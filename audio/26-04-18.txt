@@ -1,0 +1,16 @@
+สวัสดีครับ นี่คือ Enabridge Daily AI Brief ของวันที่ 18 April 2026
+วันนี้มี 4 เรื่อง เน้น Agentic AI, business use case, และ trend ที่เอามาใช้กับ OpenBridge ได้
+
+เรื่องที่ 1
+เรื่องแรกของวันนี้ Cloudflare เปิด MCP server ตัวใหม่ชื่อ Code Mode ประเด็นคือ แต่เดิมเวลาเราให้ agent คุยกับ API ที่มี endpoint เยอะ ๆ มันต้องยัด tool spec ทุกตัวเข้า context กิน token มหาศาล Cloudflare บอกว่า 2,500 endpoint เดิมกินหนึ่งล้านกว่า token ตอนนี้ Code Mode ลดเหลือพันเดียว คือหายไป 99.9% วิธีคือให้ agent เขียน code สั้น ๆ เรียก API แทนการอ่าน spec ทั้งก้อน รันใน sandbox แยก สำหรับทีม OpenBridge ผมว่าน่าจับตา เพราะถ้า pattern นี้กลายเป็น standard เร็ว ๆ นี้ การต่อ agent กับ SaaS enterprise จะถูกและเร็วขึ้นมาก คุ้มที่ทดสอบดูว่าเอาแนวคิด code-as-tool มาใช้กับ connector เราได้ไหม
+
+เรื่องที่ 2
+เรื่องที่สอง Pinterest เปิดให้ MCP ขึ้น production จริง ๆ ไม่ใช่ experiment แล้ว โครงสร้างเขาน่าสนใจ แยกเป็น domain-specific server หลาย ๆ ตัว มี central registry ให้ agent ค้นเจอ แล้วใส่ human-in-the-loop approval ก่อน action เสี่ยง ๆ เคลมประหยัดเวลา engineer หลายพันชั่วโมงต่อเดือน ผมว่าเรื่องนี้สำคัญเพราะตัวอย่าง production-scale แบบนี้หายาก ส่วนใหญ่ยังเป็น demo อยู่ และ pattern registry บวก domain server บวก approval gate มันตอบคำถาม enterprise ว่าจะปล่อย agent เข้าระบบ prod ยังไงให้ไม่พัง สำหรับ OpenBridge ผมว่านี่คือ blueprint ที่ copy ได้ตรง ๆ เลย และ HITL approval เป็น angle ขายลูกค้าไทยที่ยังไม่กล้า agent เต็มตัวได้ดีมาก
+
+เรื่องที่ 3
+เรื่องที่สาม Microsoft ประกาศปล่อย Agent 365 วันที่ 1 พฤษภาคม มันเป็น control plane สำหรับ AI agent ใน enterprise รวม identity governance security observability ไว้ที่เดียว ไม่ว่า agent จะมาจาก Copilot third-party หรือ build เอง ก็คุมผ่าน Agent 365 ได้หมด Context ที่น่าสนใจคือผลสำรวจ OutSystems บอก 94% ของ enterprise กังวลเรื่อง agent sprawl agent เยอะเกินคุมไม่ไหว ผมมองว่าเรื่องนี้เปิด category ใหม่ที่ชื่อ agent identity and governance และ vendor อื่น ๆ อย่าง Okta CrowdStrike น่าจะมี competitive product ตามมาไตรมาสนี้ สำหรับ OpenBridge ต่อไปเวลาคุย enterprise คำถาม agent governance จะตามมาทุกครั้ง ต้องเตรียมคำตอบ แล้วถ้า OpenBridge ยืนเป็น neutral layer คุม agent หลาย vendor ได้ ก็มีที่ยืนในช่องว่างที่ Agent 365 คุมแต่ Microsoft
+
+เรื่องที่ 4
+เรื่องสุดท้ายของวันนี้ Distyl AI ระดม 175 ล้านดอลลาร์ที่ valuation 1.8 พันล้าน บริษัทนี้ทำอะไรน่าสนใจ เขาช่วย Fortune 500 แปลง workflow ให้ AI-native ไม่ใช่แค่เอา ChatGPT ไปใส่ข้าง ๆ แต่ rework กระบวนการทำงานทั้งชุด context ที่ควรรู้ ไตรมาสแรก 2026 VC ลงเงินรวม 300 พันล้านดอลลาร์ทุบสถิติ AI กินส่วนแบ่ง 80% หรือ 242 พันล้าน pattern ที่เห็นคือเงินไป infrastructure orchestration และ vertical SaaS ที่ AI-native โดยเฉพาะ legal procurement compliance logistics สำหรับ OpenBridge ผมว่าสำคัญสองเรื่อง หนึ่ง thesis AI-native workflow ตรงกับ OpenBridge เลย Distyl คือ proof ว่าตลาดจ่ายจริง สอง vertical ที่ร้อนสุดเขาเลือก 4 ตัว น่าจะพิจารณาว่า OpenBridge ลง vertical ไหนก่อน หรือจะทำ horizontal แล้วอยู่เส้นก็ได้
+
+ทั้งหมดนี้คือ brief ของวันนี้ ขอให้วันนี้เป็นวันที่ดีครับ แล้วเจอกันใหม่พรุ่งนี้

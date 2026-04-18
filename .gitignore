@@ -1,0 +1,16 @@
+# Secrets — NEVER commit
+.env
+.env.local
+*.key
+
+# Note: audio/*.mp3 IS tracked — GitHub hosts it for the podcast feed
+# ถ้า repo size โตเกิน 1GB ค่อยย้ายไป Git LFS
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# OS
+.DS_Store

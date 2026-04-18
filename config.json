@@ -1,0 +1,31 @@
+{
+  "topics": {
+    "primary": [
+      "Agentic AI — new agents, frameworks, protocols (MCP, ACP), autonomous workflows",
+      "Real-world AI business use cases — case studies, ROI numbers, deployments in production",
+      "OpenBridge-relevant trends — integration platforms, AI-native workflow tools, B2B automation"
+    ],
+    "signal_boosters": [
+      "ผลงานจับต้องได้ (metrics, revenue, customer count, concrete deployments)",
+      "Thai market moves (บริษัทไทย / ภูมิภาค APAC)",
+      "จาก Anthropic, OpenAI, Google DeepMind, Meta AI labs",
+      "Y Combinator / a16z / Sequoia portfolio AI agent moves",
+      "Enterprise AI (Microsoft, Salesforce, ServiceNow, SAP AI rollouts)"
+    ],
+    "deprioritize": [
+      "Pure research papers ไม่มี business angle",
+      "Hype/prediction pieces ที่ไม่มีข้อมูลจริง",
+      "LLM benchmark ไม่ได้เปลี่ยน landscape"
+    ]
+  },
+  "output": {
+    "target_reading_time_min": 5,
+    "items_per_day": "3-5",
+    "language": "Thai primary, EN for tech terms",
+    "tone": "สั้น คม actionable — เหมือน VC analyst ส่ง morning memo"
+  },
+  "delivery": {
+    "phase_1": ["markdown_file"],
+    "phase_2": ["podcast_feed", "email", "line_or_telegram"]
+  }
+}
