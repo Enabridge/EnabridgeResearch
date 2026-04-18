@@ -1,0 +1,147 @@
+name: Daily Audio Pipeline
+
+# Auto-triggered when brief .md files are pushed to any branch.
+# Claude Code web writes briefs + commits, GHA runner has open internet
+# to reach api.openai.com (which is blocked in Claude Code sandbox).
+#
+# Flow: push news/*.md → TTS → update_index → commit audio back → Telegram
+
+on:
+  push:
+    paths:
+      - 'news/*.md'
+    branches:
+      - '**'
+  workflow_dispatch:
+    inputs:
+      date:
+        description: 'Date slug (YY-MM-DD). Leave empty to use latest brief.'
+        required: false
+        type: string
+      skip_telegram:
+        description: 'Skip Telegram push'
+        required: false
+        default: false
+        type: boolean
+
+concurrency:
+  group: daily-audio-${{ github.ref }}
+  cancel-in-progress: false
+
+jobs:
+  audio:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+          cache: 'pip'
+
+      - name: Install dependencies
+        run: |
+          pip install --upgrade pip
+          pip install openai python-dotenv requests 'httpx[socks]'
+
+      - name: Detect date slug
+        id: date
+        run: |
+          if [ -n "${{ github.event.inputs.date }}" ]; then
+            SLUG="${{ github.event.inputs.date }}"
+            echo "Using manual date: $SLUG"
+          else
+            # Find latest non-index brief file in news/ root (exclude archive/)
+            LATEST=$(find news -maxdepth 1 -name '*-*.md' ! -name '*-index.md' | sort | tail -1)
+            if [ -z "$LATEST" ]; then
+              echo "::error::No brief files found in news/"
+              exit 1
+            fi
+            BASENAME=$(basename "$LATEST")
+            SLUG=$(echo "$BASENAME" | grep -oE '^[0-9]{2}-[0-9]{2}-[0-9]{2}')
+            echo "Detected date from $BASENAME: $SLUG"
+          fi
+          if ! echo "$SLUG" | grep -qE '^[0-9]{2}-[0-9]{2}-[0-9]{2}$'; then
+            echo "::error::Invalid date slug: $SLUG"
+            exit 1
+          fi
+          echo "slug=$SLUG" >> $GITHUB_OUTPUT
+
+      - name: Check if audio already generated
+        id: check
+        run: |
+          MP3="audio/${{ steps.date.outputs.slug }}.mp3"
+          if [ -f "$MP3" ] && [ -s "$MP3" ]; then
+            echo "Audio already exists and non-empty: $MP3"
+            echo "exists=true" >> $GITHUB_OUTPUT
+          else
+            echo "exists=false" >> $GITHUB_OUTPUT
+          fi
+
+      - name: Run TTS
+        if: steps.check.outputs.exists == 'false'
+        env:
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+        run: python scripts/tts.py --date ${{ steps.date.outputs.slug }}
+
+      - name: Verify MP3 non-empty
+        if: steps.check.outputs.exists == 'false'
+        run: |
+          MP3="audio/${{ steps.date.outputs.slug }}.mp3"
+          if [ ! -s "$MP3" ]; then
+            echo "::error::MP3 is empty or missing — OpenAI TTS likely failed"
+            exit 1
+          fi
+          SIZE=$(stat -c %s "$MP3")
+          echo "MP3 size: $SIZE bytes"
+
+      - name: Rebuild audio index
+        if: steps.check.outputs.exists == 'false'
+        run: python scripts/update_index.py
+
+      - name: Commit audio back to branch
+        if: steps.check.outputs.exists == 'false'
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add "audio/${{ steps.date.outputs.slug }}".* audio/index.json
+          if git diff --cached --quiet; then
+            echo "Nothing to commit"
+          else
+            git commit -m "audio: ${{ steps.date.outputs.slug }} (auto via GHA)"
+            # Retry push up to 3 times for transient network errors
+            for i in 1 2 3; do
+              if git push origin HEAD:${{ github.ref_name }}; then
+                break
+              fi
+              echo "Push failed (attempt $i), retrying in $((i * 2))s..."
+              sleep $((i * 2))
+            done
+          fi
+
+      - name: Push to Telegram
+        if: steps.check.outputs.exists == 'false' && !inputs.skip_telegram
+        env:
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+        run: python scripts/push_telegram.py --date ${{ steps.date.outputs.slug }}
+
+      - name: Summary
+        if: always()
+        run: |
+          echo "### Daily Audio Pipeline — ${{ steps.date.outputs.slug }}" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          if [ "${{ steps.check.outputs.exists }}" = "true" ]; then
+            echo "- Audio already existed, skipped TTS" >> $GITHUB_STEP_SUMMARY
+          else
+            echo "- TTS generated and committed" >> $GITHUB_STEP_SUMMARY
+            echo "- Telegram: ${{ inputs.skip_telegram && 'skipped' || 'pushed' }}" >> $GITHUB_STEP_SUMMARY
+          fi
