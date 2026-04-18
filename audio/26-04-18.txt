@@ -1,0 +1,70 @@
+สวัสดีครับ นี่คือ Enabridge Daily AI Brief ของวันที่ 18 April 2026
+วันนี้มี 4 เรื่อง เน้น Agentic AI, business use case, และ trend ที่เอามาใช้กับ OpenBridge ได้
+
+เรื่องที่ 1
+เรื่องที่หนึ่งของวันนี้ Perplexity เปิดตัวของใหม่ชื่อ Personal Computer สำหรับ Mac เมื่อวันพฤหัสที่ผ่านมา ฟังชื่อเหมือนของเล่น แต่จริง ๆ มันคือ agent ที่รันบน Mac ของเราแล้วคุม Mail, Finder, Slack, Messages, Notes, Calendar รวมถึง Comet browser ของ Perplexity เองได้หมด กด Command ซ้ายขวาพร้อมกัน แล้วสั่งเป็นข้อความหรือเสียง
+
+ที่น่าสนใจคือ Perplexity แนะนำตรง ๆ เลยว่าให้รันบน Mac mini แล้วเปิดทิ้งไว้ตลอด 24 ชั่วโมง เพื่อให้ agent ทำงานต่อแม้ laptop ของเราปิดอยู่ นี่คือแนวคิด agent OS ที่เกิดจริงครั้งแรก คือเรามี Mac mini หนึ่งเครื่องเป็น server ส่วนตัวของเราที่คอย monitor inbox, ตามงานในปฏิทิน, reply Slack แทนเราได้ทั้งวัน ไม่ใช่ session แบบ ChatGPT ที่เปิดแล้วปิด
+
+ราคา $200 ต่อเดือน เฉพาะสมาชิก Perplexity Max เท่านั้น plan Pro $20 ใช้ไม่ได้ นี่คือ signal ว่าเขามอง agent เต็มรูปเป็น productivity tool ระดับ enterprise ไม่ใช่ consumer app
+
+มุม entrepreneur มี 3 ช่องว่างที่น่าสนใจ หนึ่งคือ vertical agent OS สำหรับ lawyer, accountant, doctor ที่ integrate ลึกกับ software เฉพาะทาง สองคือ agent OS บน Windows และ Linux ที่ Perplexity ยังไม่แตะ สามคือ layer memory context แบบ local ที่ user ควบคุม data เอง
+
+ความเสี่ยงที่ต้องจับตา คือ churn — $200 ต่อเดือนคือ psychological barrier สูงมาก ถ้า 3 เดือนแรก retention ต่ำกว่า 70% เปอร์เซ็นต์ โมเดลพัง อีกอย่างคือ Apple ถ้าใส่ agent แบบนี้ฟรีใน macOS ปีหน้า Perplexity เหลือ moat แค่ multi-model choice
+
+เทียบ pattern เก่า คือ Dropbox ยุค 2010 ตอน cloud storage เริ่ม mass market ใคร integrate OS ลึกสุดชนะ pattern วันนี้คล้ายกัน แต่ lesson ที่สำคัญจาก Siri กับ Alexa คือ distribution ไม่เท่ากับ adoption ของที่ต้องวัดจริงคือ habit formation ใน 30 วันแรก ไม่ใช่ download count
+
+สำหรับ OpenBridge signal ที่ใช้ได้เลยคือ เรา ควรเพิ่ม always-on connector mode ที่ให้ agent listen event แทนที่ user ต้อง trigger แต่ละครั้ง เหมือน cron ยิง webhook เข้า agent ทำให้ integration platform ของเราเข้ากับ pattern agent 24/7 ที่กำลังมา แค่นี้สำหรับเรื่องนี้
+
+เรื่องที่ 2
+เรื่องที่สองของวันนี้ Windsurf 2.0 ซึ่งเป็นของ Cognition บริษัทแม่ของ Devin เปิดตัวเมื่อวันอังคารที่ผ่านมา feature หลักคือ Agent Command Center ที่เปลี่ยน IDE ให้กลายเป็น Kanban board ของ agent หลายตัวรวมกันในที่เดียว developer เห็น agent ที่รัน local และ cloud พร้อมกัน status งานทุกตัว เป็น interface เดียว
+
+จุดที่น่าสนใจคือ Devin ที่เมื่อก่อนเป็นสินค้าแยกและโดนวิจารณ์ว่าขายเกินจริง ตอนนี้ถูกฝังใน Windsurf ตรง ๆ developer planning งานด้วย Cascade local แล้วกดปุ่มเดียว ส่งต่อให้ Devin ทำต่อบน cloud VM ที่มี browser กับ computer-use ครบ quota shared กัน ไม่ต้องซื้อเพิ่ม
+
+ตัวเลขที่สะท้อน signal — Windsurf ปิดไตรมาสสุดท้ายปี 2025 ที่ ARR $82M เอ็นเตอร์ไพรซ์ลูกค้า 350 ราย และขึ้น #1 ใน LogRocket AI Dev Tool Rankings แซง Cursor กับ GitHub Copilot ซึ่งเป็นเรื่องใหญ่ เพราะ Cognition ซื้อ Windsurf มาแค่ 8 เดือน ด้วย $250M หลังดีล Google ล่ม เป็นการ integrate หลัง acquisition ที่หายากในวงการ AI
+
+pattern ที่เห็นชัดคือ 1 developer = manager ของ 10+ agent แทนที่จะเป็น 1 developer + 1 copilot อีกต่อไป CEO Windsurf พูดตรง ๆ บน X ว่า future คือการ manage agent หลายตัวพร้อมกัน
+
+มุม entrepreneur มี 3 ช่อง หนึ่งคือ Agent Command Center สำหรับ non-code workflow คือ sales, marketing, ops ที่ยังไม่มีใครทำ UI ระดับนี้ สองคือ vertical agent IDE เช่น data engineering, SRE, security สามคือ agent observability layer ที่เมื่อ dev คุม agent 10 ตัว การเฝ้าดู agent ล้มแบบไหนกลายเป็นปัญหาใหม่
+
+ความเสี่ยงคือ Devin รันบน cloud VM compute cost สูง ถ้า heavy user ใช้เยอะ unit economics เสี่ยง และที่สำคัญ Windsurf ยังใช้ third party model อยู่ ถ้า OpenAI ออก IDE ของตัวเองหรือ Anthropic เปลี่ยน pricing Windsurf โดนบีบทันที
+
+เทียบ pattern เก่าใกล้สุดคือ Jira vs Trello ปี 2011 Trello ชนะเพราะ simple และ visual Windsurf = Trello ของยุค agent ส่วน lesson ที่สำคัญคือ productivity gain ไม่ได้มาจาก agent ที่เร็วขึ้น แต่มาจาก cognitive load ที่ developer แบกลดลง นั่นคือจุดที่ Cursor พลาด Windsurf เข้าใจก่อน
+
+สำหรับ OpenBridge โอกาสชัดคือเราควรทำ MCP server ของตัวเอง ให้ Windsurf agent เรียก integration ของเราได้จาก IDE โดยตรง นี่คือ distribution channel ใหม่ที่ Zapier ยังไม่ได้เข้า แค่นี้สำหรับเรื่องนี้
+
+เรื่องที่ 3
+เรื่องที่สามของวันนี้ Atlassian เจ้าของ Jira, Confluence, Trello ประกาศเมื่อวานว่า ตั้งแต่ 17 สิงหาคมปีนี้จะเริ่มใช้ metadata กับ in-app data ของลูกค้าไปเทรน AI model ทั่วทั้ง platform
+
+ที่สำคัญต้องแยกให้ชัด — customer data คือข้อความที่ user พิมพ์ หรือไฟล์ที่อัพโหลด อันนั้นยังไม่เอาไปเทรน ยังยืนยัน privacy แต่ metadata ที่ประกาศเพิ่ม คือพวก issue type, project structure, usage pattern — ตรงนี้จะเอาไปเทรน
+
+จุดที่คนจะโกรธคือ opt-out matrix — plan Free, Standard, Premium opt-out metadata ไม่ได้เลย มีแต่ Enterprise ที่ opt-out ได้ แปลว่า SMB ลูกค้า 99% ของ Atlassian ต้องยอมให้ data ตัวเองถูกเอาไปเทรน Rovo agent ไม่มีทางเลือก ถ้าอยาก privacy ต้องอัพเกรดไป Enterprise ราคา $17 ต่อ user ต่อเดือน
+
+signal ที่ใหญ่คือ SaaS B2B กำลัง repriced "data privacy" เป็น luxury feature ของ enterprise tier เมื่อก่อน Enterprise = SSO + SLA + audit log ตอนนี้ Enterprise = สิทธิไม่โดนเทรน และ pattern นี้ GitHub, Notion, Figma, Slack, Salesforce จะเดินตามใน 12 เดือน
+
+มุม entrepreneur มี 4 ช่อง หนึ่งคือ Privacy-first Jira alternative สำหรับ SMB ที่ไม่พร้อมจ่าย Enterprise — Linear กำลังจะกิน โอกาส 12 เดือน สองคือ metadata privacy audit tool ที่ช่วย CIO ก่อนดีเดย์ 17 สิงหาคม สามคือ self-hosted workflow platform บวก agent เช่น Plane, Huly สี่คือ integration platform ที่ privacy-aware — ตรงนี้ OpenBridge มีโอกาสตรง
+
+ความเสี่ยงที่ต้องรู้คือ de-identified กับ aggregated ที่ Atlassian อ้างนั้น วิจัย MIT กับ Princeton ชี้ว่า metadata re-identification ทำได้มากกว่า 80% กับ dataset ใหญ่ระดับ Atlassian แปลว่า claim privacy มีช่องโหว่ — จะมี class action อเมริกาและ GDPR complaint ยุโรปแน่นอน Thailand PDPA อาจตีความว่า project metadata เป็นข้อมูลระบุบุคคล ต้อง opt-in ในไทย
+
+เทียบ pattern เก่า ใกล้สุดคือ Facebook post Cambridge Analytica ปี 2018 ที่เปลี่ยน TOS กระทบ developer ecosystem ทั้งวง อีกอันคือ Oracle ขึ้นค่า Java license ปี 2019 ที่ตั้งต้น migration wave ใหญ่ไป OpenJDK Atlassian move นี้จะกระตุ้น migration ไปทาง Linear และ self-hosted ในปี 2026 ถึง 2027
+
+สำหรับ OpenBridge action ที่ทำได้เลย หนึ่งคือออก privacy policy statement ชัด ๆ ว่าไม่เทรน AI บน integration data ของลูกค้า ใช้เป็น marketing asset ยิง CIO ที่กำลัง review Atlassian อยู่ไตรมาสนี้ สองคือ spec feature metadata hygiene tool ที่ audit และ scrub field sensitive ก่อน sync — เป็น PDPA firewall ให้ลูกค้าไทย สามคือ outbound list ที่ใช้ Jira Free/Standard กำลังวิ่งหา alternative มี shape ชัดมาก subdomain Jira บวก company 50 ถึง 500 คน แค่นี้สำหรับเรื่องนี้
+
+เรื่องที่ 4
+เรื่องที่สี่ เรื่องไทย รัฐบาลไทยโดยกระทรวง อว. ร่วมกับ NECTEC และพาร์ทเนอร์เอกชน เปิดตัว ThaiLLM sovereign AI แห่งชาติ ช่วงปลายมีนาคมถึงต้นเมษายนปีนี้ ฟรีสำหรับทุกคน มี playground ให้ลองที่เว็บ thaillm.or.th มี API ให้ developer และ download weights ไปรันเอง fine-tune เองได้
+
+ที่สำคัญคือ KBTG กับ SCB 10X เริ่ม integrate ของจริงแล้ว SCB 10X มี Typhoon 2 ที่เป็น multimodal รองรับทั้ง audio และ vision และ agentic capability ผ่าน RAG กับ multi-agent workflow KBTG มี THaLLE ของตัวเอง KXVC ซึ่งเป็น VC arm ของ KBTG ประกาศ strategic partnership scale AI startup ไทย พร้อมกันนี้ตั้งแต่ปลายปี 2025 มีนักศึกษาและนักวิจัยไทยมากกว่า 700 คนผ่าน bootcamp ThaiLLM แล้ว
+
+signal ที่ใหญ่สุด คือไทยมี foundation layer ภาษาไทยของตัวเองแล้ว agent ไทยไม่ต้องพึ่ง GPT หรือ Claude ร้อยเปอร์เซ็นต์อีกต่อไป สำหรับงานที่ regulated เช่น ธนาคาร ประกัน โรงพยาบาล ราชการ ที่ต้อง data residency ใน TH — ThaiLLM ชนะเรื่อง compliance เรื่องราคา
+
+มุม entrepreneur มี 5 ช่องที่เปิดแล้ว หนึ่งคือ vertical Thai agent สำหรับอุตสาหกรรม regulated ที่ยอมจ่ายราคา enterprise สองคือ integration platform ไทยที่ connect SaaS ไทยกับ ThaiLLM agent — ตรงนี้คือ thesis OpenBridge อยู่แล้ว สามคือ call center agent ภาษาไทยที่ใช้ Typhoon audio สี่คือ agentic RPA สำหรับเอกสารไทย สัญญา ใบเสร็จ ภพ.30 ภงด ห้าคือ training certification service สำหรับ enterprise ที่อยาก deploy ThaiLLM เอง คำเตือน อย่าแข่งสร้าง Thai LLM ตัวใหม่ รัฐลงทุนแล้ว field ปิดสำหรับรายเล็ก ให้เล่น application layer แทน
+
+ความเสี่ยงที่ต้องรู้ คือ benchmark ThaiLLM ยังต่ำกว่า GPT-4o กับ Claude 4 งาน complex reasoning ยังไม่พร้อม production solo ต้อง hybrid กับ frontier model อีกอันคือ sustainability — ตอนนี้ DEF funding รัฐ ฟรี แต่พอ scale API cost ใครจ่าย ยังไม่ชัด และ ecosystem ยัง fragment Pathumma OpenThaiGPT Typhoon THaLLE ยังไม่ converge
+
+เทียบ pattern ต่างประเทศ ใกล้สุดคือ Mistral ของฝรั่งเศสที่ระดม €2B+ ได้ กับ Aleph Alpha ของเยอรมันที่ scale ไม่ได้ — ความต่างอยู่ที่ founder quality open-source strategy กับ commercial discipline ThaiLLM ต้องเรียนจาก Mistral ไม่ใช่ Aleph Alpha
+
+สำหรับ OpenBridge นี่คือ thesis validation ตรง ๆ demand integration platform บวก Thai agent จะโตไตรมาสนี้ Action คือต่อ MCP กับ Typhoon API ของ SCB 10X และ THaLLE ของ KBTG เป็น priority ใน 30 วัน และคุย SCB 10X กับ KXVC โดยตรงในฐานะ co-builder ของ Thai agent ecosystem ยิง portfolio company เขาเป็น channel แรก แค่นี้สำหรับเรื่องสุดท้าย
+
+สรุปวันนี้ 4 เรื่อง agent OS ฝั่ง consumer ที่ Perplexity นำ, agent orchestration IDE ที่ Windsurf เปิดเกมใหม่, SaaS B2B ใหญ่เริ่มเก็บ metadata เทรน AI ที่ Atlassian จุดไฟ, และไทยมี foundation AI ของตัวเองแล้ว ขอให้วันนี้เป็นวันที่ดีครับ เจอกันใหม่พรุ่งนี้
+
+ทั้งหมดนี้คือ brief ของวันนี้ ขอให้วันนี้เป็นวันที่ดีครับ แล้วเจอกันใหม่พรุ่งนี้
