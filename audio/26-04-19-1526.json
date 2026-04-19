@@ -1,0 +1,32 @@
+{
+  "date": "26-04-19-1526",
+  "iso_date": "2026-04-19T15:26:00+07:00",
+  "title": "Daily AI Brief — 26-04-19 15:26",
+  "items": [
+    {
+      "file": "26-04-19-1526-01-nvidia-agent-toolkit-openshell.md",
+      "title": "NVIDIA เปิด Agent Toolkit + OpenShell — 17 enterprise partner รับไม้ทันที, เล่น OS layer ของ agent era",
+      "order": 1
+    },
+    {
+      "file": "26-04-19-1526-02-cloudflare-enterprise-mcp-reference.md",
+      "title": "Cloudflare ออก Enterprise MCP Reference Architecture — \"Shadow MCP detection\" + central governance สำหรับ agent era",
+      "order": 2
+    },
+    {
+      "file": "26-04-19-1526-03-rebar-14m-vertical-ai-hvac.md",
+      "title": "Rebar ปิด Series A $14M — vertical AI ที่ทำ HVAC quote เร็วขึ้น 60-70% + win rate 2-3× โดย founded แค่ 18 เดือน",
+      "order": 3
+    },
+    {
+      "file": "26-04-19-1526-04-lua-58m-human-agent-os.md",
+      "title": "Lua ปิด seed $5.8M — \"OS สำหรับคน + agent collaboration\" ที่ ARR $1M ใน 3 เดือน + growth 30% WoW",
+      "order": 4
+    }
+  ],
+  "script_char_count": 5704,
+  "audio_file": "26-04-19-1526.mp3",
+  "voice": "coral",
+  "model": "gpt-4o-mini-tts",
+  "speed": 1.3
+}
