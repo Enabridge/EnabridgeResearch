@@ -37,14 +37,16 @@ def parse_index(md_text: str) -> dict:
     return {"theme": theme, "items": items}
 
 
-def build_message(date_slug: str) -> str:
+def build_message(date_slug: str, pr_url: str | None = None) -> str:
     index_path = ROOT / "news" / f"{date_slug}-index.md"
     if not index_path.exists():
         sys.exit(f"ไม่เจอ index: {index_path}")
     idx = parse_index(index_path.read_text(encoding="utf-8"))
     yy, mm, dd = date_slug.split("-")
+    is_preview = pr_url is not None
+    header = "📝 Preview — Daily AI Brief" if is_preview else "Daily AI Brief"
     lines = [
-        f"<b>Daily AI Brief — 20{yy}-{mm}-{dd}</b>",
+        f"<b>{header} — 20{yy}-{mm}-{dd}</b>",
         "",
     ]
     if idx["theme"]:
@@ -54,7 +56,11 @@ def build_message(date_slug: str) -> str:
         lines.append(f"<b>{i}.</b> {item['title']}")
         lines.append(f"   {item['summary']}")
         lines.append("")
-    lines.append(f"🎧 podcast: https://enabridge.ai/research")
+    if is_preview:
+        lines.append("🎧 ฟัง audio ด้านล่าง ถ้าโอเค merge ได้เลยครับ")
+        lines.append(f"✅ Review &amp; merge PR: {pr_url}")
+    else:
+        lines.append("🎧 podcast: https://enabridge.ai/research")
     return "\n".join(lines)
 
 
@@ -88,6 +94,8 @@ def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--date", required=True, help="YY-MM-DD")
     ap.add_argument("--skip-audio", action="store_true", help="ส่งแค่ข้อความ ไม่ส่ง MP3")
+    ap.add_argument("--pr-url", default=None,
+                    help="ถ้าส่ง = preview mode (ขอให้ user review/merge); ไม่ส่ง = published mode")
     args = ap.parse_args()
 
     token = os.environ.get("TELEGRAM_BOT_TOKEN")
@@ -97,7 +105,7 @@ def main():
     if not chat_id:
         sys.exit("ไม่เจอ TELEGRAM_CHAT_ID ใน .env — รัน scripts/telegram_setup.py ก่อน")
 
-    msg = build_message(args.date)
+    msg = build_message(args.date, pr_url=args.pr_url)
     print("[telegram] ส่ง message...")
     send_message(token, chat_id, msg)
 

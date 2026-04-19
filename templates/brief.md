@@ -4,6 +4,8 @@ slug: {{short-slug}}
 topic: {{agentic-ai | use-case | openbridge-trend}}
 reading_time_min: {{1-5}}
 sources: {{n}}
+image_prompt: {{คำอธิบายภาพ illustration editorial style 1-2 ประโยค ภาษาอังกฤษ — GHA จะเอาไป gen ผ่าน DALL-E 3}}
+image: {{GHA เติมให้เอง หลัง gen — path ของไฟล์ใน news/images/}}
 ---
 
 # {{หัวข้อ — 1 บรรทัด คม ๆ}}
@@ -12,13 +14,13 @@ sources: {{n}}
 {{2–3 bullet — อ่านจบใน 15 วิ รู้ว่าเรื่องอะไร ทำไมสำคัญ}}
 
 ## เกิดอะไรขึ้น
-{{2–4 ย่อหน้า — ใคร, ทำอะไร, เมื่อไหร่, จำนวน/ตัวเลขจริง}}
+{{3–5 ย่อหน้า — เล่าแบบ story-driven: ใคร ทำอะไร เมื่อไหร่ มีตัวเลขจริง/deployment จริง/คำพูดจาก founder/exec ได้ยิ่งดี. เขียนให้อ่านเพลิน เหมือน article ใน Stratechery หรือ The Information ไม่ใช่ bullet list}}
 
 ## ทำไมสำคัญ
-{{1–2 ย่อหน้า — pattern ที่เห็น, ส่งสัญญาณอะไรต่อตลาด}}
+{{2–3 ย่อหน้า — pattern ที่เห็น, เทียบกับเรื่องอื่นในตลาด, signal อะไรต่อจากนี้. ไม่ต้องกลาง ๆ — มี point of view}}
 
 ## มุม OpenBridge
-{{1–2 bullet — เอาไปใช้ / ปรับ product / เตือนใจยังไงได้บ้าง, ถ้าไม่เกี่ยวโดยตรงเขียน "ไม่ direct เกี่ยว แต่…"}}
+{{1–2 ย่อหน้า — เอาไปใช้ / ปรับ product / positioning / เตือนใจยังไงได้บ้าง. ถ้าไม่ direct เกี่ยว เขียน "ไม่ direct เกี่ยว แต่..." แล้วชี้ adjacent insight}}
 
 ## Sources
 - [{{Title}}]({{URL}})
@@ -26,5 +28,5 @@ sources: {{n}}
 
 ---
 
-## Audio script (สำหรับ TTS — Phase 2)
-{{เรื่องเล่าเหมือนคุยกับเพื่อน 60–90 วินาที ภาษาไทย ไม่มี markdown ไม่มี URL, ใช้คำพูดธรรมชาติ}}
+## Audio script
+{{เรื่องเล่าเหมือนคุยกับเพื่อน 60–90 วินาที ภาษาไทย ไม่มี markdown ไม่มี URL, ใช้คำพูดธรรมชาติ technical terms (MCP, agentic, orchestration) เก็บ English ได้}}
