@@ -1,7 +1,41 @@
 {
-  "generated_at": "2026-04-19T15:57:56Z",
-  "count": 3,
+  "generated_at": "2026-04-19T23:23:00Z",
+  "count": 4,
   "episodes": [
+    {
+      "date": "26-04-19-2312",
+      "iso_date": "2026-04-19T23:12:00+07:00",
+      "title": "Daily AI Brief — 26-04-19 23:12",
+      "description": "1. MCP มี design flaw ระดับ supply chain — 200K server เสี่ยง RCE, Anthropic ปฏิเสธแก้ที่ protocol level\n2. Factory ปิด Series C $150M ที่ valuation $1.5B — \"Droids\" agent coder doubled MoM 6 เดือนติด\n3. EY ติดตั้ง agentic AI ทั้ง 130,000 คนใน Assurance — ใหญ่ที่สุดของ Big 4 ในรอบ AI era\n4. Canva AI 2.0 — biggest reinvention since 2013, agentic orchestration + connector รัวใส่ Slack/Notion/Gmail",
+      "items": [
+        {
+          "file": "26-04-19-2312-01-mcp-systemic-vulnerability-anthropic.md",
+          "title": "MCP มี design flaw ระดับ supply chain — 200K server เสี่ยง RCE, Anthropic ปฏิเสธแก้ที่ protocol level",
+          "order": 1
+        },
+        {
+          "file": "26-04-19-2312-02-factory-150m-droids-coding-agent.md",
+          "title": "Factory ปิด Series C $150M ที่ valuation $1.5B — \"Droids\" agent coder doubled MoM 6 เดือนติด",
+          "order": 2
+        },
+        {
+          "file": "26-04-19-2312-03-ey-130k-agentic-audit-rollout.md",
+          "title": "EY ติดตั้ง agentic AI ทั้ง 130,000 คนใน Assurance — ใหญ่ที่สุดของ Big 4 ในรอบ AI era",
+          "order": 3
+        },
+        {
+          "file": "26-04-19-2312-04-canva-ai-2-agentic-orchestration.md",
+          "title": "Canva AI 2.0 — biggest reinvention since 2013, agentic orchestration + connector รัวใส่ Slack/Notion/Gmail",
+          "order": 4
+        }
+      ],
+      "audio_file": "26-04-19-2312.mp3",
+      "audio_size_bytes": 7725312,
+      "voice": "coral",
+      "model": "gpt-4o-mini-tts",
+      "speed": 1.3,
+      "script_char_count": 6575
+    },
     {
       "date": "26-04-19-1526",
       "iso_date": "2026-04-19T15:26:00+07:00",

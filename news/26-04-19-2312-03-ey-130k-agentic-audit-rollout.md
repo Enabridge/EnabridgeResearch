@@ -6,7 +6,7 @@ reading_time_min: 5
 sources: 5
 image_prompt: Editorial illustration of a vast translucent ledger floating above a global map, with delicate threads connecting human silhouettes and glowing agent orbs across continents, minimal flat shapes, muted navy and gold palette, soft architectural lighting, no text no logos no faces
 image:
----
+images/26-04-19-2312-03-ey-130k-agentic-audit-rollout.png
 
 # EY ติดตั้ง agentic AI ทั้ง 130,000 คนใน Assurance — ใหญ่ที่สุดของ Big 4 ในรอบ AI era
 

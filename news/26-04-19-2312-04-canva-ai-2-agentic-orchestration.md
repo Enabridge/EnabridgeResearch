@@ -6,7 +6,7 @@ reading_time_min: 5
 sources: 5
 image_prompt: Editorial illustration of a translucent blank canvas blooming into interconnected layered design fragments orchestrated by ribbons of light flowing toward calendar, chat, and document silhouettes, minimal flat shapes, muted lavender and peach palette, soft volumetric lighting, no text no logos no faces
 image:
----
+images/26-04-19-2312-04-canva-ai-2-agentic-orchestration.png
 
 # Canva AI 2.0 — biggest reinvention since 2013, agentic orchestration + connector รัวใส่ Slack/Notion/Gmail
 

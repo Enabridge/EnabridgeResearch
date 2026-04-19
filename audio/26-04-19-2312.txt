@@ -1,0 +1,50 @@
+สวัสดีครับ นี่คือ Enabridge AI Brief รอบ 19 April 2026 เวลา 23:12
+รอบนี้มี 4 เรื่อง เน้น Agentic AI, business use case, และ trend ที่เอามาใช้กับ OpenBridge ได้
+
+เรื่องที่ 1
+ข่าวใหญ่ที่ทุก founder ใช้ MCP ต้องรู้คืนนี้. OX Security ปล่อย advisory ที่ตั้งชื่อแรงมาก The Mother of All AI Supply Chains. เนื้อหาคือ Model Context Protocol ของ Anthropic มี design flaw ที่ทำให้ arbitrary command execution บน server ที่ใช้ official SDK ทุกภาษา. Python, TypeScript, Java, Rust รวมกัน 150 ล้าน downloads. มี server public ออก internet 7,000 ตัวที่ scan เจอแล้ว. คาดทั้งหมด 200,000 instance.
+
+OX โชว์ proof-of-concept ว่า execute command ได้บน 6 production platform จริง. รวม LiteLLM, LangChain, IBM LangFlow. ถ้า founder ไหน adopt MCP ใน production = เช็คทันที.
+
+ที่เดือดกว่าคือ Anthropic ตอบกลับว่าไม่ใช่ bug. STDIO execution model เป็น secure default. การ sanitize input เป็นหน้าที่ของ developer ที่ deploy server เอง. จะไม่แก้ที่ protocol level.
+
+ผลคือวงการแตกสองฝั่ง. ฝั่ง Anthropic ที่ปกป้อง design philosophy. ฝั่ง CISO กับ security researcher ที่บอกว่านี่คือ Log4Shell moment. เพราะ developer ส่วนใหญ่ assume ว่า SDK official ของ Anthropic = ปลอดภัย default. ความ asymmetry ตรงนี้คือ supply chain disaster.
+
+ที่อยากให้ตามคือ trajectory ของ ecosystem. ถ้า Anthropic ไม่กลับลำใน 30 วัน. MCP จะเปิดช่องให้ Cloudflare, OpenAI Agents SDK, NVIDIA OpenShell ที่ market themselves ว่า secure-by-default fork ออกมา.
+
+สำหรับ OpenBridge. Audit ทุก MCP server ที่ run หรือ depend on ภายในสัปดาห์นี้. และมี positioning opportunity ทันที ขายเป็น MCP gateway with security audit เหมือน Cloudflare ทำได้บน edge เราทำได้บน vertical stack. SMB ไทยจ่ายแน่นอน เพราะคำว่า MCP-native ตอนนี้แปลว่าเปิดช่อง RCE ในหู CISO.
+
+เรื่องที่ 2
+Factory เพิ่งปิด Series C 150 ล้าน valuation 1.5 พันล้าน. นำโดย Khosla Ventures พร้อม Sequoia, Insight, Blackstone. founder Matan Grinberg อายุ 26 เข้า unicorn club ภายในไม่ถึง 3 ปีตั้งแต่ตั้งบริษัท.
+
+Product ชื่อ Droids. ต่างจาก Cursor หรือ Copilot ที่ pair programming. Droids ออกแบบให้ทำงานเอง end-to-end. รับ ticket จาก Jira เขียน code, test, deploy เอง. เน้น enterprise refactoring กับ maintenance.
+
+ตัวเลขที่ทำให้ Khosla กล้าเปิด check 150 ล้านเร็วขนาดนี้คือ revenue doubled month-over-month 6 เดือนติด. ถ้าเริ่มที่ 2 ล้าน ARR ตอน Q4 ที่แล้ว. ตอนนี้ run-rate ราว 130 ล้าน. เป็น growth rate เดียวกับที่ Cursor ทำได้ปี 2024.
+
+Customer คือ NVIDIA, Adobe, EY, Palo Alto Networks, Adyen. ทั้งหมด enterprise tier 1 ที่ procurement ยาก. ผ่าน security review แล้ว นี่คือ moat ที่ไม่ได้อยู่ใน screenshot.
+
+Differentiator ที่ชูเด่นคือ model-agnostic. Droids switch ระหว่าง Claude, DeepSeek, GPT runtime ตาม task. Claude สำหรับ planning. DeepSeek สำหรับ refactor เพราะถูกและเร็ว. GPT สำหรับ review. pattern เดียวกับ NVIDIA AI-Q ของรอบบ่าย. hybrid model architecture คือ winning pattern ของ agentic ปี 2026.
+
+สำหรับ OpenBridge. lesson หนึ่ง model router คือ table stakes ปีนี้. ใครยัง hardcode Claude อย่างเดียวต้อง action item Q2. lesson สอง vertical autonomy ชนะ horizontal assistance สำหรับ B2B. ขายเป็น outcome-based pricing per ticket per form. ไม่ใช่ seat-based. lesson สาม brand-name logo สำคัญกว่า ARR ตอน raise. ไล่จับ SET100 ก่อน. CP, SCB, Krungthai, Bangchak. unlock check ใหญ่ที่ตามมา.
+
+เรื่องที่ 3
+EY เพิ่ง deploy agentic AI ครอบทั้ง audit workforce 130,000 คน 150 ประเทศ ทำ audit ปีละ 160,000 งาน process journal entry 1.4 ล้านล้านบรรทัดต่อปี. นี่คือ largest single agentic AI deployment ที่ public ทราบในขณะนี้.
+
+Architecture build บน Microsoft Azure, Foundry, Fabric. Multi-agent framework แต่ละตัว specialize ตาม audit task. ฝังเข้า EY Canvas ที่เป็น platform กลางที่ใช้ทั่วโลก. Vision คือ end-to-end agentic audit ภายในปี 2028. CEO Janet Truncale ใช้คำว่า invest billions of dollars.
+
+ที่สำคัญพอ ๆ กับ technology คือ human side. ทำ global training upskill ทุก auditor ตลอดปี 2026. join Stanford HAI Industrial Affiliates Program เพื่อ research human-AI hybrid. positioning เน้นว่า human-led AI-powered ไม่ใช่ replacement.
+
+Signal ระยะกลาง. Big 4 ทุกเจ้าผูกกับ hyperscaler แล้ว. EY กับ Microsoft. KPMG กับ Microsoft + OpenAI. Deloitte กับ NVIDIA + Salesforce. เหลือ PwC ที่ยังไม่ commit แบรนด์ = market opportunity ของ Anthropic, Google, AWS. ทุก vertical อื่นจะตามใน 6-12 เดือน.
+
+สำหรับ OpenBridge. ไม่ direct เกี่ยวกับ audit แต่มี 2 มุม. หนึ่ง EY Thailand 2,000 คน audit SET100 — ถ้า global rollout ลงไทย Q3 ปีนี้ EY ต้องการ integration partner ไทยที่เชื่อม EY Canvas เข้า ERP ลูกค้าทันที. OpenBridge pitch ภายใน 60 วัน ก่อน EY เลือกพาร์ทเนอร์ของเค้าเอง. สอง template ของ Big 4 จะลอกโดย professional services ไทยใน 18 เดือน. OpenBridge สามารถ position เป็น agentic platform สำหรับ Thai professional services packaged พร้อมใช้ก่อน. และเตือนว่า message human-led AI-powered คือสิ่งที่ขายได้ในเอเชียที่ตลาด sensitive เรื่อง job displacement.
+
+เรื่องที่ 4
+Canva ปล่อย AI 2.0 ที่งาน Create 2026 ที่ LA. CEO Melanie Perkins เรียกว่า most significant product evolution ตั้งแต่ founding ปี 2013. คำพูดระดับนี้สำคัญเพราะ Canva ปี 2025 มี 220 ล้าน monthly active user revenue ARR เกิน 3 พันล้าน. reinvention คือ strategic bet ที่จะ define อีก 10 ปี.
+
+แกนหลัก 4 ชิ้น. หนึ่ง conversational design. พิมพ์ prompt อย่าง pitch deck Series A สำหรับ fintech ไทย โทนสี trust + growth. agent gen full deck พร้อม layout fully editable. สอง agentic orchestration. AI ได้ access design engine ทั้ง stack เลือกเองว่าจะใช้ Magic Studio, Magic Write, Background Remover ตอนไหน. user แค่ให้ goal. สาม connector รัว Slack, Gmail, Google Drive, Calendar, Notion, Zoom, HubSpot. use case เช่น ทำ social post จาก Zoom transcript เมื่อวาน. สี่ Memory Library + Scheduling automation. agent run on background. งานเสร็จขณะ user offline.
+
+อันตรายต่อ adjacent SaaS. Notion, Tome, Gamma, Buffer, Hootsuite ทุกเจ้าจะถูก subsume ถ้า Canva execute ดี. wave M&A สำหรับ agent layer for SaaS จะมาภายใน 6 เดือน.
+
+สำหรับ OpenBridge. Canva connector list ทับกับ integration map ของเรา 100%. แตกต่างคือ Canva entry คือ design. OpenBridge entry คือ workflow data orchestration. แต่ user perception เริ่มเห็นเป็น agent ที่จัดการ cross app เหมือนกัน. ต้องการ defensive move สามข้อ. หนึ่ง vertical depth ที่ Canva ไม่มี. finance ops, accounting, compliance. สอง Thai context as moat. LINE native, PromptPay, K+ API. สาม outcome pricing แทน seat pricing. และ offensive move build MCP server ของ OpenBridge ให้ agent อื่นรวม Canva ในอนาคต call เข้า workflow เรา. capture value แม้ user เลือก Canva เป็น UX. แล้วก็พยายาม partner submit เป็น connector official ของ Canva เปิด channel ขาย Canva user ไทยที่ต้องการ workflow ลึกขึ้น.
+
+ทั้งหมดนี้คือ brief ของรอบนี้ ขอให้วันนี้เป็นวันที่ดีครับ แล้วเจอกันรอบหน้า
