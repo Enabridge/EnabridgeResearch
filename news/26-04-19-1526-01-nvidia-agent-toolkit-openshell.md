@@ -6,7 +6,7 @@ reading_time_min: 6
 sources: 5
 image_prompt: Editorial illustration of an open vault door revealing layered translucent runtime shells around a glowing autonomous agent orb, minimal flat shapes, muted teal and amber palette, dramatic side lighting, no text no logos no faces
 image:
----
+images/26-04-19-1526-01-nvidia-agent-toolkit-openshell.png
 
 # NVIDIA เปิด Agent Toolkit + OpenShell — 17 enterprise partner รับไม้ทันที, เล่น OS layer ของ agent era
 

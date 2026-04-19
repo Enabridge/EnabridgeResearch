@@ -1,0 +1,46 @@
+สวัสดีครับ นี่คือ Enabridge AI Brief รอบ 19 April 2026 เวลา 15:26
+รอบนี้มี 4 เรื่อง เน้น Agentic AI, business use case, และ trend ที่เอามาใช้กับ OpenBridge ได้
+
+เรื่องที่ 1
+NVIDIA ปล่อยหมัดใหญ่ที่ GTC ปีนี้ — Agent Toolkit กับ OpenShell เป็น runtime open-source สำหรับ autonomous agent. ที่สำคัญคือ partner list — วันเดียวเซ็น 17 enterprise ใหญ่พร้อมกัน Adobe, SAP, Salesforce, ServiceNow, ServiceNow, Siemens, Cisco, Box, Atlassian, Synopsys — เกือบครบทุก vertical ของ enterprise software.
+
+ที่น่าสนใจกว่าคือ AI-Q architecture. ใช้ frontier model แบบ Claude หรือ GPT สำหรับ orchestration เท่านั้น แล้วเอา open weight Nemotron มาทำ sub-task เช่น search หรือ summarize. ลด query cost ได้ 50% โดย accuracy ไม่ตก. founder ที่จ่าย API bill เดือนละเลขหลักแสนควรเอา pattern นี้ไปใช้ตาม.
+
+ทำไมเรื่องนี้สำคัญ? เพราะ NVIDIA ไม่ได้ขายแค่ GPU อีกต่อไป — กำลังขยับขึ้น stack เป็น platform layer. เหมือนที่ AWS เริ่มจาก EC2 แล้วค่อย ๆ ดูด workload ขึ้น S3, RDS, Lambda. ถ้า OpenShell กลายเป็น Kubernetes ของ agent era ในปี 2026 — ทุก AI startup ต้องคำนวณ platform risk ใหม่หมด.
+
+สำหรับ OpenBridge — ต้อง evaluate OpenShell ทันที. ถ้า platform เราต้อง onboard agent จากลูกค้า enterprise ไทย การเป็น OpenShell-compatible = trust signal. และ hybrid architecture แบบ AI-Q ลอกได้ทันที — ใช้ Claude เป็น planner, ใช้ open weight เป็น worker. cost ลดครึ่ง quality ไม่ตก. พลาดไม่ได้.
+
+เรื่องที่ 2
+Cloudflare ปล่อย enterprise MCP reference architecture ใน Agents Week ปีนี้. สาระสำคัญคือ — ไม่ใช่โปรดักต์ใหม่ แต่เป็น blueprint ที่ CIO กับ CISO เอาไปใช้ได้ทันที.
+
+Stack แนะนำ: Cloudflare Access ทำ authentication, AI Gateway สำหรับ observability กับ rate limiting, และ MCP server portals เป็น catalog กลางให้พนักงาน discover MCP server ที่ approved.
+
+ที่สำคัญสุดคือ Shadow MCP detection. ทุก org ที่ deploy Claude Desktop หรือ ChatGPT Enterprise มีพนักงานเชื่อม MCP server เองโดย IT ไม่รู้ — SharePoint, GitHub, Notion, community server ต่าง ๆ. ข้อมูล PII กับ trade secret หลุดผ่าน MCP ได้ง่ายมาก. Cloudflare ใช้ network position ที่ edge จับ outbound traffic ไป MCP server ที่ไม่อยู่ใน whitelist — ทำได้ที่ AWS กับ Google ยังทำไม่ได้.
+
+ขนาด ecosystem ตอนนี้ 10,000 public MCP server — ต้นเดือนมีนาคมยังอยู่ที่ 5,800 ตัว. โต 70% ใน 6 สัปดาห์ นี่คือ HashiCorp moment ของ MCP — คนที่ publish reference architecture ก่อนจะ dominate standard ของทั้ง industry.
+
+สำหรับ OpenBridge — ต้อง publish MCP server ของเรา ภายใน quarter นี้ และต้อง compliant กับ Cloudflare pattern ถ้าหวังลูกค้าแบบ SCB, KBTG, PTT. รองรับ OAuth 2.1, มี SSO, มี audit log streaming. ถ้าไม่ถึง minimum นี้ = invisible ใน agent ecosystem. และมี opportunity ใหม่ — Shadow MCP detection สำหรับ Thai enterprise. Pattern เหมือน Wiz กับ Prisma Cloud ยุค cloud security ปี 2018 — ทำตอนนี้ทัน ทำปีหน้าสายไปแล้ว.
+
+เรื่องที่ 3
+Rebar ปิด Series A 14 ล้านดอลลาร์นำโดย Prudence. บริษัท founded ตุลาคม 2024 ที่นิวยอร์ก — founded แค่ 18 เดือน ปิด A แล้ว. Product คือ AI ที่อ่าน construction blueprint อัตโนมัติสำหรับ HVAC supplier.
+
+ตัวเลขที่ investor ซื้อ — quote generation เร็วขึ้น 60 ถึง 70% เทียบ manual, win rate สูงขึ้น 2 ถึง 3 เท่า, และ ARR double ใน 6 สัปดาห์แรกของปี 2026. Growth rate แบบนี้ไม่ค่อยเห็นใน construction tech.
+
+ทำไมสำคัญ? เพราะ Rebar คือ signal ของ vertical AI 2.0 — ลงลึกกว่าแค่ ChatGPT wrapper. บริษัทมี proprietary dataset ของ blueprint annotated ตัวเอง, computer vision model train เฉพาะ, domain-specific post-processing สำหรับ code compliance, และ workflow integration กับ supplier catalog อย่าง Trane, Carrier, Daikin.
+
+Pattern investor เริ่มเทเงินเข้า boring industry — HVAC, construction, legal discovery, medical billing — เพราะ horizontal AI ถูก commoditize ไปแล้ว แต่ vertical AI มี data moat จริง CFO ชอบเพราะ ROI วัดได้ เทียบกับ Hilbert ที่ a16z ลงเมื่อเช้า — pattern เดียวกัน vertical แคบ ตัวเลขชัด per-outcome pricing.
+
+สำหรับ OpenBridge — Thai construction industry 60 พันล้านดอลลาร์ต่อปี HVAC 6 พันล้าน. มีโอกาสชัดที่ OpenBridge หรือ partner จะสร้าง Rebar ไทย. Pattern copy ได้ทันที — proprietary Thai dataset, per-outcome pricing, narrow vertical ลงลึกเหมือน Rebar. เลิกเป็น AI platform กว้าง ๆ — เลือก 1 vertical ที่เรารู้จริงแล้วทำลึกให้ไม่มีใครตาม.
+
+เรื่องที่ 4
+Lua — London-based startup ที่ Y Combinator เลือก — ปิด seed 5.8 ล้านดอลลาร์เมื่อ 16 เมษายน. นำรอบโดย Norrsken22 กับ Flourish Ventures, 20VC ของ Harry Stebbings, YC. Product คือ operating system สำหรับ human กับ agent collaboration.
+
+Thesis น่าสนใจ — agent ตอนนี้ส่วนใหญ่ทำงานแบบ isolated. คุณสั่ง, มันหายไป 20 นาที, กลับมาพร้อมผลลัพธ์หรือ error. Pattern นี้พังสำหรับ team enterprise — ไม่มี context sharing, ไม่มี intervention point, ไม่มี handoff protocol. Lua build layer ที่ให้คนกับ agent แชร์ workspace, task queue, context ของทีมร่วมกัน คล้าย Google Docs แต่สำหรับ task state.
+
+Traction แรง — launch platform ตุลาคม 2025, ทำ 1 ล้านดอลลาร์ ARR ใน 3 เดือนแรก, growth 30% week-over-week ต่อเนื่องตั้งแต่มกราคม. เดือนกุมภาพันธ์เดือนเดียวมี agent ถูกสร้างบน Lua มากกว่าทุกเดือนก่อนหน้ารวมกัน. hockey stick ที่ชัดมาก.
+
+ทำไมสำคัญสำหรับ OpenBridge? เพราะ Lua คือ competitor ที่ใกล้ OpenBridge ที่สุดตอนนี้. positioning OS สำหรับ human-agent collaboration ทับกับ integration platform กับ workflow orchestration. ต้อง benchmark กับ Lua ทันที — handoff protocol, shared context layer, developer SDK มีครบหรือยัง.
+
+สิ่งที่น่าทำคือ position OpenBridge เป็น Lua สำหรับ Asia-Pacific. Lua focus US กับ EU. ตลาดเอเชีย — ไทย, เวียดนาม, อินโด, ฟิลิปปินส์ — ยังว่าง, มี workflow ที่ต่าง — ภาษาไทย, LINE เป็น messenger หลัก, Facebook Messenger สำหรับ commerce. ถ้าเรา claim ก่อน + ship 90 วัน = Lua Implementation Network ของไทยคงเป็น OpenBridge. อย่าพยายามแข่ง US ตรง ๆ — narrow + deep ในตลาดที่เรารู้จริง.
+
+ทั้งหมดนี้คือ brief ของรอบนี้ ขอให้วันนี้เป็นวันที่ดีครับ แล้วเจอกันรอบหน้า

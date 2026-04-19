@@ -6,7 +6,7 @@ reading_time_min: 5
 sources: 4
 image_prompt: Editorial illustration of a central guarded gate connecting dozens of small nodes into a secure grid network, blueprint-style grid lines, minimal flat shapes, muted indigo and green palette, soft overhead lighting, no text no logos no faces
 image:
----
+images/26-04-19-1526-02-cloudflare-enterprise-mcp-reference.png
 
 # Cloudflare ออก Enterprise MCP Reference Architecture — "Shadow MCP detection" + central governance สำหรับ agent era
 
