@@ -28,32 +28,35 @@
 
 ## Workflow (ขั้นเดียวต่อ routine นี้ — GHA ต่อเอง)
 
-1. **Setup**: ถ้ายังไม่อยู่ใน feature branch:
+> **สำคัญ — slug format ใหม่:** `YY-MM-DD-HHMM` (timestamp รอบรัน ไม่ใช่แค่วัน)
+> วันเดียวสามารถมีหลายรอบได้โดยไม่ทับกัน: `26-04-19-0700` (scheduled), `26-04-19-1430` (adhoc), etc.
+
+1. **Setup**: compute timestamp + checkout branch:
    ```bash
    cd /workspace  # (หรือตามที่ routine mount repo ไว้)
-   DATE_SLUG=$(date +%y-%m-%d)
+   SLUG=$(date +%y-%m-%d-%H%M)
    git checkout main && git pull
-   git checkout -b "daily/${DATE_SLUG}"
+   git checkout -b "daily/${SLUG}"
    ```
 
 2. WebSearch หาข่าวของวันนี้ (หรือ 24–48 ชม. ที่ผ่านมา) ใน 3 หัวข้อข้างบน — signal สูงสุด 3–5 เรื่อง
 
-3. สำหรับแต่ละเรื่อง เขียนไฟล์ใหม่ `news/YY-MM-DD-NNN-slug.md` ตาม `templates/brief.md`
+3. สำหรับแต่ละเรื่อง เขียนไฟล์ใหม่ `news/${SLUG}-NNN-slug.md` ตาม `templates/brief.md`
+   (เช่น `news/26-04-19-0700-001-cloudflare-agents.md`)
    - `topic:` = agentic-ai / use-case / openbridge-trend
    - `image_prompt:` = English 1-2 ประโยค บรรยายภาพ editorial illustration style (ไม่ใช่ photo-realistic)
      - ตัวอย่าง: `"Editorial illustration of a glowing server rack turning into a conversational interface, minimal flat shapes, muted blue and coral palette, dramatic lighting"`
      - ห้ามใส่ logo/brand/คน (DALL-E อาจ reject)
    - `image:` = เว้นว่าง — GHA จะเติมให้
 
-4. เขียนไฟล์ index ของวัน `news/YY-MM-DD-index.md` — theme + list ทุกเรื่อง + TL;DR
+4. เขียนไฟล์ index ของรอบ `news/${SLUG}-index.md` — theme + list ทุกเรื่อง + TL;DR
 
-5. **Commit + push**:
+5. **Commit + push** (ใช้ helper script):
    ```bash
-   git add news/
-   git commit -m "daily: ${DATE_SLUG} briefs (N stories)"
-   git push -u origin "daily/${DATE_SLUG}"
+   bash scripts/write_briefs.sh "${SLUG}"
    ```
-   GHA workflow `daily-branch-build.yml` จะตรวจจับ push ของ `daily/*` เอง → gen images → TTS → update index → open PR → ส่ง Telegram
+   สคริปต์จะ: stage news/${SLUG}-*.md → commit → force-with-lease push ไปที่ `daily/${SLUG}`
+   จากนั้น GHA workflow `daily-branch-build.yml` จะ gen images → TTS → update index → open PR → ส่ง Telegram
 
 6. **ห้าม merge PR เอง** — Yoh จะฟัง MP3 ใน Telegram แล้ว approve เอง
 
@@ -66,9 +69,9 @@
 ## Done state
 
 เสร็จเมื่อ:
-- [ ] อยู่บน branch `daily/YY-MM-DD` แล้ว
-- [ ] เขียนครบ 3–5 เรื่องใน `news/YY-MM-DD-NNN-*.md` — มี `image_prompt` ทุกเรื่อง
-- [ ] Index file `news/YY-MM-DD-index.md`
+- [ ] อยู่บน branch `daily/${SLUG}` แล้ว (SLUG = YY-MM-DD-HHMM)
+- [ ] เขียนครบ 3–5 เรื่องใน `news/${SLUG}-NNN-*.md` — มี `image_prompt` ทุกเรื่อง
+- [ ] Index file `news/${SLUG}-index.md`
 - [ ] ทุก brief มี `## Audio script`
-- [ ] `git push` สำเร็จ — บน GitHub เห็น branch `daily/YY-MM-DD` แล้ว
-- [ ] ตอบกลับใน chat: รายการไฟล์ที่สร้าง + TL;DR ของวันรวม 3–4 บรรทัด + link ไปที่ PR (ที่ GHA จะเปิดให้)
+- [ ] `git push` สำเร็จ — บน GitHub เห็น branch `daily/${SLUG}` แล้ว
+- [ ] ตอบกลับใน chat: รายการไฟล์ที่สร้าง + TL;DR ของรอบรวม 3–4 บรรทัด + link ไปที่ PR (ที่ GHA จะเปิดให้)

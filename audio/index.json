@@ -1,35 +1,35 @@
 {
-  "generated_at": "2026-04-18T14:41:18Z",
+  "generated_at": "2026-04-19T07:06:47Z",
   "count": 1,
   "episodes": [
     {
-      "date": "26-04-18",
+      "date": "26-04-18-0700",
       "iso_date": "2026-04-18T07:00:00+07:00",
-      "title": "Daily AI Brief — 26-04-18",
+      "title": "Daily AI Brief — 26-04-18 07:00",
       "description": "1. Cloudflare ลด token ของ MCP ลง 99.9% — จาก 1.17M เหลือ ~1,000\n2. Pinterest เอา MCP ขึ้น production — agent ช่วย engineer ประหยัดหลายพันชั่วโมง/เดือน\n3. Microsoft Agent 365 — \"control plane\" สำหรับ enterprise agents, launch 1 พ.ค.\n4. Distyl AI ระดม $175M ที่ valuation $1.8B — ช่วย Fortune 500 กลายเป็น \"AI-native\"",
       "items": [
         {
-          "file": "26-04-18-001-cloudflare-code-mode-mcp.md",
+          "file": "26-04-18-0700-001-cloudflare-code-mode-mcp.md",
           "title": "Cloudflare ลด token ของ MCP ลง 99.9% — จาก 1.17M เหลือ ~1,000",
           "order": 1
         },
         {
-          "file": "26-04-18-002-pinterest-mcp-production.md",
+          "file": "26-04-18-0700-002-pinterest-mcp-production.md",
           "title": "Pinterest เอา MCP ขึ้น production — agent ช่วย engineer ประหยัดหลายพันชั่วโมง/เดือน",
           "order": 2
         },
         {
-          "file": "26-04-18-003-microsoft-agent-365.md",
+          "file": "26-04-18-0700-003-microsoft-agent-365.md",
           "title": "Microsoft Agent 365 — \"control plane\" สำหรับ enterprise agents, launch 1 พ.ค.",
           "order": 3
         },
         {
-          "file": "26-04-18-004-distyl-175m-ai-native.md",
+          "file": "26-04-18-0700-004-distyl-175m-ai-native.md",
           "title": "Distyl AI ระดม $175M ที่ valuation $1.8B — ช่วย Fortune 500 กลายเป็น \"AI-native\"",
           "order": 4
         }
       ],
-      "audio_file": "26-04-18.mp3",
+      "audio_file": "26-04-18-0700.mp3",
       "audio_size_bytes": 3454080,
       "voice": "coral",
       "model": "gpt-4o-mini-tts",

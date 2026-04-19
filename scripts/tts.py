@@ -3,11 +3,11 @@
 Generate daily podcast audio from brief .md files using OpenAI TTS.
 
 Usage:
-    python scripts/tts.py --date 26-04-18
-    python scripts/tts.py --date 26-04-18 --voice nova --model gpt-4o-mini-tts
+    python scripts/tts.py --slug 26-04-18-0700
+    python scripts/tts.py --slug 26-04-18-0700 --voice nova --model gpt-4o-mini-tts
 
-Reads:  news/YY-MM-DD-NNN-*.md (excluding -index.md)
-Writes: audio/YY-MM-DD.mp3 + audio/YY-MM-DD.json (metadata)
+Reads:  news/YY-MM-DD-HHMM-NNN-*.md (excluding -index.md)
+Writes: audio/YY-MM-DD-HHMM.mp3 + audio/YY-MM-DD-HHMM.json (metadata)
 """
 import argparse
 import json
@@ -46,24 +46,43 @@ def extract_title(md_text: str) -> str:
     return m.group(1).strip() if m else "(no title)"
 
 
-def build_daily_script(date_slug: str) -> tuple[str, list[dict]]:
-    """Compose the full daily audio script and return (text, item_meta)."""
+def parse_slug(slug: str) -> tuple[str, str, str]:
+    """
+    Parse YY-MM-DD-HHMM slug.
+    Returns (iso_date, human_intro, human_title_suffix).
+
+    iso_date           = "2026-04-19T07:00:00+07:00"
+    human_intro        = "19 April 2026 เวลา 07:00" (used inside TTS intro)
+    human_title_suffix = "26-04-19 07:00"            (used in episode title)
+    """
+    parts = slug.split("-")
+    if len(parts) != 4 or len(parts[3]) != 4:
+        raise ValueError(f"slug must be YY-MM-DD-HHMM, got: {slug}")
+    yy, mm, dd, hhmm = parts
+    hh, mi = hhmm[:2], hhmm[2:]
+    iso_date = f"20{yy}-{mm}-{dd}T{hh}:{mi}:00+07:00"
+    dt = datetime.strptime(f"20{yy}-{mm}-{dd} {hh}:{mi}", "%Y-%m-%d %H:%M")
+    human_intro = f"{dt.strftime('%d %B %Y')} เวลา {hh}:{mi}"
+    human_title_suffix = f"{yy}-{mm}-{dd} {hh}:{mi}"
+    return iso_date, human_intro, human_title_suffix
+
+
+def build_daily_script(slug: str) -> tuple[str, list[dict], str, str]:
+    """Compose the full daily audio script.
+    Returns (text, item_meta, iso_date, title_suffix)."""
     news_dir = ROOT / "news"
     briefs = sorted(
-        p for p in news_dir.glob(f"{date_slug}-*.md")
+        p for p in news_dir.glob(f"{slug}-*.md")
         if not p.name.endswith("-index.md")
     )
     if not briefs:
-        sys.exit(f"ไม่เจอ brief สำหรับ {date_slug} ใน {news_dir}")
+        sys.exit(f"ไม่เจอ brief สำหรับ {slug} ใน {news_dir}")
 
-    # Parse human date for intro
-    yy, mm, dd = date_slug.split("-")
-    date_obj = datetime.strptime(f"20{yy}-{mm}-{dd}", "%Y-%m-%d")
-    intro_date = date_obj.strftime("%d %B %Y")  # Thai readers still parse OK
+    iso_date, intro_label, title_suffix = parse_slug(slug)
 
     parts = [
-        f"สวัสดีครับ นี่คือ Enabridge Daily AI Brief ของวันที่ {intro_date}",
-        f"วันนี้มี {len(briefs)} เรื่อง เน้น Agentic AI, business use case, และ trend ที่เอามาใช้กับ OpenBridge ได้",
+        f"สวัสดีครับ นี่คือ Enabridge AI Brief รอบ {intro_label}",
+        f"รอบนี้มี {len(briefs)} เรื่อง เน้น Agentic AI, business use case, และ trend ที่เอามาใช้กับ OpenBridge ได้",
         "",
     ]
     items = []
@@ -83,8 +102,8 @@ def build_daily_script(date_slug: str) -> tuple[str, list[dict]]:
             "order": i,
         })
 
-    parts.append("ทั้งหมดนี้คือ brief ของวันนี้ ขอให้วันนี้เป็นวันที่ดีครับ แล้วเจอกันใหม่พรุ่งนี้")
-    return "\n".join(parts), items
+    parts.append("ทั้งหมดนี้คือ brief ของรอบนี้ ขอให้วันนี้เป็นวันที่ดีครับ แล้วเจอกันรอบหน้า")
+    return "\n".join(parts), items, iso_date, title_suffix
 
 
 THAI_INSTRUCTIONS = (
@@ -147,7 +166,8 @@ def generate_audio(text: str, out_path: Path, voice: str, model: str,
 
 def main():
     ap = argparse.ArgumentParser()
-    ap.add_argument("--date", required=True, help="YY-MM-DD (e.g. 26-04-18)")
+    ap.add_argument("--slug", required=True,
+                    help="Timestamp slug YY-MM-DD-HHMM (e.g. 26-04-18-0700)")
     ap.add_argument("--voice", default="coral",
                     help="alloy|ash|ballad|coral|echo|fable|nova|onyx|sage|shimmer|verse "
                          "(default: coral — warm, works well with Thai)")
@@ -163,16 +183,16 @@ def main():
                     help="Build + save script only, skip API call")
     args = ap.parse_args()
 
-    script, items = build_daily_script(args.date)
+    script, items, iso_date, title_suffix = build_daily_script(args.slug)
     audio_dir = ROOT / "audio"
     audio_dir.mkdir(exist_ok=True)
 
     # Always save the script text for debugging
-    script_path = audio_dir / f"{args.date}.txt"
+    script_path = audio_dir / f"{args.slug}.txt"
     script_path.write_text(script, encoding="utf-8")
     print(f"[tts] script → {script_path} ({len(script)} chars)")
 
-    out_mp3 = audio_dir / f"{args.date}.mp3"
+    out_mp3 = audio_dir / f"{args.slug}.mp3"
     if not args.dry_run:
         generate_audio(script, out_mp3, args.voice, args.model,
                        instructions=args.instructions or None,
@@ -180,9 +200,9 @@ def main():
 
     # Metadata for RSS feed
     meta = {
-        "date": args.date,
-        "iso_date": datetime.strptime(f"20{args.date}", "%Y-%m-%d").strftime("%Y-%m-%dT07:00:00+07:00"),
-        "title": f"Daily AI Brief — {args.date}",
+        "date": args.slug,
+        "iso_date": iso_date,
+        "title": f"Daily AI Brief — {title_suffix}",
         "items": items,
         "script_char_count": len(script),
         "audio_file": out_mp3.name,
@@ -190,7 +210,7 @@ def main():
         "model": args.model,
         "speed": args.speed,
     }
-    meta_path = audio_dir / f"{args.date}.json"
+    meta_path = audio_dir / f"{args.slug}.json"
     meta_path.write_text(json.dumps(meta, ensure_ascii=False, indent=2), encoding="utf-8")
     print(f"[tts] meta → {meta_path}")
 

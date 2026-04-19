@@ -40,25 +40,51 @@ TELEGRAM_CHAT_ID     = 7500968194             (จาก .env)
 # Enabridge Daily AI Brief — research routine
 
 Today: {{date}}
+Working dir: ~/ws/company/enabridge-research
+
+**Slug format:** `YY-MM-DD-HHMM` (timestamp per run — วันเดียวรันหลายรอบได้ ไม่ทับกัน)
 
 ## Task
 
-1. ทำ research ตาม `prompts/daily-research.md` — 3–5 เรื่องคุณภาพ
-2. เขียน briefs + index ใน `news/` ใช้ `templates/brief.md` (ใส่ `image_prompt:` ทุกไฟล์)
-3. รัน:
+1. Compute timestamp + checkout branch:
    ```bash
-   bash scripts/write_briefs.sh $(date +%y-%m-%d)
+   cd ~/ws/company/enabridge-research
+   SLUG=$(date +%y-%m-%d-%H%M)
+   git checkout main && git pull
+   git checkout -b "daily/${SLUG}"
    ```
-4. รอ GHA: gen images → TTS → update index → open PR → ส่ง Telegram preview
+
+2. ทำ research ตาม `prompts/daily-research.md` — **3–5 เรื่องคุณภาพ**
+   Source bias: OpenAI/Anthropic/Google AI blogs, HN front page, a16z, Stratechery, The Information, Pragmatic Engineer, TechCrunch
+   เน้นตัวเลขจริง/deployment จริง — **ห้าม padding ข่าวเก่า**
+
+3. เขียน briefs ใน `news/${SLUG}-NNN-slug.md` + index `news/${SLUG}-index.md` ใช้ `templates/brief.md`
+   **ทุก brief ต้องมี:**
+   - `image_prompt:` (English, editorial illustration, ห้าม text/logos/faces)
+   - เนื้อหา 3–5 ย่อหน้า story-driven (เหมือน Stratechery article)
+   - `## Audio script` สำหรับ TTS
+
+4. Commit + push:
+   ```bash
+   bash scripts/write_briefs.sh "${SLUG}"
+   ```
+
+5. จบงาน — รอ GHA ~3–5 นาที: gen images → TTS → update index → open PR → ส่ง Telegram preview
 
 ## ห้าม
-- อย่า merge PR เอง — Yoh จะฟัง MP3 ใน Telegram แล้ว approve เอง
-- อย่ารัน `run_daily.sh` (legacy — สำหรับ local backup เท่านั้น)
-- อย่าทำ TTS/Telegram เอง — GHA ทำให้
+- ❌ อย่า merge PR เอง — Yoh จะฟัง MP3 ใน Telegram แล้ว approve เอง
+- ❌ อย่ารัน `run_daily.sh` (legacy — สำหรับ local backup เท่านั้น)
+- ❌ อย่าทำ TTS / Telegram / update_index เอง — GHA ทำให้
+- ❌ อย่า push ตรงเข้า main
 
 ## Done เมื่อ
-- `git push origin daily/YY-MM-DD` สำเร็จ
+- `git push origin daily/${SLUG}` สำเร็จ (SLUG = YY-MM-DD-HHMM)
 - GHA workflow ที่ https://github.com/Enabridge/EnabridgeResearch/actions เริ่มรัน
+
+## ถ้าเจอปัญหา
+- ไม่มี source แข็งพอ → เขียน 2 เรื่อง ห้าม padding
+- Git push fail → ตรวจ GitHub App permission ของ routine
+- GHA error → แจ้ง Yoh พร้อม link workflow run
 ````
 
 ### 5. Enabridge-site — update env + deploy
@@ -84,36 +110,39 @@ Railway จะ redeploy อัตโนมัติ
 
 ```bash
 cd ~/ws/company/enabridge-research
-# จำลอง routine: สร้าง branch + ใส่ brief demo + push
+# จำลอง routine: timestamp slug + สร้าง branch + ใส่ brief demo + push
+SLUG=$(date +%y-%m-%d-%H%M)   # เช่น 26-04-19-1430
 git checkout main && git pull
-git checkout -b daily/26-04-19
-# (ถ้าอยาก test ไม่เสียง API token, เอา brief ของ 26-04-18 มาเปลี่ยน date เป็น 26-04-19)
-bash scripts/write_briefs.sh 26-04-19
+git checkout -b "daily/${SLUG}"
+# copy brief เก่ามาแก้ slug (สมมติ test ไม่ใช้ API token)
+#   cp news/26-04-18-0700-001-*.md news/${SLUG}-001-test.md  ← แก้ filename + frontmatter
+bash scripts/write_briefs.sh "${SLUG}"
 ```
 
 หลัง push ดู:
 - GHA running: https://github.com/Enabridge/EnabridgeResearch/actions
 - รอ ~3-5 นาที → Telegram preview + PR link
 - คลิก PR link → review → merge
-- รอ 5 นาที (ISR) → เปิด https://enabridge.ai/research ดูว่ามีวันใหม่โผล่
+- รอ 5 นาที (ISR) → เปิด https://enabridge.ai/research ดูว่ามี episode ใหม่โผล่
 
 ## Architecture diagram
 
 ```
 ┌──────────────────────────────────────────────────────────────┐
-│  Claude Code Routine (6:00 AM daily, Asia/Bangkok)           │
-│  → research + write news/*.md (w/ image_prompt)             │
-│  → scripts/write_briefs.sh → push daily/YY-MM-DD branch     │
+│  Claude Code Routine (6:00 AM + adhoc, Asia/Bangkok)         │
+│  → SLUG=$(date +%y-%m-%d-%H%M)  e.g. 26-04-19-0700           │
+│  → research + write news/${SLUG}-*.md (w/ image_prompt)      │
+│  → scripts/write_briefs.sh → push daily/${SLUG} branch       │
 └────────────────────┬─────────────────────────────────────────┘
-                     │ push
+                     │ push  (1 run = 1 branch = 1 episode)
                      ▼
 ┌──────────────────────────────────────────────────────────────┐
 │  GitHub Actions: daily-branch-build.yml                      │
-│  1. gen_images.py  (DALL-E 3)                               │
-│  2. tts.py         (gpt-4o-mini-tts → coral 1.3x)           │
+│  1. gen_images.py  --slug ${SLUG}  (DALL-E 3)                │
+│  2. tts.py         --slug ${SLUG}  (gpt-4o-mini-tts coral)   │
 │  3. update_index.py                                          │
-│  4. commit back to daily/YY-MM-DD                           │
-│  5. open PR to main                                          │
+│  4. commit back to daily/${SLUG}                             │
+│  5. open PR to main  (title: Daily AI Brief — YY-MM-DD HH:MM)│
 │  6. Telegram: message + MP3 + PR link                        │
 └────────────────────┬─────────────────────────────────────────┘
                      │ Yoh: listen + approve
@@ -125,8 +154,8 @@ bash scripts/write_briefs.sh 26-04-19
                      ▼
 ┌──────────────────────────────────────────────────────────────┐
 │  enabridge.ai/research (Next.js on Railway)                  │
-│  - list: grid of 60 days                                     │
-│  - /research/[date]: rich detail + audio player              │
+│  - list: grid of 60 latest episodes (with time)              │
+│  - /research/[slug]: rich detail + audio player              │
 │  - /research/feed.xml: podcast RSS                           │
 └──────────────────────────────────────────────────────────────┘
 ```

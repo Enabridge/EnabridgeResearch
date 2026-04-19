@@ -3,7 +3,7 @@
 Push a daily brief to Telegram as message + audio.
 
 Usage:
-    python scripts/push_telegram.py --date 26-04-18
+    python scripts/push_telegram.py --slug 26-04-18-0700
 """
 import argparse
 import json
@@ -37,16 +37,21 @@ def parse_index(md_text: str) -> dict:
     return {"theme": theme, "items": items}
 
 
-def build_message(date_slug: str, pr_url: str | None = None) -> str:
-    index_path = ROOT / "news" / f"{date_slug}-index.md"
+def build_message(slug: str, pr_url: str | None = None) -> str:
+    index_path = ROOT / "news" / f"{slug}-index.md"
     if not index_path.exists():
         sys.exit(f"ไม่เจอ index: {index_path}")
     idx = parse_index(index_path.read_text(encoding="utf-8"))
-    yy, mm, dd = date_slug.split("-")
+    # Parse slug YY-MM-DD-HHMM
+    parts = slug.split("-")
+    if len(parts) != 4 or len(parts[3]) != 4:
+        sys.exit(f"slug format ผิด (ต้อง YY-MM-DD-HHMM): {slug}")
+    yy, mm, dd, hhmm = parts
+    hh, mi = hhmm[:2], hhmm[2:]
     is_preview = pr_url is not None
     header = "📝 Preview — Daily AI Brief" if is_preview else "Daily AI Brief"
     lines = [
-        f"<b>{header} — 20{yy}-{mm}-{dd}</b>",
+        f"<b>{header} — 20{yy}-{mm}-{dd} {hh}:{mi}</b>",
         "",
     ]
     if idx["theme"]:
@@ -92,7 +97,8 @@ def send_audio(token: str, chat_id: str, audio_path: Path, caption: str):
 
 def main():
     ap = argparse.ArgumentParser()
-    ap.add_argument("--date", required=True, help="YY-MM-DD")
+    ap.add_argument("--slug", required=True,
+                    help="Timestamp slug YY-MM-DD-HHMM (e.g. 26-04-18-0700)")
     ap.add_argument("--skip-audio", action="store_true", help="ส่งแค่ข้อความ ไม่ส่ง MP3")
     ap.add_argument("--pr-url", default=None,
                     help="ถ้าส่ง = preview mode (ขอให้ user review/merge); ไม่ส่ง = published mode")
@@ -105,16 +111,16 @@ def main():
     if not chat_id:
         sys.exit("ไม่เจอ TELEGRAM_CHAT_ID ใน .env — รัน scripts/telegram_setup.py ก่อน")
 
-    msg = build_message(args.date, pr_url=args.pr_url)
+    msg = build_message(args.slug, pr_url=args.pr_url)
     print("[telegram] ส่ง message...")
     send_message(token, chat_id, msg)
 
-    audio_path = ROOT / "audio" / f"{args.date}.mp3"
+    audio_path = ROOT / "audio" / f"{args.slug}.mp3"
     if args.skip_audio or not audio_path.exists():
         print(f"[telegram] skip audio ({'flag' if args.skip_audio else 'ไม่มีไฟล์'})")
     else:
         print(f"[telegram] ส่ง audio {audio_path.name}...")
-        send_audio(token, chat_id, audio_path, caption=f"🎧 {args.date} · ฟังในแอพ Telegram ได้เลย")
+        send_audio(token, chat_id, audio_path, caption=f"🎧 {args.slug} · ฟังในแอพ Telegram ได้เลย")
     print("[telegram] เสร็จ")
 
 

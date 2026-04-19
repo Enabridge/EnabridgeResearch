@@ -2,15 +2,15 @@
 """
 Generate hero images for briefs via OpenAI DALL-E 3.
 
-For each news/YY-MM-DD-*.md (excluding -index):
+For each news/YY-MM-DD-HHMM-*.md (excluding -index):
   - Parse frontmatter
   - If `image:` is already filled → skip
   - If `image_prompt:` exists → call DALL-E, save PNG to news/images/,
     rewrite frontmatter with `image: images/<filename>.png`
 
 Usage:
-    python3 scripts/gen_images.py --date 26-04-19
-    python3 scripts/gen_images.py --date 26-04-19 --size 1024x1024 --quality standard
+    python3 scripts/gen_images.py --slug 26-04-19-0700
+    python3 scripts/gen_images.py --slug 26-04-19-0700 --size 1024x1024 --quality standard
 """
 import argparse
 import os
@@ -95,7 +95,8 @@ def generate_one(client: OpenAI, prompt: str, size: str, quality: str) -> bytes:
 
 def main() -> None:
     ap = argparse.ArgumentParser()
-    ap.add_argument("--date", required=True, help="YY-MM-DD")
+    ap.add_argument("--slug", required=True,
+                    help="Timestamp slug YY-MM-DD-HHMM (e.g. 26-04-19-0700)")
     ap.add_argument("--size", default="1024x1024",
                     choices=["1024x1024", "1792x1024", "1024x1792"])
     ap.add_argument("--quality", default="standard", choices=["standard", "hd"],
@@ -107,11 +108,11 @@ def main() -> None:
     IMAGES_DIR.mkdir(parents=True, exist_ok=True)
 
     briefs = sorted(
-        p for p in NEWS_DIR.glob(f"{args.date}-*.md")
+        p for p in NEWS_DIR.glob(f"{args.slug}-*.md")
         if not p.name.endswith("-index.md")
     )
     if not briefs:
-        sys.exit(f"[images] ไม่เจอ brief สำหรับ {args.date}")
+        sys.exit(f"[images] ไม่เจอ brief สำหรับ {args.slug}")
 
     for brief_path in briefs:
         md = brief_path.read_text(encoding="utf-8")
@@ -150,7 +151,7 @@ def main() -> None:
         brief_path.write_text(new_fm_block + body, encoding="utf-8")
         print(f"[images] updated frontmatter: image: {rel}")
 
-    print(f"[images] done for {args.date}")
+    print(f"[images] done for {args.slug}")
 
 
 if __name__ == "__main__":

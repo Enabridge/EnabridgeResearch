@@ -1,9 +1,10 @@
 #!/usr/bin/env bash
 #
-# Helper สำหรับ routine — สร้าง branch + push ของวัน
-# ใช้งาน: bash scripts/write_briefs.sh [YY-MM-DD]
+# Helper สำหรับ routine — สร้าง branch + push ของรอบ
+# ใช้งาน: bash scripts/write_briefs.sh [YY-MM-DD-HHMM]
 #
-# ก่อนเรียกสคริปต์นี้ routine ต้องเขียน news/YY-MM-DD-*.md เรียบร้อยแล้ว
+# Default = timestamp ปัจจุบัน (ปี-เดือน-วัน-ชั่วโมงนาที, 24hr)
+# ก่อนเรียกสคริปต์นี้ routine ต้องเขียน news/${SLUG}-*.md เรียบร้อยแล้ว
 # สคริปต์จะ checkout feature branch + commit + push
 # GHA workflow `daily-branch-build.yml` จะรับช่วงต่อ (gen images → TTS → index → PR → Telegram)
 
@@ -11,17 +12,23 @@ set -euo pipefail
 
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 REPO_ROOT="$(dirname "$SCRIPT_DIR")"
-DATE_SLUG="${1:-$(date +%y-%m-%d)}"
-BRANCH="daily/${DATE_SLUG}"
+SLUG="${1:-$(date +%y-%m-%d-%H%M)}"
+BRANCH="daily/${SLUG}"
+
+# Validate YY-MM-DD-HHMM format
+if [[ ! "$SLUG" =~ ^[0-9]{2}-[0-9]{2}-[0-9]{2}-[0-9]{4}$ ]]; then
+  echo "[ERR] slug '$SLUG' ไม่ใช่ format YY-MM-DD-HHMM (เช่น 26-04-19-0700)"
+  exit 1
+fi
 
 cd "$REPO_ROOT"
 
-echo "=== write_briefs.sh for $DATE_SLUG (branch: $BRANCH) ==="
+echo "=== write_briefs.sh for $SLUG (branch: $BRANCH) ==="
 
-# ตรวจว่ามี brief ของวันนี้แล้วยัง
-COUNT=$(ls "news/${DATE_SLUG}"-*.md 2>/dev/null | grep -v -- '-index\.md$' | wc -l | tr -d ' ')
+# ตรวจว่ามี brief ของรอบนี้แล้วยัง
+COUNT=$(ls "news/${SLUG}"-*.md 2>/dev/null | grep -v -- '-index\.md$' | wc -l | tr -d ' ')
 if [ "$COUNT" = "0" ]; then
-  echo "[ERR] ไม่เจอ brief สำหรับ ${DATE_SLUG} — เขียน news/${DATE_SLUG}-NNN-*.md ก่อน"
+  echo "[ERR] ไม่เจอ brief สำหรับ ${SLUG} — เขียน news/${SLUG}-NNN-*.md ก่อน"
   exit 1
 fi
 echo "[ok] พบ ${COUNT} brief(s)"
@@ -37,12 +44,12 @@ else
   git checkout -b "$BRANCH" origin/main 2>/dev/null || git checkout -b "$BRANCH" main
 fi
 
-# Stage + commit แค่ news/ ของวันนี้
-git add "news/${DATE_SLUG}"*.md
+# Stage + commit แค่ news/ ของรอบนี้
+git add "news/${SLUG}"*.md
 if git diff --cached --quiet; then
   echo "[git] ไม่มีอะไรใหม่ — ข้าม commit"
 else
-  git commit -m "daily: ${DATE_SLUG} briefs (${COUNT} stories)"
+  git commit -m "daily: ${SLUG} briefs (${COUNT} stories)"
 fi
 
 # Push (force-with-lease — กัน race condition)
