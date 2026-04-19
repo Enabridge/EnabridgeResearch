@@ -4,27 +4,27 @@
   "title": "Daily AI Brief — 26-04-18",
   "items": [
     {
-      "file": "26-04-18-001-cloudflare-code-mode-mcp.md",
-      "title": "Cloudflare ลด token ของ MCP ลง 99.9% — จาก 1.17M เหลือ ~1,000",
+      "file": "26-04-18-101-perplexity-personal-computer-mac.md",
+      "title": "Perplexity เปิด \"Personal Computer\" เปลี่ยน Mac mini ให้กลายเป็น AI agent 24/7 ที่ราคา $200/เดือน",
       "order": 1
     },
     {
-      "file": "26-04-18-002-pinterest-mcp-production.md",
-      "title": "Pinterest เอา MCP ขึ้น production — agent ช่วย engineer ประหยัดหลายพันชั่วโมง/เดือน",
+      "file": "26-04-18-102-windsurf-2-agent-command-center.md",
+      "title": "Windsurf 2.0 เปิด Agent Command Center + ฝัง Devin — IDE กลายเป็นห้อง control tower สำหรับ agent หลายตัว",
       "order": 2
     },
     {
-      "file": "26-04-18-003-microsoft-agent-365.md",
-      "title": "Microsoft Agent 365 — \"control plane\" สำหรับ enterprise agents, launch 1 พ.ค.",
+      "file": "26-04-18-103-atlassian-metadata-ai-training.md",
+      "title": "Atlassian เปลี่ยนเกม — เริ่ม 17 ส.ค. 2026 จะ train AI บน metadata ลูกค้า, Free/Standard opt-out ได้, Enterprise ต้องเจรจา",
       "order": 3
     },
     {
-      "file": "26-04-18-004-distyl-175m-ai-native.md",
-      "title": "Distyl AI ระดม $175M ที่ valuation $1.8B — ช่วย Fortune 500 กลายเป็น \"AI-native\"",
+      "file": "26-04-18-104-thaillm-sovereign-ai-launch.md",
+      "title": "ไทยเปิด \"ThaiLLM\" sovereign AI แห่งชาติ — KBTG + SCB 10X ใช้งานจริง, สัญญาณ agent ไทยมี foundation แล้ว",
       "order": 4
     }
   ],
-  "script_char_count": 2973,
+  "script_char_count": 9328,
   "audio_file": "26-04-18.mp3",
   "voice": "coral",
   "model": "gpt-4o-mini-tts",

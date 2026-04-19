@@ -2,7 +2,20 @@
 
 > ทำตาม 4 ขั้น ~10 นาที จะ end-to-end pipeline ทำงาน: brief → audio → podcast feed → Telegram
 
-## 0. Prerequisite
+## Cloud mode (GitHub Actions) — default ตั้งแต่ 26-04-18
+
+ถ้ารันผ่าน Claude Code web: `api.openai.com` ถูก block ที่ sandbox → TTS ทำ local ไม่ได้
+**Solution:** `.github/workflows/daily-audio.yml` จะ trigger auto เมื่อ push `news/*.md`
+→ GHA runner รัน TTS + update_index + commit audio back + push Telegram
+
+**Setup ครั้งเดียว (ที่ repo settings → Secrets and variables → Actions):**
+- `OPENAI_API_KEY`
+- `TELEGRAM_BOT_TOKEN`
+- `TELEGRAM_CHAT_ID`
+
+**Backfill วันที่พลาด:** GitHub → Actions tab → "Daily Audio Pipeline" → Run workflow → กรอก date slug
+
+## 0. Prerequisite (local mode เท่านั้น)
 
 Credentials อยู่ใน `.env` (เรียบร้อยแล้ว). ติดตั้ง Python deps:
 
