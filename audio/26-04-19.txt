@@ -1,0 +1,72 @@
+สวัสดีครับ นี่คือ Enabridge Daily AI Brief ของวันที่ 19 April 2026
+วันนี้มี 4 เรื่อง เน้น Agentic AI, business use case, และ trend ที่เอามาใช้กับ OpenBridge ได้
+
+เรื่องที่ 1
+วันที่ 16 เมษายน 2026 เป็นวันที่แปลกมาก. เมื่อวานเราคุยเรื่อง Perplexity Personal Computer เปิดตัวบน Mac ใช่มั้ย. ปรากฏว่า OpenAI ก็ปล่อย Codex desktop update วันเดียวกันเลย ทำสิ่งเดียวกัน — ให้ agent คุม Mac ทั้งเครื่องได้.
+
+สรุปสั้น ๆ คือ Codex ตัวใหม่ใช้ cursor ของตัวเองคลิก พิมพ์ เปิดแอป ทำ task ได้ข้ามทุกแอป macOS — Mail, Slack, Jira, Figma, อะไรก็ได้. รันได้พร้อมกันหลาย agent ระหว่างที่คุณทำงานแอปอื่น. แถมเปิด plugin ใหม่ 90 ตัว รวมของเดิมขึ้นเป็น 200 กว่า — Atlassian, CircleCI, GitLab, Microsoft 365, Neon database.
+
+เด็ดสุดคือราคา. Perplexity บังคับต้อง Max $200 ต่อเดือน. OpenAI ปล่อยใน ChatGPT Plus $20 ต่อเดือน — ถูกกว่า 10 เท่า. คนละ playbook เลย — Perplexity เล่น premium, OpenAI เล่น distribution.
+
+ทำไมสำคัญ? นี่คือสัญญาณว่า macOS กลายเป็นสนามรบของ agent แล้ว ไม่ใช่ web chat ไม่ใช่ browser ไม่ใช่ mobile. สองเจ้าใหญ่กระโดดลงมาวันเดียวกัน ไม่ใช่บังเอิญ.
+
+ถ้าเป็น founder วันนี้คิดอะไร? หนึ่ง — plugin economy เปิดแล้ว เหมือนปี 2008 App Store มา คนเข้าเร็วจะครอง. สอง — ไทยยังไม่มี plugin สำหรับ K-ERP, FlowAccount, PromptPay — นี่คือช่องว่าง OpenBridge ที่ต้องเสียบให้ทันก่อนคนอื่นจะยึดทางเข้านี้.
+
+สาม — dev tool กับ agent workstation กำลังรวมกัน. Cursor Windsurf ต้อง redefine ตัวเองภายใน 3 เดือน ไม่งั้นโดนกลืน.
+
+ปิดท้าย takeaway — ถ้าคุณยังคิดว่า agent คือ chatbot อยู่ คุณช้าไปหนึ่งรอบแล้ว. agent คือ desktop worker ที่รัน 24 ชั่วโมงบน Mac ของคุณ ราคาเริ่มต้น 20 เหรียญ. window 12 เดือน ใครไม่ปรับ product ให้ agent เข้าถึงได้ตายแน่.
+
+เรื่องที่ 2
+สัปดาห์ที่ผ่านมา Anthropic ถือไพ่สามใบพร้อมกัน หนักมาก.
+
+หนึ่ง — ปล่อย Claude Opus 4.7 วันที่ 16 เมษายน. CursorBench ได้ 70% — เมื่อก่อนตัว 4.6 ได้ 58%. แก้ production task ได้มากกว่าเดิม 3 เท่า. coding agent ของ Cursor Windsurf Cognition พุ่งขึ้นตามทันที.
+
+สอง — VC ยื่น offer ระดมรอบใหม่ที่ valuation 800 พันล้านดอลลาร์ — Bloomberg scoop ออกมาวันที่ 14 เมษายน. รอบก่อนหน้าตอนกุมภาพันธ์ valuation 350 พันล้าน. ขึ้น 2.3 เท่าในสองเดือน. Anthropic ยัง**ไม่รับ** — สัญญาณว่าเขาคิดว่ายังถูก
+
+สาม — ARR แตะ 30 พันล้านดอลลาร์ต้นเดือนนี้ โต 1,400% เทียบปีต่อปี. ที่สำคัญคือ — ตอนนี้ Anthropic revenue แซง OpenAI ที่ 20 พันล้าน + growth rate ก็แซงด้วย. ครั้งแรกในประวัติศาสตร์บริษัท
+
+ทำไมสำคัญ? Anthropic ไม่ใช่ "underdog safer cousin" ของ OpenAI อีกแล้ว. เป็น category leader ของ agentic coding — Cursor Windsurf Legora Ramp ใช้ Claude เป็น default. Enterprise moat แข็งกว่า consumer ของ OpenAI เยอะ.
+
+Entrepreneur take — founder ไทยที่ default OpenAI ต้องเปลี่ยน. ถ้า build coding agent, document agent, tool-use agent — Claude Opus 4.7 ชนะ GPT-5 ในงานจริงหลายเคส. และ prompt caching ของ Anthropic ลด cost ได้ 60-90% ถ้าออกแบบดี — founder ไทยยังไม่ค่อยใช้ทริคนี้
+
+ระวัง — Anthropic ไม่รับ 800 พันล้าน ไม่ใช่ถ่อมตัว. หวัง IPO ตุลาคมปีนี้ที่ valuation 1 ล้านล้านดอลลาร์. ถ้าสำเร็จ = Oracle moment ของ AI era. ถ้าไม่สำเร็จ = bubble top signal.
+
+ปิดท้าย — สำหรับ OpenBridge ต้อง upgrade default model เป็น Opus 4.7 ทันที สำหรับ code + automation; และยืนจุดเป็น multi-model orchestrator ไม่ผูกเจ้าใดเจ้าหนึ่ง — เพราะ window ของ "Claude = king" อาจสั้นแค่ 6 เดือน ก่อน GPT-6 หรือ Gemini 4 ออกมาพลิกกลับ
+
+เรื่องที่ 3
+มีข่าว agentic AI ที่ fundamental กว่าที่เห็น. Hilbert บริษัท a16z backed ปิด Series A 28 ล้านดอลลาร์วันที่ 15 เมษายน. ทำ agent ที่ตัดสินใจเรื่อง pricing, promotion, marketing spend แทนทีม analyst ใน consumer brand.
+
+ลูกค้าจริงปรากฏชื่อน่าสนใจมาก — Walmart, FreshDirect, Blank Street, Levain Bakery. ที่เด็ดคือ Walmart ยอมให้ agent ตัดสินใจ pricing ในระดับ store-cluster — incumbent retailer ใหญ่สุดในโลกยอม outsource decision นี้ให้ agent ได้. signal แรงมาก
+
+Pricing ของ Hilbert ก็เท่ ๆ — revenue-share ไม่ใช่ SaaS flat fee. แปลว่า ถ้า agent ไม่ทำ revenue ขึ้น ลูกค้าไม่จ่าย. alignment ดีสุด — CFO ทุกคนอยากได้ model นี้
+
+ทำไมสำคัญ? CFO อเมริกันปี 2026 กดดันทีม IT ว่า AI ใช้เงินเยอะแต่ revenue ไม่ขยับ — Hilbert คือคำตอบ. a16z lead signal ว่า VC เริ่มเชื่อว่า value ของ AI ไม่ได้อยู่ที่ model infrastructure แล้ว — อยู่ที่ vertical agent ที่ solve ROI problem
+
+Entrepreneur take — หนึ่ง vertical ชนะ horizontal. Hilbert ยึด B2C growth อันเดียว ไม่ได้ทำ general agent. founder ที่ยังบอกว่า "สร้าง agent ทำได้ทุกอย่าง" = ตายช้า ๆ.
+
+สอง revenue-share pricing ใช้แล้ว SaaS flat fee เลิกได้. คนไทยส่วนใหญ่ยังใช้ 500 ต่อเดือน — เปลี่ยนเป็น 5% ของ incremental revenue ได้ราคาสูงกว่า 3-10 เท่า
+
+สาม — ไทยไม่มี Hilbert equivalent. Boonrawd, CP All, Makro, After You ใช้ analyst ทีม 10-30 คนทำ pricing. ถ้าใครเข้าก่อน ด้วย Thai data + Thai consumer behavior = ตลาดไทย 2 ล้านล้านบาท — arbitrage 18 เดือน
+
+สำหรับ OpenBridge — Hilbert style จะมาไทยแน่ ๆ ใน 18 เดือน. OpenBridge เข้าไปเป็น data integration layer ใต้ agent เหล่านั้น = ไม่ใช่คู่แข่ง แต่เป็น plumbing ที่ agent ต้องใช้. Pitch ใหม่ของทีม sales ได้
+
+เรื่องที่ 4
+ถ้าคุณคิดว่า agent เป็นแค่เรื่อง LLM วิ่งบน chat box คุณช้าไปหนึ่งรอบ. วันที่ 15 เมษายน 2026 OpenAI ปล่อย Agents SDK v2 ที่ reframe ว่า agent = compute workload ไม่ใช่ API call.
+
+ของใหม่คืออะไร? Native sandbox — agent รันใน isolated environment ที่มี file system shell dependency ครบ. ที่สำคัญรองรับ sandbox 7 provider — Blaxel, Cloudflare, Daytona, E2B, Modal, Runloop, Vercel. dev เลือกเอง
+
+มี durable execution — ถ้า container fail หรือ expire, SDK snapshot แล้วฟื้นขึ้นใน container ใหม่ = agent ทำงาน multi-day ได้ไม่ต้อง restart
+
+ข่าวที่สอง — Model Context Protocol ของ Anthropic แตะ 97 ล้าน installs เดือน มี.ค.. ธ.ค. ปีที่แล้วบริจาคให้ Linux Foundation พร้อม AGENTS.md ของ OpenAI กับ goose ของ Block. OpenAI Google AWS Microsoft Cloudflare Bloomberg — all support.
+
+แปลว่า "protocol war" ของ agent จบแล้ว. MCP เป็น standard ตัวจริง. การแข่งใหม่ย้ายไปสองชั้น — หนึ่ง sandbox/compute layer ใครรันถูก ปลอดภัย เสถียร ชนะ. สอง SDK UX ใครเขียนง่าย debug ง่าย deploy ง่าย ชนะ
+
+ทำไมสำคัญ? นี่คือ Docker Kubernetes moment ของ AI. MCP = Docker (standardize การเรียก tool). SDK + sandbox = Kubernetes (orchestrate workload ข้าม provider). คนชนะ wave Docker K8s ไม่ใช่ Docker Inc. — เป็น Datadog Snowflake Confluent ที่ build บน standard
+
+Entrepreneur take — หนึ่ง founder ไทยต้อง publish MCP server ของ OpenBridge, FlowAccount, K-ERP ทันที window 3-6 เดือน. ใครเข้าก่อน = default ของ agent Thai. สอง Thai sandbox provider — latency จาก US เกิน 200-300ms — มี opportunity ทำ regional sandbox ที่ data sovereignty
+
+สาม — agent observability ยังไม่มีใครครอง — Braintrust Langfuse Helicone แข่งกัน — founder ไทยยังไม่ลง ช่องยังเปิด
+
+สำหรับ OpenBridge ข้อสำคัญสุด — ไม่ต้อง build standard เอง. build บน MCP. OpenBridge = Thai business context layer ที่ agent เรียกผ่าน MCP ได้ — shift จาก "integration platform" เป็น "agent-native context provider". ถ้าไม่ทำ Q2 นี้ = invisible
+
+ทั้งหมดนี้คือ brief ของวันนี้ ขอให้วันนี้เป็นวันที่ดีครับ แล้วเจอกันใหม่พรุ่งนี้

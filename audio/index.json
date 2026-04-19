@@ -1,7 +1,41 @@
 {
-  "generated_at": "2026-04-18T22:56:48Z",
-  "count": 1,
+  "generated_at": "2026-04-19T03:09:57Z",
+  "count": 2,
   "episodes": [
+    {
+      "date": "26-04-19",
+      "iso_date": "2026-04-19T07:00:00+07:00",
+      "title": "Daily AI Brief — 26-04-19",
+      "description": "1. OpenAI สวน Perplexity วันเดียวกัน — เปิด Codex desktop คุม Mac ได้ทั้งเครื่อง + 90 plugins\n2. Anthropic ออก Claude Opus 4.7 + รับ offer $800B + ARR แตะ $30B — สามเหตุการณ์ในสัปดาห์เดียว\n3. Hilbert ระดม $28M จาก a16z — agent ตัดสินใจ pricing/promo ให้ Walmart, FreshDirect, Blank Street\n4. OpenAI Agents SDK สวน Anthropic MCP — เปิด sandbox ใน 7 provider + MCP แตะ 97M installs",
+      "items": [
+        {
+          "file": "26-04-19-101-openai-codex-mac-computer-use.md",
+          "title": "OpenAI สวน Perplexity วันเดียวกัน — เปิด Codex desktop คุม Mac ได้ทั้งเครื่อง + 90 plugins",
+          "order": 1
+        },
+        {
+          "file": "26-04-19-102-anthropic-opus-47-800b-offers.md",
+          "title": "Anthropic ออก Claude Opus 4.7 + รับ offer $800B + ARR แตะ $30B — สามเหตุการณ์ในสัปดาห์เดียว",
+          "order": 2
+        },
+        {
+          "file": "26-04-19-103-hilbert-a16z-consumer-growth-agent.md",
+          "title": "Hilbert ระดม $28M จาก a16z — agent ตัดสินใจ pricing/promo ให้ Walmart, FreshDirect, Blank Street",
+          "order": 3
+        },
+        {
+          "file": "26-04-19-104-openai-agents-sdk-sandbox-mcp-foundation.md",
+          "title": "OpenAI Agents SDK สวน Anthropic MCP — เปิด sandbox ใน 7 provider + MCP แตะ 97M installs",
+          "order": 4
+        }
+      ],
+      "audio_file": "26-04-19.mp3",
+      "audio_size_bytes": 8190720,
+      "voice": "coral",
+      "model": "gpt-4o-mini-tts",
+      "speed": 1.3,
+      "script_char_count": 6813
+    },
     {
       "date": "26-04-18",
       "iso_date": "2026-04-18T07:00:00+07:00",
