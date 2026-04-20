@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-19T23:23:00Z",
+  "generated_at": "2026-04-20T04:37:21Z",
   "count": 4,
   "episodes": [
     {
@@ -30,7 +30,7 @@
         }
       ],
       "audio_file": "26-04-19-2312.mp3",
-      "audio_size_bytes": 7725312,
+      "audio_size_bytes": 7524096,
       "voice": "coral",
       "model": "gpt-4o-mini-tts",
       "speed": 1.3,
