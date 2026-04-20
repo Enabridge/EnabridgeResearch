@@ -5,9 +5,8 @@ topic: use-case
 reading_time_min: 5
 sources: 4
 image_prompt: Editorial illustration of an architectural blueprint being automatically annotated with glowing symbols and bounding boxes, computer vision overlay effect, minimal flat shapes, muted blueprint-blue and warm orange palette, dramatic lighting, no text no logos no faces
-image:
-images/26-04-19-1526-03-rebar-14m-vertical-ai-hvac.png
-
+image: images/26-04-19-1526-03-rebar-14m-vertical-ai-hvac.png
+---
 # Rebar ปิด Series A $14M — vertical AI ที่ทำ HVAC quote เร็วขึ้น 60-70% + win rate 2-3× โดย founded แค่ 18 เดือน
 
 ## TL;DR

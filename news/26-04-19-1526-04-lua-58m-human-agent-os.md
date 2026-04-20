@@ -5,9 +5,8 @@ topic: agentic-ai
 reading_time_min: 5
 sources: 4
 image_prompt: Editorial illustration of two silhouette-like figures and several translucent orbs working around a shared glowing table with orbiting task cards, minimal flat shapes, muted purple and mint palette, soft ambient lighting, no text no logos no faces
-image:
-images/26-04-19-1526-04-lua-58m-human-agent-os.png
-
+image: images/26-04-19-1526-04-lua-58m-human-agent-os.png
+---
 # Lua ปิด seed $5.8M — "OS สำหรับคน + agent collaboration" ที่ ARR $1M ใน 3 เดือน + growth 30% WoW
 
 ## TL;DR

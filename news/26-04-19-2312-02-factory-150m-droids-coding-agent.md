@@ -5,9 +5,8 @@ topic: agentic-ai
 reading_time_min: 5
 sources: 5
 image_prompt: Editorial illustration of a translucent assembly line of glowing humanoid silhouettes building cascading layers of code blocks, minimal flat shapes, muted emerald and copper palette, dramatic top-down lighting, no text no logos no faces
-image:
-images/26-04-19-2312-02-factory-150m-droids-coding-agent.png
-
+image: images/26-04-19-2312-02-factory-150m-droids-coding-agent.png
+---
 # Factory ปิด Series C $150M ที่ valuation $1.5B — "Droids" agent coder doubled MoM 6 เดือนติด
 
 ## TL;DR

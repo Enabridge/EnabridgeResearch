@@ -60,9 +60,11 @@ def parse_frontmatter(md: str) -> tuple[dict, str, str]:
 
 def upsert_frontmatter_line(fm_block: str, key: str, value: str) -> str:
     """Set frontmatter key=value, either replacing or appending before the closing ---."""
-    pattern = re.compile(rf"^({re.escape(key)}:\s*).*$", re.MULTILINE)
+    # [ \t]* keeps the match on one line. \s* previously swallowed the newline
+    # after "image:" so the value landed on the next line (invalid YAML).
+    pattern = re.compile(rf"^{re.escape(key)}:[ \t]*.*$", re.MULTILINE)
     if pattern.search(fm_block):
-        return pattern.sub(f"\\1{value}", fm_block)
+        return pattern.sub(f"{key}: {value}", fm_block)
     # Insert before the closing ---
     return fm_block.replace("\n---\n", f"\n{key}: {value}\n---\n", 1)
 
