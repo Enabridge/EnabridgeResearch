@@ -1,8 +1,0 @@
-{
-  "permissions": {
-    "allow": [
-      "Bash(rm .git/index.lock)",
-      "Bash(git pull *)"
-    ]
-  }
-}
