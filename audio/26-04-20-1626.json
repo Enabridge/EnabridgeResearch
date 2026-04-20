@@ -1,0 +1,32 @@
+{
+  "date": "26-04-20-1626",
+  "iso_date": "2026-04-20T16:26:00+07:00",
+  "title": "Daily AI Brief — 26-04-20 16:26",
+  "items": [
+    {
+      "file": "26-04-20-1626-01-flowise-cve-rce-mcp-exploitation.md",
+      "title": "Flowise CVE-2025-59528 CVSS 10.0 ถูก exploit ในวงกว้าง — 12,000+ agent builder instance เปิด internet, 48 ชม. หลัง MCP vulnerability ของ Anthropic",
+      "order": 1
+    },
+    {
+      "file": "26-04-20-1626-02-openai-mcp-connectors-atlassian-rovo.md",
+      "title": "OpenAI เปิด MCP connector รัวมาก — Atlassian Rovo + Stripe + Monday + Hex + 7 เจ้าเข้า ChatGPT Enterprise ในครั้งเดียว, ChatGPT กำลังกลายเป็น \"workflow portal\" ทับ product ระดับกลางทั้งตลาด",
+      "order": 2
+    },
+    {
+      "file": "26-04-20-1626-03-bluefish-43m-agentic-marketing-fortune500.md",
+      "title": "Bluefish ปิด Series B $43M ที่ NEA + Threshold นำ — agentic marketing ระดับ \"ChatGPT/Perplexity/Gemini จะพูดถึงแบรนด์คุณยังไง\" กลายเป็น line item ของ Fortune 500",
+      "order": 3
+    },
+    {
+      "file": "26-04-20-1626-04-general-compute-asic-inference-cloud-agents.md",
+      "title": "General Compute เปิด \"ASIC-first\" inference cloud สำหรับ agent only — แยก prefill/decode ที่ hardware level, GA 15 พ.ค., agent era กำลังเรียก infrastructure stack ใหม่",
+      "order": 4
+    }
+  ],
+  "script_char_count": 7469,
+  "audio_file": "26-04-20-1626.mp3",
+  "voice": "coral",
+  "model": "gpt-4o-mini-tts",
+  "speed": 1.3
+}
