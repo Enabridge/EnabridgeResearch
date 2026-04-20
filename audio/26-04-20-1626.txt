@@ -1,0 +1,70 @@
+สวัสดีครับ นี่คือ Enabridge AI Brief รอบ 20 April 2026 เวลา 16:26
+รอบนี้มี 4 เรื่อง เน้น Agentic AI, business use case, และ trend ที่เอามาใช้กับ OpenBridge ได้
+
+เรื่องที่ 1
+ข่าวที่ founder ทุกคนที่ใช้ Flowise ต้องเช็ควันนี้. VulnCheck ยืนยันว่า CVE สอง-ห้า-ห้า เก้า เป็น in-the-wild exploitation อยู่ตอนนี้. CVSS score สิบ perfect. scope คือ Flowise agent builder ที่มีประมาณ สิบสองพัน ถึง หนึ่งหมื่นห้าพัน instance เปิด internet. starting IP ที่ detect ตัวแรกคือ Starlink. ถ้าไม่ upgrade ถึง v3.1.1 = assume compromise.
+
+root cause เหมือน MCP flaw ของ Anthropic อาทิตย์ที่แล้ว. Custom MCP node ของ Flowise parse config string แล้ว execute JavaScript โดยไม่มี sandbox. attacker inject code เข้า child process และ file system ได้ด้วย Node runtime privilege. game over บน server.
+
+timing มันเจ็บเป็นพิเศษ. สิบห้า เมษา OX Security ปล่อย MCP design flaw ของ Anthropic. Anthropic ปฏิเสธแก้ protocol level. ไม่กี่วันต่อมา Flowise exploitation active. สองเรื่องในสัปดาห์เดียวไม่ใช่บังเอิญ. agent builder layer ทั้งชั้นกำลัง bleed เพราะโตเร็วกว่า security audit ตามทัน.
+
+parallel ที่ตรงตัวคือ Log4Shell ปลายปี สองพันยี่สิบเอ็ด. ตอนนั้นไม่มีใคร audit library ที่ embed ลึกในระบบ. MCP + Flowise กำลังเดิน path เดียวกัน. ภายใน Q3 Cloudflare AI Gateway จะ market ว่า patch upstream vulnerability ให้โดยไม่ต้องแก้ code. และ CISO enterprise จะถามทุก vendor ว่า ใครเป็น gateway.
+
+สำหรับ OpenBridge. upgrade Flowise ทันทีถ้ามีใน stack. และออก blog หรือ landing สั้น ๆ เปรียบเทียบ OpenBridge vs Flowise ภายใน สองวัน. ใช้ CVE นี้เป็น hook. rank Google สำหรับคำว่า Flowise secure alternative ตอนที่ traffic กำลังพุ่ง. ถ้ามี bandwidth outreach Cloudflare AI Gateway ล่วงหน้า. OpenBridge จะเป็น first Thai native agent runtime ที่ claim MCP gateway compatible ก่อน local competitor รอดู.
+
+เรื่องที่ 2
+OpenAI ปล่อย batch update ที่ใหญ่ที่สุดของ ChatGPT connector ตั้งแต่เปิด feature มา. สิบเอ็ด partner ใหม่รวด. Atlassian Rovo, Amplitude, Fireflies, Vercel, Monday.com, Stripe, Hex, Egnyte, Alpaca, BioRender, Semrush, Jam.dev. เปิดให้ Enterprise, Edu, Business, Pro, Plus ใช้ได้เลย.
+
+ที่ต่างจากเดิมคือ Rovo connector ไม่ใช่แค่ read. create Jira issue, trigger workflow, update Compass ได้ตรงจาก ChatGPT. MCP กำลังกลายจาก lookup layer เป็น action layer. นี่คือ shift สำคัญ.
+
+Company Knowledge feature ก็ update. custom MCP connector auto appear ใน search ของ employee ทั้ง org. admin เปิด connector ครั้งเดียว employee เห็นผลจาก internal system เลย. ChatGPT ไม่ใช่แค่ assistant แล้ว. มันเป็น workflow portal ที่เข้าถึง tool สิบเอ็ดเจ้า.
+
+timing จงใจ. สัปดาห์ที่แล้ว Anthropic ปฏิเสธแก้ MCP design flaw. Flowise RCE active exploitation. OpenAI ปล่อย partner-built OpenAI-reviewed connector ทันที. positioning implicit ว่า security เราดูให้. CISO เทียบแล้วจ่ายเงินกับ OpenAI ง่ายกว่าสิบเท่า.
+
+สำหรับ OpenBridge. warning จังที่สุด. Atlassian, Stripe, Monday, Hex ทับ feature เราสี่จากสิบสอง. ลูกค้า mid-market ไทยจะถามว่าทำไมต้องใช้ OpenBridge แยก.
+
+defense สามเรื่อง. vertical depth ที่ ChatGPT ทำไม่ได้คือ Thai accounting และ LINE OA และ PromptPay. Thai context ที่ connector generic ไม่เข้าใจรายได้สรรพากร. outcome pricing ที่เก็บเป็น percent ของ reconciliation saved แทน seat price.
+
+opportunity. build OpenBridge MCP server submit เข้า OpenAI partner program. ต้นทุน สี่ถึงหก สัปดาห์ engineering. impact ใหญ่กว่า outbound sales ร้อยเท่า. ลูกค้า ChatGPT Enterprise ไทยเห็น OpenBridge เป็น default.
+
+message ต้องเปลี่ยน. หยุด pitch ว่าเราเป็น workflow hub. ChatGPT อ้างเหมือนกัน. pitch เป็น OpenBridge extends ChatGPT เข้า Thai accounting, commerce, compliance ที่ OpenAI ไม่แตะ.
+
+เรื่องที่ 3
+ข่าว Series B ที่น่าจับตาสำหรับคนเข้าใจ agentic. Bluefish ปิด สี่สิบสาม ล้านที่ Threshold Ventures และ NEA นำ. total raise ขึ้น หกสิบแปด ล้าน. investor ใหม่คือ Amex Ventures, TIAA Ventures, Salesforce Ventures. มีกลิ่น strategic แน่นอน.
+
+สิ่งที่ Bluefish ทำคือ category ที่เรียกว่า Agentic Marketing Platform. เปลี่ยน object ของการ optimize จาก Google search เป็น ChatGPT, Claude, Perplexity, Gemini, Amazon Rufus. แบรนด์จ่ายให้ Bluefish monitor ว่า LLM พูดถึงตัวเองยังไง และ inject context เข้า training data ของ LLM.
+
+traction แรงมาก. สิบ percent ของ Fortune 500 ใช้งานในยี่สิบสี่เดือน. Adidas, American Express, Hearst, LVMH, Ulta Beauty เปิดเผยเป็นลูกค้า. SaaS ปกติใช้สามถึงห้าปีไปถึงสิบ percent. pattern นี้ผิดปกติ. หมายความว่าความกังวลของ brand ต่อ LLM answer layer เกิด sudden และ mass. เหมือน CRM wave ปี สองพันห้า.
+
+TAM claim คือ ห้าร้อย พันล้าน ดอลลาร์. ฟังเหมือน over marketing แต่ math แนวเดียวกับ digital ads ปี สองพันยี่สิบ. ถ้า consumer query ย้ายจาก Google ไป LLM อย่างน้อย สามสิบ สี่สิบ percent ใน สามปี ตัวเลขไม่เกินจริง.
+
+สำหรับ OpenBridge ไม่ direct เกี่ยว แต่ pattern สำคัญสองข้อ.
+
+หนึ่ง. Fortune 500 พร้อมจ่ายให้ agentic layer. validation ว่า budget line ใหม่เปิดแล้ว. เขาพร้อมจ่ายให้ OpenBridge ดูแล workflow visibility เหมือน Bluefish ดูแล brand visibility.
+
+สอง. Bluefish winning คือ fear driven sell. ไม่ซื้อ คู่แข่งชนะ. OpenBridge ควร test message นี้กับ SME ไทย. ถ้าไม่มี agentic layer พนักงานใช้ ChatGPT ไม่ log. compliance หาย. knowledge leak ออก. fear driven convert เร็วกว่า growth driven.
+
+watch signal. ถ้า Salesforce acquire Bluefish ใน ปีเดียว สัญญาณว่า CRM vendor อยากซื้อ AI visibility. OpenBridge position ตัวเองให้ acquirable by Thai native CRM ERP vendor. สร้าง integration lock in กับ FlowAccount Zort Peak ก่อนเขา start build native.
+
+เรื่องที่ 4
+ข่าว infrastructure ที่ founder ควรเข้าใจ pattern. General Compute เปิด inference cloud ที่ build เฉพาะ agent workload. ไม่ใช้ GPU ใช้ purpose built AI ASIC ทั้งชั้น. GA สิบห้า พฤษภา.
+
+สิ่งที่น่าสนใจกว่า startup อีกเจ้าทำ AI cloud คือ technical opinion คม. ปฏิเสธ GPU first. แยก prefill stage กับ decode stage ที่ hardware level ให้ scale แยกกัน. เพราะสอง stage มี compute pattern ต่างกันสิ้นเชิง. prefill compute bound. decode memory bandwidth bound.
+
+ทำไมเฉพาะ agent. เพราะ agent traffic ต่างจาก human chat. prompt ยาวมาก สามสิบสองถึงร้อยยี่สิบแปด พันโทเคน. response หลายรอบ inference แล้ว tool call แล้ว inference. throughput sensitive ไม่ใช่ latency. GPU cluster ทั่วไปที่ tune สำหรับ chatbot ทำให้ cost ของ agent workload เพิ่มสอง สามเท่า.
+
+อีก feature เด็ด. programmatic self provisioning. agent ที่ต้องการ compute เพิ่ม provision instance เองผ่าน API. AWS Google Cloud ยัง match ไม่ได้เพราะ quota system ยัง assume human เปิด account.
+
+pattern ประวัติศาสตร์ซ้ำ. สองพันหก AWS สองพันสิบสี่ Snowflake สองพันสิบเจ็ด CoreWeave. สองพันยี่สิบหก คือ agent cloud era. General Compute ไม่ใช่คนแรก. Fireworks AI และ Together มี disaggregated serving แล้ว. แต่เป็นคนแรกที่ positioning ชัดว่าสร้างให้ agent เท่านั้น.
+
+ถ้าทำได้จริง cost ของ agent deployment จะลด สี่สิบ ถึงหกสิบ percent. use case ที่ตอนนี้ไม่ viable จะเปิด. continuous background agent. per user personal agent. high frequency agent to agent communication.
+
+สำหรับ OpenBridge ไม่ direct เกี่ยว แต่ architectural signal สำคัญ.
+
+หนึ่ง. ถ้ายัง hardcode Anthropic หรือ OpenAI API refactor เป็น abstraction layer ภายใน Q2. swap backend ได้เป็น parameter. preserve optionality.
+
+สอง. programmatic self provisioning คือ pattern ที่ OpenBridge build ขายต่อได้. Thai SME ไม่น่ารู้วิธีจัดการ inference capacity. OpenBridge เป็น abstraction ที่ auto provision optimize cost ข้าม provider ให้ลูกค้าไม่ต้องคิด. horizontal เลียนแบบยากเพราะต้อง Thai context.
+
+watch. ถ้า General Compute เปิด Asia Pacific ภายในปี OpenBridge ควรเป็น first design partner. outbound Jason Goodison ก่อน GA.
+
+ทั้งหมดนี้คือ brief ของรอบนี้ ขอให้วันนี้เป็นวันที่ดีครับ แล้วเจอกันรอบหน้า

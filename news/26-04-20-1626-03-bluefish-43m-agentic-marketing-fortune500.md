@@ -5,7 +5,7 @@ topic: agentic-ai
 reading_time_min: 5
 sources: 4
 image_prompt: Editorial illustration of a translucent school of fish flowing through a giant search bar, reshaping it into a brand logo shape made of pure light, minimal flat shapes, muted navy and coral palette, cinematic lighting, no text no logos no faces
-image:
+image: images/26-04-20-1626-03-bluefish-43m-agentic-marketing-fortune500.png
 ---
 
 # Bluefish ปิด Series B $43M ที่ NEA + Threshold นำ — agentic marketing ระดับ "ChatGPT/Perplexity/Gemini จะพูดถึงแบรนด์คุณยังไง" กลายเป็น line item ของ Fortune 500

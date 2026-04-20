@@ -5,7 +5,7 @@ topic: agentic-ai
 reading_time_min: 4
 sources: 3
 image_prompt: Editorial illustration of a specialized silicon chip tile cluster with two distinct zones glowing—one marked with long horizontal bars, the other with short vertical pulses—connected by a thin optic pipe, minimal flat shapes, muted silver and electric blue palette, volumetric light rays, no text no logos no faces
-image:
+image: images/26-04-20-1626-04-general-compute-asic-inference-cloud-agents.png
 ---
 
 # General Compute เปิด "ASIC-first" inference cloud สำหรับ agent only — แยก prefill/decode ที่ hardware level, GA 15 พ.ค., agent era กำลังเรียก infrastructure stack ใหม่

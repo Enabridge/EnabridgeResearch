@@ -5,7 +5,7 @@ topic: openbridge-trend
 reading_time_min: 5
 sources: 4
 image_prompt: Editorial illustration of a glowing central hub with eleven translucent pipes radiating outward into geometric silhouettes of notebooks, spreadsheets, calendars, and payment cards, minimal flat shapes, muted teal and amber palette, soft volumetric lighting, no text no logos no faces
-image:
+image: images/26-04-20-1626-02-openai-mcp-connectors-atlassian-rovo.png
 ---
 
 # OpenAI เปิด MCP connector รัวมาก — Atlassian Rovo + Stripe + Monday + Hex + 7 เจ้าเข้า ChatGPT Enterprise ในครั้งเดียว, ChatGPT กำลังกลายเป็น "workflow portal" ทับ product ระดับกลางทั้งตลาด
