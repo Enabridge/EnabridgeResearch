@@ -5,7 +5,7 @@ topic: agentic-ai
 reading_time_min: 5
 sources: 5
 image_prompt: Editorial illustration of a central orchestrator figure weaving luminous threads outward to a ring of smaller worker silhouettes that become nodes on a network, minimal flat geometric shapes, muted navy and amber palette, soft gradient background, dramatic rim lighting, no text no logos no faces
-image:
+image: images/26-04-21-0606-01-adobe-cx-enterprise-coworker-mcp-a2a.png
 ---
 
 # Adobe เปิด "CX Enterprise Coworker" ที่ Summit — Experience Cloud โดนรีแบรนด์ทั้ง stack, วาง MCP + A2A เป็นมาตรฐานกลาง, พาร์ทเนอร์กับ AWS/Anthropic/Google/Microsoft/OpenAI/NVIDIA พร้อมกัน

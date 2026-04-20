@@ -5,7 +5,7 @@ topic: agentic-ai
 reading_time_min: 4
 sources: 5
 image_prompt: Editorial illustration of a translucent portcullis gate woven from circuit lines guarding a warehouse of glowing data crates, small agent silhouettes waiting in line with tokenized badges, minimal flat shapes, muted indigo and copper palette, soft spotlight lighting, no text no logos no faces
-image:
+image: images/26-04-21-0606-04-databricks-unity-ai-gateway-mcp-governance.png
 ---
 
 # Databricks รวม AI Gateway เข้า Unity Catalog — MCP governance, OBO access, end-to-end observability; Agent Bricks platform เปิดพร้อมกัน, positioning ตรงต่อ Snowflake Cortex + Salesforce Agentforce

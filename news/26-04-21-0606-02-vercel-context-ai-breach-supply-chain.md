@@ -5,7 +5,7 @@ topic: openbridge-trend
 reading_time_min: 5
 sources: 5
 image_prompt: Editorial illustration of a broken chain link unraveling into pixelated dust above a dark cloud silhouette, stray OAuth tokens spilling like coins, muted crimson and graphite palette, chiaroscuro lighting with one warm highlight, minimal flat geometry, no text no logos no faces
-image:
+image: images/26-04-21-0606-02-vercel-context-ai-breach-supply-chain.png
 ---
 
 # Vercel ยืนยันถูก hack ผ่าน Context.ai — OAuth token ของพนักงานเป็นประตู, environment variables รั่ว, ลูกค้า "หลายร้อย organization" ได้รับผลกระทบ; ข้อมูลถูกตั้งขาย $2M

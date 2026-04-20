@@ -5,7 +5,7 @@ topic: openbridge-trend
 reading_time_min: 5
 sources: 5
 image_prompt: Editorial illustration of a large stylized lotus flower with circuit pattern petals unfurling over a network of golden temple silhouettes, glowing data streams flowing outward, minimal flat geometric shapes, muted emerald teal and gold palette, warm dawn lighting, no text no logos no faces
-image:
+image: images/26-04-21-0606-03-gulf-edge-kore-ai-thailand-exclusive.png
 ---
 
 # Gulf Edge จับมือ Kore.ai "exclusive" ใน Thailand — เปิด enterprise agent play ครอบ energy/telecom/bank/insurance/healthcare/public sector พร้อมกัน, เจ้าของ Gulf Development สนับสนุน distribution
