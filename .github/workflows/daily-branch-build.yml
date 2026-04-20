@@ -87,12 +87,19 @@ jobs:
 
       - name: Commit generated artifacts
         run: |
+          # Re-run failed jobs จะ checkout SHA เดิมตอน trigger — ถ้า remote มี
+          # bot commit ค้างอยู่ (artifacts ของ run ก่อน) push จะ non-fast-forward
+          # แก้ด้วยการ reset soft ไปที่ remote HEAD + push --force-with-lease
+          BRANCH="${GITHUB_REF#refs/heads/}"
+          git fetch origin "$BRANCH"
+          git reset --soft "origin/$BRANCH" 2>/dev/null || true
+
           git add news/images/ audio/ news/
           if git diff --cached --quiet; then
             echo "ไม่มีไฟล์ใหม่ให้ commit"
           else
             git commit -m "build: images + audio + index for ${{ steps.slug.outputs.slug }}"
-            git push origin HEAD:"${GITHUB_REF#refs/heads/}"
+            git push --force-with-lease origin "HEAD:$BRANCH"
           fi
 
       - name: Open or update PR
