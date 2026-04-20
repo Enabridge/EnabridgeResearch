@@ -49,7 +49,8 @@ Working dir: ~/ws/company/enabridge-research
 1. Compute timestamp + checkout branch:
    ```bash
    cd ~/ws/company/enabridge-research
-   SLUG=$(date +%y-%m-%d-%H%M)
+   # Bangkok TZ — ถ้ารันบน Claude Code web (UTC) จะ shift 7 ชม.
+   SLUG=$(TZ=Asia/Bangkok date +%y-%m-%d-%H%M)
    git checkout main && git pull
    git checkout -b "daily/${SLUG}"
    ```
@@ -111,7 +112,7 @@ Railway จะ redeploy อัตโนมัติ
 ```bash
 cd ~/ws/company/enabridge-research
 # จำลอง routine: timestamp slug + สร้าง branch + ใส่ brief demo + push
-SLUG=$(date +%y-%m-%d-%H%M)   # เช่น 26-04-19-1430
+SLUG=$(TZ=Asia/Bangkok date +%y-%m-%d-%H%M)   # เช่น 26-04-19-1430 (Bangkok time)
 git checkout main && git pull
 git checkout -b "daily/${SLUG}"
 # copy brief เก่ามาแก้ slug (สมมติ test ไม่ใช้ API token)
@@ -130,7 +131,7 @@ bash scripts/write_briefs.sh "${SLUG}"
 ```
 ┌──────────────────────────────────────────────────────────────┐
 │  Claude Code Routine (6:00 AM + adhoc, Asia/Bangkok)         │
-│  → SLUG=$(date +%y-%m-%d-%H%M)  e.g. 26-04-19-0700           │
+│  → SLUG=$(TZ=Asia/Bangkok date +%y-%m-%d-%H%M)  e.g. 26-04-19-0700 │
 │  → research + write news/${SLUG}-*.md (w/ image_prompt)      │
 │  → scripts/write_briefs.sh → push daily/${SLUG} branch       │
 └────────────────────┬─────────────────────────────────────────┘

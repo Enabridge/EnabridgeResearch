@@ -34,7 +34,8 @@
 1. **Setup**: compute timestamp + checkout branch:
    ```bash
    cd /workspace  # (หรือตามที่ routine mount repo ไว้)
-   SLUG=$(date +%y-%m-%d-%H%M)
+   # Force Bangkok TZ — routine host อาจเป็น UTC ทำให้ slug เพี้ยน
+   SLUG=$(TZ=Asia/Bangkok date +%y-%m-%d-%H%M)
    git checkout main && git pull
    git checkout -b "daily/${SLUG}"
    ```

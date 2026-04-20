@@ -83,7 +83,7 @@ Today: {{date}}
 3. รัน:
    ```bash
    pip3 install openai python-dotenv requests 'httpx[socks]' --break-system-packages -q
-   bash scripts/run_daily.sh $(date +%y-%m-%d)
+   bash scripts/run_daily.sh $(TZ=Asia/Bangkok date +%y-%m-%d)
    ```
 4. Commit + push ทำโดย `run_daily.sh` แล้ว — ไม่ต้องทำซ้ำ
 

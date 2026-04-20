@@ -19,7 +19,7 @@ set -euo pipefail
 
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 RESEARCH_ROOT="$(dirname "$SCRIPT_DIR")"
-DATE_SLUG="${1:-$(date +%y-%m-%d)}"
+DATE_SLUG="${1:-$(TZ=Asia/Bangkok date +%y-%m-%d)}"
 
 cd "$RESEARCH_ROOT"
 

@@ -12,7 +12,7 @@ set -euo pipefail
 
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 REPO_ROOT="$(dirname "$SCRIPT_DIR")"
-SLUG="${1:-$(date +%y-%m-%d-%H%M)}"
+SLUG="${1:-$(TZ=Asia/Bangkok date +%y-%m-%d-%H%M)}"
 BRANCH="daily/${SLUG}"
 
 # Validate YY-MM-DD-HHMM format
