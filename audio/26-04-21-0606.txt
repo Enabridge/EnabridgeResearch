@@ -1,0 +1,70 @@
+สวัสดีครับ นี่คือ Enabridge AI Brief รอบ 21 April 2026 เวลา 06:06
+รอบนี้มี 4 เรื่อง เน้น Agentic AI, business use case, และ trend ที่เอามาใช้กับ OpenBridge ได้
+
+เรื่องที่ 1
+วันนี้ที่ Adobe Summit ลาสเวกัส Shantanu Narayen เปิดงานด้วยการฆ่าชื่อ Experience Cloud ที่ใช้มาสิบห้าปี. รีแบรนด์เป็น CX Enterprise. แกนหลักของ suite ใหม่คือ agentic AI ไม่ใช่ marketing automation แบบเดิมแล้ว.
+
+launchhead ที่เด่นที่สุดคือ CX Enterprise Coworker. Adobe ไม่เรียกว่า AI assistant. เรียกว่า super agent ที่ orchestrate agent อื่นได้. decompose goal เป็น multi step plan. มี guardrail + scope ของ expertise. mental model เดียวกับ LangChain CrewAI แต่ pitch โดย enterprise vendor ที่มี Fortune 100 อยู่แล้วแปดสิบสามเปอร์เซ็นต์.
+
+ส่วนที่ใหญ่กว่าคือ architecture. Adobe ไม่สร้าง proprietary agent protocol ของตัวเอง. adopt MCP + A2A เป็นมาตรฐานเปิด. และ push Adobe Marketing Agent เข้า surface ของทุก hyperscaler พร้อมกัน. Amazon Quick. Anthropic Claude Enterprise. ChatGPT Enterprise. Gemini Enterprise. IBM watsonx Orchestrate. Microsoft 365 Copilot. partner logo เยอะที่สุดในปีนี้แล้ว.
+
+ที่น่าจับตาคือ deal กับ NVIDIA. Adobe integrate OpenShell secure runtime + Nemotron models เข้า governance layer. หลัง Flowise CVE + Context ai breach อาทิตย์ที่แล้ว ไม่มี vendor ไหนกล้าพูดคำว่า agent โดยไม่พ่วง sandbox + governed ต่อท้าย. Adobe เข้าใจจุดนี้เร็ว.
+
+signal ที่สำคัญที่สุดคือ. Adobe ที่ชอบ proprietary format ทุกอย่าง. PSD. AI. PDF. PostScript. วันนี้ adopt MCP ของ Anthropic. แปลว่า network effect ของ MCP ถึง tipping point แล้ว. ใครไม่มี MCP ใน Q2 จะถูกถามใน sales call ว่าพ่วง Claude Enterprise กับ Copilot ได้ไหม. แล้วแพ้ทันที.
+
+สำหรับ OpenBridge. ไม่ใช่ threat ตรง เพราะ Adobe เล่น Fortune 500 ไม่ overlap Thai SME. แต่ message ที่ต้องชัดในสามสิบวันคือ OpenBridge equal tool layer ไม่ใช่ coworker. pitch ที่คม คือ OpenBridge เป็นตัวเสียบ Thai SaaS SCB Connect K Plus FlowAccount LINE OA PromptPay เข้า Coworker ของ Claude หรือ ChatGPT ที่องค์กรคุณมีอยู่แล้ว. defensible เพราะ local context.
+
+action ที่ทำใน tri day thirty. publish MCP server spec submit เข้า Anthropic registry. demo video หกสิบวินาที ChatGPT Enterprise plus OpenBridge MCP. แล้วคุย Adobe Thailand partner team. เป็น first Thai native MCP connector ใน Adobe CX Enterprise partner ecosystem ก่อน Q3. distribution play ที่ cost effective กว่า direct outbound.
+
+เรื่องที่ 2
+ข่าวที่ทุก founder ที่ใช้ Vercel ต้องเช็ควันนี้. สิบเก้า เม ย Vercel ยืนยัน security incident. ไม่ใช่ bug ของ Vercel เอง. root cause คือ Context ai AI note taker ถูก breach ตั้งแต่ กุมภา ผ่าน Lumma Stealer. attacker ใช้ OAuth token ของพนักงาน Vercel เข้า Google Workspace แล้วเข้า Vercel internal infrastructure ต่อ.
+
+timeline มันน่ากลัว. กุมภา พนักงาน Context ai search Roblox cheats แล้วโหลด Lumma มา. สองเดือน attacker ขาย credential บน BreachForums. มีคนซื้อไป ใช้ OAuth token ของ Context ai ที่ link กับ Google Workspace ของพนักงาน Vercel. พลิกเป็น full account takeover. เข้า Gmail Drive Vercel dashboard. รั่ว environment variables ที่ไม่ได้ mark sensitive ไปหลายร้อย organization.
+
+crypto developer rush rotate API key กันทั้งอาทิตย์. Supabase key Datadog token Authkit secret ของลูกค้า Vercel รั่วหมด. attacker ตั้งขายสอง ล้านเหรียญบน BreachForums เสาร์ที่แล้ว. Vercel ยังไม่ confirm ว่าจ่ายหรือปล่อย.
+
+pattern ของอาทิตย์เดียว. Anthropic ปฏิเสธ MCP flaw สิบห้า. Flowise CVSS สิบ exploit สิบเจ็ด สิบแปด. Vercel Context ai breach สิบเก้า ยี่สิบ. ทั้งสามเรื่องเหมือนกัน. AI tool ทำ assumption trust แบบ local dev ในสภาพแวดล้อม production ที่ไม่ควรเชื่อ.
+
+จุดที่ต่างจาก Flowise คือ vector คือ AI productivity tool ที่ดูไม่เกี่ยว. Context ai ไม่ใช่ agent builder. เป็น AI note taker ที่พนักงานทุกบริษัท install. OAuth scope กว้าง token ไม่ rotate. หนึ่ง endpoint compromise equal enterprise compromise. นี่คือ first public incident ที่ supply chain vector หลักคือ พนักงาน install AI tool. จะไม่ใช่ครั้งสุดท้าย.
+
+สำหรับ OpenBridge. วันนี้ ถ้ามี Vercel ใน stack. เข้า dashboard. mark env vars เป็น sensitive. rotate API keys. revoke OAuth token ของ Context ai ใน Google Workspace ถ้าพนักงานเคย install.
+
+positioning play สี่สิบแปด ชม. ออก AI OAuth audit checklist เป็น blog บวก LINE OA broadcast. ช่วย SME ไทยไล่ดู AI tool ที่ staff install แล้ว revoke. sharp เพราะ SME ไทยไม่มี CISO. OpenBridge เป็น trusted integration partner neutral. พูดเรื่องนี้ได้.
+
+product angle สามสิบวัน. add feature connected AI apps audit ใน OpenBridge. แสดง token ทั้งหมด age scope last used. sticky feature ที่ IT manager ใช้ทุกเดือน. differentiator ที่ Zapier กับ n8n ไม่มี. และ commit public ว่า OpenBridge ทุก connector ใช้ short lived token หนึ่งชั่วโมง กับ scope minimization read only by default.
+
+เรื่องที่ 3
+ข่าวไทยสำคัญวันนี้ที่ Yoh ต้องรู้. สิบเจ็ด เม ย Gulf Development ประกาศผ่าน Gulf Edge ว่าได้ sign exclusive partnership กับ Kore.ai ตั้งแต่ สามสิบเอ็ด มี ค. scope คือ energy telecom banking insurance healthcare public sector. หก vertical ที่รวมกันคิด หกสิบ ถึง หกสิบห้าเปอร์เซ็นต์ของ GDP ไทย.
+
+Gulf ไม่ใช่ distributor ธรรมดา. Gulf เป็นเจ้าของ Gulf Energy Thai Digital Port GulfSat. เจ้าของโครงสร้างพื้นฐาน digital backbone ไทยสองในสาม. เมื่อ Gulf Edge claim exclusive บน agentic layer ของหก vertical นี่คือ vertical integration play. พลังงาน network data center AI agent layer อยู่ในมือเดียว.
+
+Kore.ai ไม่ใช่ทีมแข็งที่สุดใน agentic space โลก. Microsoft Agent Framework Adobe CX Enterprise Anthropic Claude Managed Agents Cloudflare Agents SDK ship มาตรฐาน MCP และ A2A พร้อมกันปีนี้. Kore.ai positioning คือ conversational AI และ IVA legacy เมื่อเทียบ pure native agentic stack. Gulf เลือก Kore.ai แทน hyperscaler เพราะ Kore.ai ให้ white label customization ลึกกว่า และ vendor ยอมยืดหยุ่นเรื่อง data locality กับ Thai compliance.
+
+pattern ที่เห็น. Thai large cap กำลัง lock in AI partner แบบ country exclusive. ไม่ใช่ experimentation แบบ สองพันยี่สิบสี่ แล้ว. เป็น long term procurement. Gulf ออกก่อนเพราะมี infrastructure leverage บวก CEO สายเทค. SCB KBank CP AIS PTT น่าจะตามมาใน sixty ถึง ninety วัน.
+
+สำหรับ OpenBridge. direct threat ไม่ตรง. Gulf scope เป็น large enterprise หก vertical. OpenBridge เป็น SMB mid market integration layer. คนละตลาด คนละ pricing คนละ sales cycle.
+
+แต่มีจุดที่ squeeze. channel partner ของ Gulf Edge จะ default แนะนำ Kore.ai stack. OpenBridge หาย shortlist ใน large enterprise deal. และ talent investor mindshare จะมอง Gulf Edge เป็น king maker ของ enterprise AI ทันที.
+
+positioning move สามสิบวัน. หนึ่ง claim SMB agentic integration layer ชัดเจน ไม่แข่ง vertical. สอง ประกาศ OpenBridge equal Kore.ai compatible เพื่อ survive ใน ecosystem. สาม ชู local depth ที่ Kore.ai ไม่มี. PromptPay LINE OA PEAK FlowAccount ThaID NDID.
+
+strategic bet หกสิบ ถึง เก้าสิบ วัน. outreach Gulf Edge เอง. pitch ว่า OpenBridge เป็น Thai SaaS integration layer ที่ Kore.ai ไม่มี. win win Gulf ได้ connector depth OpenBridge ได้ distribution เข้าหก vertical ผ่าน Gulf channel. pattern เหมือน Mulesoft เอาตัวรอดตอน Salesforce ครอบ enterprise.
+
+เรื่องที่ 4
+Databricks ใช้อาทิตย์นี้ ที่ Adobe Microsoft Anthropic Cloudflare ทุกคน push agent stack พร้อมกัน. ประกาศ Unity AI Gateway. ไม่ใช่ product ใหม่. เป็นการ merge AI Gateway เข้า Unity Catalog. data + permission governance layer ที่ Databricks วางไว้ตั้งแต่ สองพันยี่สิบสอง.
+
+move สำคัญเพราะ Unity Catalog คือ crown jewel ของ Databricks ที่ Snowflake ไม่มี equivalent ชัดเจน. ทุก table notebook ML model dashboard ถูก govern ผ่าน Unity Catalog. ตอนนี้ LLM call MCP call external API call ของ agent ก็อยู่ภายใต้ policy engine เดียวกัน. CISO ไม่ต้อง maintain tool ใหม่. ทุกอย่าง reuse framework เดิม.
+
+feature ที่ sharp ที่สุดคือ MCP governance บวก on behalf of access. agent action จะถูก authorize ด้วย identity ของ user ที่ trigger ไม่ใช่ identity ของ agent service account. pattern นี้ solve confused deputy problem ใน agent security. เป็นหัวใจของ MCP vulnerability ที่ Anthropic ปฏิเสธแก้เมื่อสัปดาห์ที่แล้ว. Databricks แก้ที่ gateway layer แทน.
+
+observability. Unity AI Gateway emit trace ของทุก LLM และ MCP call. cost attribution ลงถึง team project workflow level. coding agent sprawl Cursor Claude Code Copilot ทำ finance team ไม่รู้ว่าเงินหมดไปกับ project ไหน. Databricks แก้ cost attribution ที่ gateway.
+
+pattern เร่งตัว. Microsoft สาม เม ย. Anthropic แปด. Cloudflare สิบสาม ถึงสิบเจ็ด. Adobe ยี่สิบ. Databricks อาทิตย์นี้. ทุกเจ้า pitch governed agent platform พร้อมกัน. category นี้กลายเป็น table stakes สำหรับ enterprise software สองพันยี่สิบหก.
+
+สำหรับ OpenBridge. ไม่ direct แข่ง. แต่ adjacent insight สำคัญ. ภาษาที่ enterprise buyer ใช้ใน Q2 กำลัง shift จาก AI capability เป็น AI governance observability cost attribution. ถ้า OpenBridge sales deck ยังพูด agent integration ล้วน ๆ โดยไม่พูด audit log cost attribution scope minimization จะฟังเหมือน vendor สองพันยี่สิบสี่.
+
+product absorb สามสิบวัน. cost attribution dashboard. policy slide. MCP first positioning piggyback บน Unity AI Gateway Cloudflare AI Gateway Auth0. OpenBridge ไม่ต้อง build governance เอง. แค่ต้อง emit signal ว่า govern-able.
+
+watch Snowflake Summit มิถุนายน. ถ้า Snowflake match Databricks ได้ market ยัง fragment OpenBridge ปรับ messaging ช้า. ถ้าไม่ match Databricks ยึด enterprise agent governance สิบสองเดือน OpenBridge messaging ว่า works with Databricks Unity AI Gateway.
+
+ทั้งหมดนี้คือ brief ของรอบนี้ ขอให้วันนี้เป็นวันที่ดีครับ แล้วเจอกันรอบหน้า

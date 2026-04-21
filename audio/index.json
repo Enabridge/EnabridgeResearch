@@ -1,7 +1,41 @@
 {
-  "generated_at": "2026-04-20T09:39:03Z",
-  "count": 5,
+  "generated_at": "2026-04-20T23:20:11Z",
+  "count": 6,
   "episodes": [
+    {
+      "date": "26-04-21-0606",
+      "iso_date": "2026-04-21T06:06:00+07:00",
+      "title": "Daily AI Brief — 26-04-21 06:06",
+      "description": "1. Adobe เปิด \"CX Enterprise Coworker\" ที่ Summit — Experience Cloud โดนรีแบรนด์ทั้ง stack, วาง MCP + A2A เป็นมาตรฐานกลาง, พาร์ทเนอร์กับ AWS/Anthropic/Google/Microsoft/OpenAI/NVIDIA พร้อมกัน\n2. Vercel ยืนยันถูก hack ผ่าน Context.ai — OAuth token ของพนักงานเป็นประตู, environment variables รั่ว, ลูกค้า \"หลายร้อย organization\" ได้รับผลกระทบ; ข้อมูลถูกตั้งขาย $2M\n3. Gulf Edge จับมือ Kore.ai \"exclusive\" ใน Thailand — เปิด enterprise agent play ครอบ energy/telecom/bank/insurance/healthcare/public sector พร้อมกัน, เจ้าของ Gulf Development สนับสนุน distribution\n4. Databricks รวม AI Gateway เข้า Unity Catalog — MCP governance, OBO access, end-to-end observability; Agent Bricks platform เปิดพร้อมกัน, positioning ตรงต่อ Snowflake Cortex + Salesforce Agentforce",
+      "items": [
+        {
+          "file": "26-04-21-0606-01-adobe-cx-enterprise-coworker-mcp-a2a.md",
+          "title": "Adobe เปิด \"CX Enterprise Coworker\" ที่ Summit — Experience Cloud โดนรีแบรนด์ทั้ง stack, วาง MCP + A2A เป็นมาตรฐานกลาง, พาร์ทเนอร์กับ AWS/Anthropic/Google/Microsoft/OpenAI/NVIDIA พร้อมกัน",
+          "order": 1
+        },
+        {
+          "file": "26-04-21-0606-02-vercel-context-ai-breach-supply-chain.md",
+          "title": "Vercel ยืนยันถูก hack ผ่าน Context.ai — OAuth token ของพนักงานเป็นประตู, environment variables รั่ว, ลูกค้า \"หลายร้อย organization\" ได้รับผลกระทบ; ข้อมูลถูกตั้งขาย $2M",
+          "order": 2
+        },
+        {
+          "file": "26-04-21-0606-03-gulf-edge-kore-ai-thailand-exclusive.md",
+          "title": "Gulf Edge จับมือ Kore.ai \"exclusive\" ใน Thailand — เปิด enterprise agent play ครอบ energy/telecom/bank/insurance/healthcare/public sector พร้อมกัน, เจ้าของ Gulf Development สนับสนุน distribution",
+          "order": 3
+        },
+        {
+          "file": "26-04-21-0606-04-databricks-unity-ai-gateway-mcp-governance.md",
+          "title": "Databricks รวม AI Gateway เข้า Unity Catalog — MCP governance, OBO access, end-to-end observability; Agent Bricks platform เปิดพร้อมกัน, positioning ตรงต่อ Snowflake Cortex + Salesforce Agentforce",
+          "order": 4
+        }
+      ],
+      "audio_file": "26-04-21-0606.mp3",
+      "audio_size_bytes": 10041984,
+      "voice": "coral",
+      "model": "gpt-4o-mini-tts",
+      "speed": 1.3,
+      "script_char_count": 9236
+    },
     {
       "date": "26-04-20-1626",
       "iso_date": "2026-04-20T16:26:00+07:00",
