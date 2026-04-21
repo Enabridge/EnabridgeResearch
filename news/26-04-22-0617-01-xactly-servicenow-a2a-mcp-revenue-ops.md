@@ -5,7 +5,7 @@ topic: agentic-ai
 reading_time_min: 5
 sources: 5
 image_prompt: Editorial illustration of two robotic figures shaking hands across a glowing bridge of data tokens that flows between two separate glass platforms, minimal flat geometric shapes, muted teal and burnt orange palette, soft gradient background, dramatic rim lighting, no text no logos no faces
-image:
+image: images/26-04-22-0617-01-xactly-servicenow-a2a-mcp-revenue-ops.png
 ---
 
 # Xactly + ServiceNow ยิง Agent-to-Agent MCP production agent ตัวแรกใน revenue ops — "Dispute Management Agent" เล่น commission dispute ผ่าน A2A orchestration

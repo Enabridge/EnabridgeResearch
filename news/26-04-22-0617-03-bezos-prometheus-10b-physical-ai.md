@@ -5,7 +5,7 @@ topic: use-case
 reading_time_min: 4
 sources: 5
 image_prompt: Editorial illustration of a massive glowing robotic arm emerging from clouds to reshape a miniature factory floor below, minimal flat geometric shapes, muted indigo and copper palette, dramatic overhead lighting with rim light on industrial silhouettes, no text no logos no faces
-image:
+image: images/26-04-22-0617-03-bezos-prometheus-10b-physical-ai.png
 ---
 
 # Bezos Project Prometheus ใกล้ปิด $10B ที่ valuation $38B — BlackRock + JPMorgan เข้า, "physical AI" แยกจาก digital AI เป็น category ใหม่

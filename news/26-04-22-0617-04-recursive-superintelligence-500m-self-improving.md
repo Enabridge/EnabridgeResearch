@@ -5,7 +5,7 @@ topic: agentic-ai
 reading_time_min: 4
 sources: 5
 image_prompt: Editorial illustration of an abstract spiral of gears and neural threads looping back into itself, each revolution slightly larger than the last, minimal flat geometric shapes, muted violet and chartreuse palette, glowing center, soft radial gradient, no text no logos no faces
-image:
+image: images/26-04-22-0617-04-recursive-superintelligence-500m-self-improving.png
 ---
 
 # Recursive Superintelligence ปิด $500M ที่ valuation $4B — lab อายุ 4 เดือนจาก Socher/Rocktäschel, GV + Nvidia นำ, pitch ว่า "AI ที่ train ตัวเอง"

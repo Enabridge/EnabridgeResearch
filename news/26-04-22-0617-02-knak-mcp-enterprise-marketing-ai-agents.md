@@ -5,7 +5,7 @@ topic: openbridge-trend
 reading_time_min: 5
 sources: 5
 image_prompt: Editorial illustration of a floating template stack splitting into identical branded cards being pulled through a translucent pipe into an open terminal window, minimal flat shapes, muted cobalt and peach palette, soft gradient background, clean light from above, no text no logos no faces
-image:
+image: images/26-04-22-0617-02-knak-mcp-enterprise-marketing-ai-agents.png
 ---
 
 # Knak เปิด MCP server ให้ AI agent **สั่งยิง marketing campaign** ได้ตรง — OpenAI/Meta/Google อยู่บน production stack, Adobe Summit วันนี้มี session โชว์
