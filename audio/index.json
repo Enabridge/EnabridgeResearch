@@ -1,7 +1,41 @@
 {
-  "generated_at": "2026-04-20T23:20:11Z",
-  "count": 6,
+  "generated_at": "2026-04-21T23:32:59Z",
+  "count": 7,
   "episodes": [
+    {
+      "date": "26-04-22-0617",
+      "iso_date": "2026-04-22T06:17:00+07:00",
+      "title": "Daily AI Brief — 26-04-22 06:17",
+      "description": "1. Xactly + ServiceNow ยิง Agent-to-Agent MCP production agent ตัวแรกใน revenue ops — \"Dispute Management Agent\" เล่น commission dispute ผ่าน A2A orchestration\n2. Knak เปิด MCP server ให้ AI agent **สั่งยิง marketing campaign** ได้ตรง — OpenAI/Meta/Google อยู่บน production stack, Adobe Summit วันนี้มี session โชว์\n3. Bezos Project Prometheus ใกล้ปิด $10B ที่ valuation $38B — BlackRock + JPMorgan เข้า, \"physical AI\" แยกจาก digital AI เป็น category ใหม่\n4. Recursive Superintelligence ปิด $500M ที่ valuation $4B — lab อายุ 4 เดือนจาก Socher/Rocktäschel, GV + Nvidia นำ, pitch ว่า \"AI ที่ train ตัวเอง\"",
+      "items": [
+        {
+          "file": "26-04-22-0617-01-xactly-servicenow-a2a-mcp-revenue-ops.md",
+          "title": "Xactly + ServiceNow ยิง Agent-to-Agent MCP production agent ตัวแรกใน revenue ops — \"Dispute Management Agent\" เล่น commission dispute ผ่าน A2A orchestration",
+          "order": 1
+        },
+        {
+          "file": "26-04-22-0617-02-knak-mcp-enterprise-marketing-ai-agents.md",
+          "title": "Knak เปิด MCP server ให้ AI agent **สั่งยิง marketing campaign** ได้ตรง — OpenAI/Meta/Google อยู่บน production stack, Adobe Summit วันนี้มี session โชว์",
+          "order": 2
+        },
+        {
+          "file": "26-04-22-0617-03-bezos-prometheus-10b-physical-ai.md",
+          "title": "Bezos Project Prometheus ใกล้ปิด $10B ที่ valuation $38B — BlackRock + JPMorgan เข้า, \"physical AI\" แยกจาก digital AI เป็น category ใหม่",
+          "order": 3
+        },
+        {
+          "file": "26-04-22-0617-04-recursive-superintelligence-500m-self-improving.md",
+          "title": "Recursive Superintelligence ปิด $500M ที่ valuation $4B — lab อายุ 4 เดือนจาก Socher/Rocktäschel, GV + Nvidia นำ, pitch ว่า \"AI ที่ train ตัวเอง\"",
+          "order": 4
+        }
+      ],
+      "audio_file": "26-04-22-0617.mp3",
+      "audio_size_bytes": 10454400,
+      "voice": "coral",
+      "model": "gpt-4o-mini-tts",
+      "speed": 1.3,
+      "script_char_count": 9587
+    },
     {
       "date": "26-04-21-0606",
       "iso_date": "2026-04-21T06:06:00+07:00",

@@ -1,0 +1,70 @@
+สวัสดีครับ นี่คือ Enabridge AI Brief รอบ 22 April 2026 เวลา 06:17
+รอบนี้มี 4 เรื่อง เน้น Agentic AI, business use case, และ trend ที่เอามาใช้กับ OpenBridge ได้
+
+เรื่องที่ 1
+วันอังคารที่ยี่สิบเอ็ดเมษา Xactly กับ ServiceNow เปิดตัว Dispute Management AI Agent ตัวแรกของ agent to agent production integration ระหว่าง SaaS vendor สอง brand. ไม่ใช่ MCP plug in ที่ให้ ChatGPT เรียกเข้า API. แต่เป็น agent ของ Xactly คุยกับ agent ของ ServiceNow ผ่าน MCP handshake ตรง.
+
+use case คือ commission dispute. seller ถาม Now Assist ว่าเดือนที่แล้วคอมมิชชันลดลงทำไม. Now Assist ยิง MCP call เข้า Xactly agent. Xactly ดึง policy transaction attainment. คำตอบเด้งกลับในสนทนาเดียว. รอบที่เคยกินเวลาเป็นวันลด เหลือไม่กี่นาที. Chris Li CPO Xactly เรียกสิ่งนี้ว่า autonomous revenue orchestration.
+
+ที่น่าจับตาที่สุดคือภาษาของ Anandan Jayaraman VP Product ServiceNow. เรียกตรงๆว่า agent to agent orchestration. ไม่อ้อม. และทั้งสอง vendor ประกาศว่าจะทยอยปล่อย fleet of agents ตาม Dispute Management Agent. ไม่ใช่ one off. เป็น commitment ยาวใน revenue ops funnel forecasting quote approval territory planning revenue recognition.
+
+signal สำคัญคือ. Xactly ไม่ใช่ hyperscaler ไม่ใช่ CRM leader. เป็น category SaaS ขนาดสองถึงสามพันล้าน. ถ้า Xactly ServiceNow ทำ A2A ได้ทุกคู่ SaaS vendor ทำได้. middleware integration ที่เคยพึ่ง Mulesoft Workato Zapier. ตอนนี้ MCP plus A2A equal middleware ไม่ต้องมี. agent ของ vendor A คุย agent ของ vendor B ตรง. นี่คือ existential threat category iPaaS ในสิบสองถึงสิบแปดเดือน.
+
+Adobe บอกจันทร์ที่แล้วว่าจะใช้ A2A future tense. Xactly ServiceNow กำลังใช้แล้ว present tense. Workday Salesforce Atlassian HubSpot น่าจะตามในไตรมาสนี้.
+
+สำหรับ OpenBridge. Dispute Management Agent คือ exactly สิ่งที่ OpenBridge ควรเป็น. แต่ build โดย SaaS vendor เอง ไม่ผ่าน integration platform. ถ้า FlowAccount PEAK LINE OA SCB Connect K Plus PromptPay จับคู่กันเองผ่าน A2A. OpenBridge เสียบใต้ไม่ได้. ทางรอด position เป็น broker layer ระหว่าง A2A pair ที่ไม่มี official partnership.
+
+action สามสิบวัน. หนึ่ง ออก A2A broker feature. OpenBridge เป็น MCP server proxy call ไป Thai SaaS ที่ยังไม่มี native MCP. ขายว่า until vendor builds MCP OpenBridge is their MCP. สอง publish playbook how to replace Workato with A2A ใช้ Xactly ServiceNow เป็น reference. สาม เริ่มคุย revenue ops vertical Thai enterprise SCB KBank PTT AIS เอา commission dispute pattern มาเสนอ window สิบสองเดือนก่อน Thai vendor native MCP
+
+เรื่องที่ 2
+วันจันทร์ที่ยี่สิบเม.ย. Knak marketing production platform ที่ Fortune five hundred ใช้สร้าง email landing page asset ประกาศเปิด MCP server alpha. ให้ ChatGPT Claude call ตรงได้ ไม่ต้องผ่าน integration middleman.
+
+ที่น่าสนใจกว่าคือวันต่อมา Adobe Summit session ที่ยี่สิบเอ็ดเม.ย. Brendan Farnand Co founder Knak ขึ้นเวทีร่วมกับ Jeff Canada Head of B2B Marketing Operations ของ OpenAI. ใช้ OpenAI เป็น reference customer ต่อหน้าหนึ่งหมื่นสองพันคน. OpenAI ที่เป็น vendor ของ agent ทุกตัวยังเลือก Knak เป็น production layer. ไม่ build เอง.
+
+use case ที่โชว์. demand gen team บอก ChatGPT Enterprise ให้ gen welcome email series ห้าฉบับสำหรับ trial signup สามภาษา. ChatGPT เรียก Knak MCP. Knak ดึง template welcome series. populate content. render HTML ผ่าน brand review. push Marketo Engage. เวลาจาก concept ถึง launch สิบห้านาที. จากสองสัปดาห์.
+
+enterprise reference ที่ cite คือ OpenAI Meta Google. สาม hyperscaler ใช้เป็น production. ไม่ใช่ demo. Knak ประกาศ roadmap ว่าทั้งตัวจะ MCP callable ภายในสิบสองเดือน. เหมือน Salesforce Headless สามหกศูนย์ ที่บอกทุก capability เป็น MCP tool CLI API.
+
+pattern ที่ Knak ยืนยันสำคัญกว่า Knak launch. Salesforce Databricks Adobe Xactly ServiceNow Knak. หก enterprise vendor ในสัปดาห์เดียวประกาศ MCP first. Anthropic MCP playbook ถึง commercial tipping point. Enterprise vendor ไม่คำนวณ MCP จะชนะ protocol war ไหมแล้ว. คำนวณต้องออก MCP server ก่อนคู่แข่งกี่สัปดาห์.
+
+angle ที่ยังไม่มีใครพูด. OpenAI Anthropic Google เอง ใช้ SaaS vendor เป็น production. proof ว่า full stack AI company build everything ไม่ scale to marketing ops. vertical SaaS ไม่ตาย โตขึ้นถ้าปรับตัวเป็น MCP first ทัน.
+
+สำหรับ OpenBridge. Knak คือ reference architecture ของ OpenBridge คนละ vertical. enterprise marketing vs Thai SMB integration. same pattern. OpenAI เลือก Knak ยืนยัน thesis OpenBridge ว่า specialization ยังมี moat ที่ hyperscaler ไม่เข้า. แต่ต้อง MCP first.
+
+action สามสิบวัน. หนึ่ง ลอก Knak playbook หนึ่งต่อหนึ่ง publish MCP server alpha expose Thai SaaS. สอง หา one reference customer ที่มี name recognition ธนาคารเล็ก logistics Thai tech ใช้เป็น proof เหมือน Knak ใช้ OpenAI. สาม เตรียม session pitch local conference copy Adobe Summit format
+
+เรื่องที่ 3
+วันอังคารที่ยี่สิบเอ็ดเม.ย. FT กับ Bloomberg รายงานพร้อมกัน. Jeff Bezos ใกล้ปิด round สิบพันล้านของ Project Prometheus AI lab ของเขา. valuation สามสิบแปดพันล้าน. BlackRock และ JPMorgan เป็น anchor. เป็นครั้งแรกที่ Bezos มี operational role หลังออกจาก Amazon ปี ยี่สิบยี่สิบเอ็ด.
+
+Prometheus incorporate ธ.ค. สองห้า. ห้าเดือนที่แล้ว. launch ด้วยหกจุดสองพันล้าน. ปัจจุบันหนึ่งร้อยยี่สิบพนักงานจาก OpenAI xAI Meta DeepMind. CEO คือ Vikram Bajaj อดีต Google X scientist. สำนักงาน US London Zurich. European industrial ambition ตั้งแต่ day one.
+
+mission คือ physical AI. model ที่เข้าใจ physical world ไม่ใช่แค่ text image code. ฟิสิกส์ gravity inertia material property. apply ไป manufacturing aerospace robotics drug discovery logistics. ไม่ใช่ chatbot ไม่ใช่ coding agent. คือ AI ควบคุม robot ใน factory orchestrate supply chain design molecule.
+
+จุดที่น่าตกใจ. Bezos เล็ง holding company หนึ่งร้อยพันล้าน ซื้อ industrial business ที่ AI disrupt. feed operational data ของ business เหล่านั้นเข้า Prometheus model. strategy ที่ไม่เคยเห็นใน AI lab. แทนที่รอ data partnership ซื้อ customer นั้นเลย. vertical integration Amazon style.
+
+signal หนึ่ง physical AI แยกเป็น category ใหม่จาก digital AI. NVIDIA Cosmos Google DeepMind RT xAI Colossus robot ปีที่แล้วคือ hints. Bezos Prometheus 1X Figure AI Physical Intelligence ปี ยี่สิบยี่สิบหก คือ category formation ชัดเจน. TAM manufacturing logistics construction aerospace ยี่สิบถึงสามสิบ trillion global. ใหญ่กว่า cognitive software หนึ่งถึงสอง trillion.
+
+signal สอง BlackRock JPMorgan เข้า anchor. capital allocator traditional finance ยอมรับ AI lab เป็น asset class. pension fund asset management สิบเอ็ด trillion และ สี่ trillion AUM. direct invest ไม่ใช่ fund of funds. AI lab กลายเป็น core allocation แทน alternative.
+
+สำหรับ OpenBridge. direct relevance ศูนย์. Prometheus เล่น physical industrial. OpenBridge เล่น Thai SMB software integration. ไม่ overlap.
+
+แต่ adjacent insight. capital ขนาดนี้เริ่มไหลเข้า AI. สิบสองถึงสิบแปดเดือน funding landscape ของ AI adjacent SaaS ไทยจะเปลี่ยน. valuation multiple seed Series A ขึ้นสามสิบถึงห้าสิบเปอร์เซนต์. Thai corporate SCB KBank CP PTT ที่มีเงินสดจะเริ่มซื้อ Thai AI startup strategic ไม่ใช่แค่ POC.
+
+action สามสิบถึงหกสิบวัน. อัพเดท investor deck ให้มี physical AI tangent slide. start conversations กับ Thai corporate venture arm SCB สิบX KBank KVision AIS The StartUp PTT ExpresSo. valuation inflection จะมาไตรมาสสาม
+
+เรื่องที่ 4
+วันอังคารที่ยี่สิบเอ็ดเม.ย. วันเดียวกับ Bezos Prometheus. Recursive Superintelligence ปิด round ห้าร้อยล้านที่ valuation สี่พันล้าน. GV กับ Nvidia นำ. round oversubscribed เกือบหนึ่งพันล้าน. lab incorporated ธ.ค. สองห้า. สี่เดือนที่แล้ว. เส้นทางจาก incorporation ถึง สี่พันล้าน เร็วที่สุดในประวัติศาสตร์ venture ยุค AI. เร็วกว่า Anthropic xAI Mistral.
+
+founding team ระดับ hall of fame. Richard Socher อดีต Chief Scientist Salesforce สร้าง Einstein AI. Tim Rocktäschel ex director DeepMind. Josh Tobin Jeff Clune Tim Shi ex OpenAI. total ยี่สิบคน. ratio ห้าร้อยล้านต่อยี่สิบ equal ยี่สิบห้าล้านต่อหัว. outlier. Anthropic ในช่วงอายุเดียวกันห้าล้านต่อหัว. OpenAI สิบล้านต่อหัว.
+
+pitch คือ end to end self improving AI. automate ทุก step ของ AI research pipeline evaluation data selection training post training research direction. ไม่ต้องมี human in the loop. thesis contrarian. Anthropic OpenAI Google ยังเน้น human oversight เป็น safety layer. Recursive ประกาศตัดทิ้งเพื่อ compound improvement rate.
+
+signal หนึ่ง self improving model คือ bet ใหม่ที่ top tier VC ยอมเดิมพัน. ก่อน ยี่สิบยี่สิบหก thesis นี้ AGI ish speculative ไม่มี lab ใหญ่ทำจริง. ตอนนี้ GV Nvidia ลง ห้าร้อยล้าน. mainstream capital allocator คำนวณว่า thesis ประเมินได้. มี asymmetric upside. แม้ความเสี่ยงแปดสิบเปอร์เซ็นต์ไม่ converge.
+
+signal สอง ratio ยี่สิบห้าล้านต่อหัว. talent concentration equal key variable. Ilya SSI ยี่สิบพันล้านที่ seed. Mira Thinking Machines สิบสองพันล้านที่ seed. Recursive สี่พันล้านที่สี่เดือนอายุ. VC ปรับ model การประเมิน. ไม่ใช่ DCF revenue multiple benchmark. คือ top global researcher กี่คนคูณ premium factor. Recursive มีห้าบวกในนั้น. ห้าร้อยล้านเป็น talent deposit ไม่ใช่ business investment.
+
+signal สาม Rocktäschel เลิก DeepMind ตอน DeepMind มี resource เยอะสุดในประวัติศาสตร์. brain drain Big Tech AI lab เร่ง. ปีที่แล้ว Ilya Mira Jan Leike Dario ออก OpenAI. ตอนนี้ Rocktäschel Clune Tobin Shi. Talent ไป lab ที่ promise ทำ thesis ที่ Big Tech ไม่ยอมทำ. frontier fragmentation. Big Tech lock top researcher ไม่ได้อีกต่อไป.
+
+สำหรับ OpenBridge. direct relevance ต่ำ. strategic signal สองด้าน. หนึ่ง capital reshuffling. สิบจุดห้าพันล้านไหลเข้า AI lab ใน ยี่สิบสี่ชั่วโมง. Thai AI adjacent SaaS ควร lock term sheet runway ในไตรมาสที่ตลาด frothy. สอง model commoditization เร่ง. ถ้า Recursive thesis work model cost curve drop เร็วกว่า exponential. OpenBridge value ที่ connector specificity plus local context จะมีมูลค่ามากขึ้น. LLM จะ commoditize. Thai SaaS connector จะไม่
+
+ทั้งหมดนี้คือ brief ของรอบนี้ ขอให้วันนี้เป็นวันที่ดีครับ แล้วเจอกันรอบหน้า
