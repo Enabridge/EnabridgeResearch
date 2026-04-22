@@ -5,7 +5,7 @@ topic: agentic-ai
 reading_time_min: 4
 sources: 4
 image_prompt: Editorial illustration of a multi-floor trading tower where each floor holds a different glowing agent cluster connected by vertical streams of candlestick charts and order books flowing between levels, minimal flat geometric shapes, muted teal and gold palette, soft gradient background, dramatic neon underlighting, no text no logos no faces
-image:
+image: images/26-04-23-0617-04-bybit-mcp-multi-agent-trading-crypto.png
 ---
 
 # Bybit (crypto exchange #2) เปิด official MCP — ให้ Claude/ChatGPT/Cursor สั่ง trade ได้ตรง เปิด fintech MCP vertical ใหม่

@@ -5,7 +5,7 @@ topic: use-case
 reading_time_min: 4
 sources: 5
 image_prompt: Editorial illustration of a massive golden funnel pouring glowing coins into dozens of small factory floors where workers are assembling glowing agent modules on conveyor belts, minimal flat geometric shapes, muted ochre and deep green palette, soft gradient background, dramatic warm lighting, no text no logos no faces
-image:
+image: images/26-04-23-0617-03-google-cloud-750m-partner-fund-merck-vista.png
 ---
 
 # Google ทุ่ม $750M ปั้น 120,000 partner ให้ "deploy agentic AI ได้" — Merck + Vista Equity sign ติดธง กลางงาน Cloud Next

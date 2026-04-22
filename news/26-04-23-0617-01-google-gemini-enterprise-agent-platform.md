@@ -5,7 +5,7 @@ topic: agentic-ai
 reading_time_min: 5
 sources: 5
 image_prompt: Editorial illustration of a large glass control tower overlooking a sprawling lattice of connected agent nodes, each node glowing a different color and linked by streams of light flowing upward into the tower, minimal flat geometric shapes, muted indigo and amber palette, soft gradient background, dramatic rim lighting, no text no logos no faces
-image:
+image: images/26-04-23-0617-01-google-gemini-enterprise-agent-platform.png
 ---
 
 # Google เปิด Gemini Enterprise Agent Platform — รวม Vertex AI + Agentspace เป็น "agent control plane" เดียว ท้าชน OpenAI/Anthropic เต็มสูบ

@@ -5,7 +5,7 @@ topic: openbridge-trend
 reading_time_min: 4
 sources: 5
 image_prompt: Editorial illustration of a translucent glass CRM dashboard peeling away like a discarded skin, revealing a dense network of glowing API tendrils and agent connectors beneath, minimal flat geometric shapes, muted slate-blue and coral palette, soft gradient background, dramatic side lighting, no text no logos no faces
-image:
+image: images/26-04-23-0617-02-salesforce-headless-360-agent-api.png
 ---
 
 # Salesforce เปิด Headless 360 — ยอมทิ้ง UI ให้ agent ใช้ platform แทนมนุษย์ 60+ MCP tools + 30 coding skills ship ทันที
