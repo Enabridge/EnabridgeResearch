@@ -1,0 +1,86 @@
+สวัสดีครับ นี่คือ Enabridge AI Brief รอบ 24 April 2026 เวลา 06:13
+รอบนี้มี 4 เรื่อง เน้น Agentic AI, business use case, และ trend ที่เอามาใช้กับ OpenBridge ได้
+
+เรื่องที่ 1
+วันพุธที่ยี่สิบสองเมษา หลัง Thomas Kurian เปิด Gemini Enterprise Agent Platform ที่ Cloud Next ได้ไม่ถึงยี่สิบสี่ชั่วโมง OpenAI ปล่อย GPT ห้าจุดห้า พร้อม ChatGPT Workspace Agents. Greg Brockman เรียกว่า new class of intelligence ก้าวสำคัญสู่ agentic และ intuitive computing.
+
+Benchmark หนักจริง. Terminal Bench สองจุดศูนย์ แปดสิบสองจุดเจ็ดเปอร์เซ็นต์. SWE Bench Pro ห้าสิบแปดจุดหก. OSWorld Verified เจ็ดสิบแปดจุดเจ็ด วัด computer use. Tau สอง Telecom เก้าสิบแปด. GDPval ข้ามสี่สิบสี่อาชีพ แปดสิบสี่จุดเก้า. strongest agentic coding model to date ตาม Decrypt.
+
+แต่ราคาขึ้นสองเท่า. API ห้าเหรียญต่อล้าน input สามสิบต่อล้าน output. gpt ห้าจุดห้า pro สามสิบและหนึ่งร้อยแปดสิบ. context หนึ่งล้าน token. Batch และ Flex ครึ่งราคา. The Decoder พาดหัวตรง double the API price.
+
+ChatGPT Workspace Agents คือของที่น่าจับตา. user สั่ง หา email สรุปประเด็น ร่าง reply แนบ deck. GPT ห้าจุดห้าวิ่ง Gmail calendar Drive Slack Figma เอง. Plus ยี่สิบเหรียญ Pro สองร้อย Business สามสิบต่อ seat. TechCrunch เรียกว่าหนึ่งก้าวชัดสุดสู่ AI super app.
+
+pattern ที่เห็นคือ OpenAI ปฏิเสธสคริปต์ที่ hyperscaler จะเป็น control plane แล้ว foundation model vendor จะถูก commoditize. OpenAI บอกว่าเราเป็นแพลตฟอร์มของเราเอง โดยใช้ ChatGPT เป็น entry point. จุดที่มีแต่ Google ไม่มี แปดร้อยล้าน user ที่ใช้ ChatGPT อยู่แล้วทุกวัน.
+
+แต่เกมนี้ต้อง CapEx หนัก. cadence สองถึงหกสัปดาห์ต่อ model release ต้องใช้ compute ที่ revenue ยี่สิบห้า billion ยังไม่แน่ว่าพอ. ราคา API ที่ขึ้นสองเท่าไม่ใช่ arrogance เป็น survival math.
+
+สำหรับ OpenBridge สามอย่างต้องทำใน สิบสี่วัน. หนึ่ง re-price tier ภายในเจ็ดวัน workflow ที่มี chained LLM มากกว่าสาม hop ต่อ task ต้องโชว์ cost simulator ก่อน execute route non critical ไป Gemini Flash หรือ Claude Haiku ประหยัดเจ็ดสิบแปดสิบเปอร์เซ็นต์.
+
+สอง Workspace Agents คือ direct threat ไม่ใช่ distant threat. OpenBridge ต้องนิยามใหม่. คำตอบ defensible คือ Thai SaaS stack ที่ ChatGPT ไม่มี FlowAccount PEAK LINE OA. on premise self hosted สำหรับ bank government. LINE native workflow ที่ ChatGPT ไม่เข้าใจ.
+
+สาม window แคบลงเร็ว. ChatGPT จะ add LINE OA connector ภายในหกสิบถึงเก้าสิบวัน. OpenAI มี Thailand team อยู่แล้ว. OpenBridge ต้อง lock distribution สาม Thai SaaS ที่ ChatGPT ยังไม่มี ออก pricing undercut fifty percent bundle services แทน raw token เปิด migration path จาก ChatGPT Workspace มา OpenBridge สำหรับลูกค้า enterprise ไทยที่กังวล data sovereignty
+
+เรื่องที่ 2
+เย็นอังคารยี่สิบเอ็ดเมษา ทีม Cursor ที่ SoHo กำลังปิด round สอง billion บน valuation ห้าสิบ billion กับ Sequoia a16z Nvidia Thrive. Michael Truell CEO เตรียมเซ็น term sheet เช้าพุธ. แล้วโทรเข้าจาก Gwynne Shotwell.
+
+SpaceX ยื่นข้อเสนอที่ไม่มีใครแข่งได้. option ซื้อ Cursor ทั้งบริษัทที่หกสิบ billion ปลายปียี่สิบยี่สิบหก หลัง SpaceX IPO summer. หรือจ่าย floor สิบ billion cash ภายใต้ joint work agreement. Musk ระบุเป้าหมายตรง Colossus supercomputer หนึ่งล้าน H หนึ่งร้อย equivalent จะ train world most useful model ได้. Truell เลือก Musk ภายในแปดชั่วโมง. round สอง billion ถูกทิ้งกลางทาง.
+
+Axios และ CNBC รายงานเพิ่ม Microsoft เคยจ่อซื้อ Cursor มาก่อน ผ่าน Satya Nadella และ Kevin Scott. ข้อเสนอน่าจะสี่สิบถึงห้าสิบ billion แต่ตีไม่ทันเพราะ regulatory timeline และ GitHub Copilot antitrust overhang. Musk ไม่มีภาระนั้น เสนอหกสิบเท่าของ revenue ตรง.
+
+ตัวเลข Cursor. annualized revenue หนึ่ง billion plus. millions developers ใช้ทุกวัน. thousands enterprises Fortune one hundred banks pharma DoD contractors. Growth สามร้อยเปอร์เซ็นต์ year over year.
+
+Deal structure ซับซ้อน. SpaceX ชะลอ acquisition จนกว่า IPO summer. Cursor ยังอิสระ operate. access Colossus เริ่มทันที Musk นั่ง observer บน board. TechCrunch เรียกว่า gutsy Hail Mary. Musk ซื้อเวลาในเกม AI coding ที่ XAI Grok ยังห่างไกล.
+
+pattern ที่ต้องอ่าน AI coding คือ strategic tier หนึ่ง สำหรับ frontier lab. Cursor มี data flywheel session logs ของ developer millions คน edit code จริง accept reject agent suggestion. data set นี้คือ training signal สำหรับ next gen agentic model ที่ซื้อจาก web scraping ไม่ได้.
+
+ดีลนี้บีบ positioning OpenAI และ Anthropic ทันที. ถ้า Cursor กลายเป็น XAI SpaceX only backend ภายในปี OpenAI Anthropic เสีย distribution channel ใหญ่สุดใน AI coding. Microsoft เจ็บที่สุด GitHub Copilot revenue สอง billion flat แล้ว.
+
+สำหรับ OpenBridge ไม่ direct เกี่ยว แต่มีสาม signal. หนึ่ง AI coding agent tooling คือ vertical ที่ valuation premium สูงสุด. ถ้า pitch VC Series A B ครึ่งปีหลังควร frame ว่าเป็น agent workflow tier ราคาต่าง สามถึงห้าเท่าของ integration platform ทั่วไป.
+
+สอง distribution plus data moat คือ valuation driver มากกว่า model. OpenBridge ที่ integrate LINE OA FlowAccount PEAK กำลังสร้าง moat ชนิดเดียวกันสำหรับ Thai workflow. ต้องเริ่ม instrument logging structured event capture consent based anonymized ภายในสามสิบวัน.
+
+สาม Thai AI coding startup ควรเรียน lesson นี้. window หกสิบถึงเก้าสิบวัน ก่อน deal trigger secondary wave ที่ push valuation ขึ้นทั่ว
+
+เรื่องที่ 3
+ที่ Shoptalk ปลายมีนา Macy's CDO Matt Baer ประกาศจะเปิด Ask Macy's agent. วงการ retail ยักไหล่ เพราะ Macy's ขึ้นชื่อ digital transformation ช้าและ legacy stack หนัก. ห้าสัปดาห์หลังจากนั้น ที่ Google Cloud Next 2026 เย็นพุธยี่สิบสองเมษา Thomas Kurian หยิบ Ask Macy's มาเป็น flagship case study ของ Gemini Enterprise for Customer Experience. ตัวเลขที่ผ่านมาทำทั้งห้องฟังเงียบ.
+
+Macy's เริ่ม build ต้นมีนา ทีม in house สี่คน บวก Google Cloud Forward Deployed Engineers สองคน. สี่สัปดาห์ต่อมา beta เปิด. วันเดียว scale ขึ้นห้าสิบเปอร์เซ็นต์ของ users. สัปดาห์เดียวหลังจากนั้น หนึ่งร้อยเปอร์เซ็นต์ desktop mobile iOS Android. Retailer ขนาดยี่สิบสาม billion revenue ship ข้ามทุก channel ในห้าสัปดาห์คือเรื่องที่ไม่เคยมี. Nordstrom ใช้สิบแปดเดือน Walmart สองจุดห้าปี Target ยังไม่ได้ ship.
+
+Ask Macy's ไม่ใช่ chatbot พื้น. Multimodal full stack. User พิมพ์ ผมต้องการเสื้อสำหรับงานแต่งกลางแจ้งเดือนมิถุนา. ระบบเข้าใจ intent ฤดูกาล formality price range. ถ่ายรูปห้องให้ดู style. upload รูปตัวเองสำหรับ virtual try on. Agent เชื่อม inventory realtime recommendation engine review data order system.
+
+ตัวเลขที่ Macy's เผยอย่างระมัดระวัง. revenue per visit สี่จุดเจ็ดห้าเท่าใน beta vs user ปกติ. Bloomberg reported ปลายมีนาเป็น about four hundred percent more. ตัวเลขสี่จุดเจ็ดห้าเท่าที่ Cloud Next confirm ใน keynote เป็น updated number หลัง scale ถึง hundred percent. Macy's e commerce revenue เก้า billion ต่อปี คูณ uplift = สี่ร้อย ล้านถึงหนึ่ง billion incremental annual revenue ถ้าครอบคลุมสามสิบเปอร์เซ็นต์ของ session ขึ้นไป. Constellation ประเมิน ROI payback น้อยกว่าหกสิบวัน.
+
+pattern ที่เปลี่ยนเกมคือ timeline. ก่อนสองพันยี่สิบห้า enterprise AI deployment สิบสองถึงสิบแปดเดือน. ต้นสองพันยี่สิบหกสามถึงหกเดือน. เมษา สองพันยี่สิบหก Engine สิบสองวัน Ask Macy's สี่สัปดาห์บวกหนึ่งสัปดาห์ rollout. Enterprise agent timeline vertex คือสี่ถึงแปดสัปดาห์แล้ว. CFO ไม่ยอมจ่าย consulting fee สิบสองเดือนอีกเมื่อ competitor ship ในหนึ่งเดือน.
+
+คำเตือนที่สำคัญ. สี่จุดเจ็ดห้าเท่าเป็น Macy's reported number ยืนยันโดย Google. ไม่มี third party audit. รอ Q สอง earnings call ปลายพฤษภาต้นมิถุนา จะมี quantified disclosure ใน 10Q ถึงจะ confident.
+
+สำหรับ OpenBridge. นี่คือ reference case ที่ควรเอาไปเล่าทุกห้องที่ pitch Thai retailer. Central CP All Robinson The Mall Siam Paragon Platinum Fashion Mall. Window เปิดหกสิบถึงเก้าสิบวัน ก่อน Accenture Thailand หรือ BCG Platinion นำ Gemini Enterprise ไปขาย Central direct.
+
+Product action ภายในสิบสี่วัน. หนึ่ง ออก Ask Brand template บน OpenBridge ที่ Thai retailer plug inventory feed LINE catalog Shopify order data ได้ conversational commerce agent ภายในเจ็ดวัน. สอง Multimodal virtual try on สำหรับ Thai fashion SME ใช้ Gemini หรือ open source alternative ไม่ lock กับ Google. สาม revenue attribution dashboard ที่ show uplift per chat เหมือน Macy's สี่จุดเจ็ดห้าเท่า.
+
+Strategic framing. OpenBridge ไม่ควรพยายามแข่ง Gemini Enterprise ในเกม global retail. Wedge ที่ชนะคือ Thai SME retailer. ร้านใน Platinum Siam Square Home Pro outlet. ลูกค้าที่ไม่มี budget สี่สัปดาห์ Google FDE engagement แต่ต้องการหกสิบเปอร์เซ็นต์ของ functionality ในราคาห้าร้อยถึงสองพันเหรียญต่อเดือน
+
+เรื่องที่ 4
+วันอังคารยี่สิบเอ็ดเมษา ทีม Fabric product group เผยแพร่สอง blog post เงียบ. OneLake MCP Generally Available กับ Fabric Local MCP GA. สอง GA release ในวันเดียวกัน ไม่ได้อยู่ใน FabCon keynote แต่ slip เข้า production ในช่วงก่อน Cloud Next เพื่อ block narrative Google ก่อนยี่สิบสี่ชั่วโมง.
+
+OneLake MCP คือ MCP server ที่ expose OneLake data plane ให้ AI agent ใช้ผ่าน conversational language. Agent ถามใน workspace finance มี table ไหนที่มี column customer id และ invoice date ที่ใช้ reconciliation ได้บ้าง. ระบบตอบพร้อม schema sample row usage metadata. Agent ต่อด้วย join สอง tables filter Q หนึ่ง สองพันยี่สิบหก export เป็น Parquet เข้า workspace analytics. Executed ภายใน OneLake permission ที่ existing user มี.
+
+จุดที่ต่างจาก generic MCP server คือ Azure identity และ Fabric permission native. Agent ไม่ได้วิ่งใต้ service account god mode. ใช้ existing user identity. ถ้า user มีสิทธิ์ dataset finance prod agent ได้. ถ้าไม่ agent ปฏิเสธ request พร้อม error message ชัด.
+
+Fabric Local MCP GA คือ server variant ที่ run ใน developer machine. ให้ GitHub Copilot Claude Code Cursor เชื่อมต่อ Fabric API ได้ตรงผ่าน MCP. Developer ถาม Cursor เขียน notebook ที่ clean duplicated customer record. Cursor ใช้ Fabric Local MCP ตรวจ workspace หา duplicate pattern เขียน PySpark notebook run validation push กลับ Fabric.
+
+pattern ที่ตกผลึกในสัปดาห์เดียวคือ MCP ข้ามจุด protocol war จบ เข้า commodity layer ของ enterprise data access. สิบสี่เมษา AWS Bedrock MCP connectors GA. ยี่สิบเอ็ดเมษา Microsoft OneLake MCP GA. ยี่สิบสองเมษา Google Apigee MCP bridge. สาม hyperscaler เปิด native MCP data access ภายในเจ็ดวัน.
+
+Microsoft ได้ unique advantage จาก OneLake installed base ห้าหมื่น organizations. ทั้งกลุ่มนี้เปิด agent native access ได้ทันทีโดยไม่ต้องเปลี่ยน stack. ไม่เหมือน Databricks Snowflake ที่ต้องไปหา partner MCP server ข้างนอก.
+
+Microsoft ไม่พยายามเป็น agent control plane ชน Gemini Enterprise. แต่เดิมพันว่าเป็น data storage layer ใต้ agent stack ทุกตัว. Switzerland positioning ที่ Google พยายามทำกับ model แต่ Microsoft ทำกับ data layer. เล่น neutral แต่เก็บ margin จากทุกฝั่ง.
+
+สำหรับ OpenBridge. OneLake MCP GA คือการพิสูจน์ pattern ที่ OpenBridge ต้อง copy ทันที. ขั้นต่อไปคือ expose Thai SaaS ทั้งหมดเป็น MCP server tier ที่ลูกค้าใช้ Cursor Claude Code ChatGPT custom GPT ดึง Thai data operation ได้ตรง. ไม่ใช่แค่ให้ agent run บน OpenBridge แต่ให้ external agent ใด ๆ เข้าถึง Thai SaaS data ผ่าน OpenBridge MCP gateway.
+
+Product action ภายในสามสิบวัน. ออก OpenBridge MCP Gateway v หนึ่ง expose ห้า Thai SaaS FlowAccount PEAK LINE OA Shopee Seller Lazada Seller เป็น MCP server พร้อม OAuth based permission ที่ใช้ login ของ user ต้นทาง. Documentation quickstart สำหรับสาม use case.
+
+Strategic framing. OpenBridge ไม่ใช่ build control plane แข่ง Google Microsoft. แต่เป็น OneLake สำหรับ Thai SMB operational data. Pricing MCP tier usage based หนึ่งเซ็นต์ต่อ tool call minimum ห้าร้อยเหรียญต่อเดือน enterprise tier สำหรับ Bank Telco.
+
+Watch signal. ถ้า Microsoft Google ประกาศ LINE OA official MCP connector ใน Q สอง window OpenBridge แคบลงจากสิบสองถึงสิบแปดเดือน เหลือสามถึงหกเดือน. ต้อง lock exclusive beta partner กับ FlowAccount PEAK อย่างน้อยหนึ่งรายภายในสี่สิบห้าวัน
+
+ทั้งหมดนี้คือ brief ของรอบนี้ ขอให้วันนี้เป็นวันที่ดีครับ แล้วเจอกันรอบหน้า

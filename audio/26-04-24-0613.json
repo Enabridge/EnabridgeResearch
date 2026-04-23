@@ -1,0 +1,32 @@
+{
+  "date": "26-04-24-0613",
+  "iso_date": "2026-04-24T06:13:00+07:00",
+  "title": "Daily AI Brief — 26-04-24 06:13",
+  "items": [
+    {
+      "file": "26-04-24-0613-01-openai-gpt-5-5-workspace-agents-counter.md",
+      "title": "OpenAI ส่ง GPT-5.5 + ChatGPT Workspace Agents ตอบโต้ Gemini Enterprise — ราคา API แพงขึ้น 2 เท่า แต่ชาร์จ OSWorld 78.7% / Terminal-Bench 82.7%",
+      "order": 1
+    },
+    {
+      "file": "26-04-24-0613-02-spacex-cursor-60b-musk-ai-coding.md",
+      "title": "SpaceX ดีลซื้อ Cursor $60B หรือจ่าย $10B ต่อ \"ความร่วมมือ\" — Musk ดักหน้า Microsoft, Cursor ยกเลิก round $2B/$50B valuation ทิ้ง 24 ชั่วโมง",
+      "order": 2
+    },
+    {
+      "file": "26-04-24-0613-03-ask-macys-gemini-4week-475-revenue.md",
+      "title": "Macy's สร้าง \"Ask Macy's\" agent ใน 4 สัปดาห์ด้วย Gemini Enterprise — revenue per visit เพิ่ม 4.75x ใน beta, rollout 0→100% site ใน 1 สัปดาห์",
+      "order": 3
+    },
+    {
+      "file": "26-04-24-0613-04-microsoft-onelake-mcp-fabric-ga.md",
+      "title": "Microsoft ปล่อย OneLake MCP + Fabric Local MCP GA — \"ส่งกุญแจ data lake ให้ AI agent\" เปิดสนามให้ agent เข้าถึงข้อมูล enterprise ผ่าน MCP เป็น default",
+      "order": 4
+    }
+  ],
+  "script_char_count": 11394,
+  "audio_file": "26-04-24-0613.mp3",
+  "voice": "coral",
+  "model": "gpt-4o-mini-tts",
+  "speed": 1.3
+}
