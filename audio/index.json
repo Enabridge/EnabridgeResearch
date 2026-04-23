@@ -1,7 +1,41 @@
 {
-  "generated_at": "2026-04-21T23:32:59Z",
-  "count": 7,
+  "generated_at": "2026-04-22T23:32:01Z",
+  "count": 8,
   "episodes": [
+    {
+      "date": "26-04-23-0617",
+      "iso_date": "2026-04-23T06:17:00+07:00",
+      "title": "Daily AI Brief — 26-04-23 06:17",
+      "description": "1. Google เปิด Gemini Enterprise Agent Platform — รวม Vertex AI + Agentspace เป็น \"agent control plane\" เดียว ท้าชน OpenAI/Anthropic เต็มสูบ\n2. Salesforce เปิด Headless 360 — ยอมทิ้ง UI ให้ agent ใช้ platform แทนมนุษย์ 60+ MCP tools + 30 coding skills ship ทันที\n3. Google ทุ่ม $750M ปั้น 120,000 partner ให้ \"deploy agentic AI ได้\" — Merck + Vista Equity sign ติดธง กลางงาน Cloud Next\n4. Bybit (crypto exchange #2) เปิด official MCP — ให้ Claude/ChatGPT/Cursor สั่ง trade ได้ตรง เปิด fintech MCP vertical ใหม่",
+      "items": [
+        {
+          "file": "26-04-23-0617-01-google-gemini-enterprise-agent-platform.md",
+          "title": "Google เปิด Gemini Enterprise Agent Platform — รวม Vertex AI + Agentspace เป็น \"agent control plane\" เดียว ท้าชน OpenAI/Anthropic เต็มสูบ",
+          "order": 1
+        },
+        {
+          "file": "26-04-23-0617-02-salesforce-headless-360-agent-api.md",
+          "title": "Salesforce เปิด Headless 360 — ยอมทิ้ง UI ให้ agent ใช้ platform แทนมนุษย์ 60+ MCP tools + 30 coding skills ship ทันที",
+          "order": 2
+        },
+        {
+          "file": "26-04-23-0617-03-google-cloud-750m-partner-fund-merck-vista.md",
+          "title": "Google ทุ่ม $750M ปั้น 120,000 partner ให้ \"deploy agentic AI ได้\" — Merck + Vista Equity sign ติดธง กลางงาน Cloud Next",
+          "order": 3
+        },
+        {
+          "file": "26-04-23-0617-04-bybit-mcp-multi-agent-trading-crypto.md",
+          "title": "Bybit (crypto exchange #2) เปิด official MCP — ให้ Claude/ChatGPT/Cursor สั่ง trade ได้ตรง เปิด fintech MCP vertical ใหม่",
+          "order": 4
+        }
+      ],
+      "audio_file": "26-04-23-0617.mp3",
+      "audio_size_bytes": 13147392,
+      "voice": "coral",
+      "model": "gpt-4o-mini-tts",
+      "speed": 1.3,
+      "script_char_count": 11396
+    },
     {
       "date": "26-04-22-0617",
       "iso_date": "2026-04-22T06:17:00+07:00",
