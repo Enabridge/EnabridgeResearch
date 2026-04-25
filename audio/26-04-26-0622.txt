@@ -1,0 +1,102 @@
+สวัสดีครับ นี่คือ Enabridge AI Brief รอบ 26 April 2026 เวลา 06:22
+รอบนี้มี 4 เรื่อง เน้น Agentic AI, business use case, และ trend ที่เอามาใช้กับ OpenBridge ได้
+
+เรื่องที่ 1
+วันศุกร์ที่ยี่สิบสี่เมษา ตอนเช้านิวยอร์ก Bloomberg ปล่อยข่าวที่ตลาดรอตั้งแต่กลางสัปดาห์. Alphabet จะลงทุน Anthropic เพิ่มอีก up to สี่สิบ billion. แบ่งเป็นสิบ billion เงินสดทันที ที่ valuation สามร้อยห้าสิบ billion. อีกสามสิบ billion ตามมาแบบ performance locked ถ้า Anthropic ทำเป้าได้.
+
+ที่สำคัญพอ ๆ กัน Google Cloud ยอม commit ห้า gigawatt ของ TPU capacity เพิ่มอีกห้าปี. ขยายจากดีลเดิมที่ Broadcom filing ระบุไว้สามจุดห้า gigawatt. รวมกัน Anthropic จะมี hyperscaler class compute เพียงพอ train โมเดลขนาด GPT เจ็ด คลาส โดยไม่พึ่ง NVIDIA เลยก็ได้.
+
+จังหวะตลกคือดีลนี้ห่างจาก Amazon เพียงสี่วัน. วันจันทร์ที่ยี่สิบเมษา AWS ประกาศ up to ยี่สิบห้า billion เข้า Anthropic. ห้า billion ทันทีที่ valuation สามร้อยแปดสิบ billion. อีกยี่สิบ billion ผูก commercial milestone. แลกกับ Anthropic commit สั่ง AWS service เกินหนึ่งร้อย billion ในสิบปี และใช้ Trainium สอง สาม รวมหนึ่ง gigawatt ภายในสิ้นปี.
+
+รวมกัน Google บวก Amazon ในสัปดาห์เดียว Anthropic ได้หกสิบห้า billion equity บวกสิบ gigawatt reserved compute. ARR ขึ้นจากเก้า billion ปลายปีที่แล้ว เป็นสามสิบ billion ในมีนา. เกือบสามจุดสามเท่าในสี่เดือน หลัก ๆ จาก Claude Code และ Opus.
+
+CFO Anthropic เขียนใน press release ว่า ความต้องการ developer enterprise และ sharp rise in consumer usage ทำให้เกิด inevitable strain on infrastructure กระทบ reliability และ performance. แปลตรงคือ Claude เซิร์ฟไม่ทันแล้ว ต้องการเงินและ chip ก่อนเสีย market share.
+
+pattern dual bet ของ Anthropic คือ master class ของ negotiation. ปกติ frontier lab เลือก primary cloud partner คนเดียว. Anthropic ขายตำแหน่ง Switzerland frontier model ให้ AWS กับ Google พร้อมกัน. แต่ละค่ายกลัวอีกฝ่ายผูกขาด ยอมจ่ายแพงเพื่อรักษา exposure. Anthropic เก็บ compute commitment ซ้อนทับเกินที่ใช้จริงในสามปี.
+
+จุดเปราะคือ Anthropic ต้องทำ performance milestone ให้ได้สำหรับสามสิบ บวกยี่สิบ billion ที่ผูกอยู่. บีบให้ต้อง ship Claude Opus สี่จุดแปดหรือห้าจุดศูนย์ บวก Claude Agent Runtime ภายในหกถึงสิบสองเดือน. survival math เดียวกับ OpenAI ตอน GPT ห้าจุดห้า แค่จังหวะถัดไป.
+
+สำหรับ OpenBridge ไม่ direct เกี่ยวแต่ implication ใหญ่. ถ้า Anthropic capacity เพิ่มสองสามเท่า ราคา Claude API จะ pressure ลงครึ่งหลังปี. OpenBridge ควรเตรียม model routing layer ภายในสามสิบวัน ให้ลูกค้า switch ระหว่าง Claude GPT Gemini Llama แบบ runtime.
+
+Strategic position คำถามใหญ่กว่า. Claude เป็น hyperscaler blessed second model ในทุก major cloud. OpenBridge เจอ enterprise procurement default ไปใช้ Claude เพราะ bundle. คำตอบคือ อย่าเสียเวลา compete ที่ raw model layer focus ที่ Thai SaaS connector LINE OA integration และ revenue attribution ที่ hyperscaler ไม่แข่ง.
+
+Action สิบสี่วัน หนึ่ง ออก BYO LLM pricing tier ลูกค้าเอา API key มาเอง OpenBridge เก็บค่า orchestration อย่างเดียว undercuts hyperscaler สามสิบ สี่สิบเปอร์เซ็นต์. สอง track Claude Bedrock latency vs Claude direct ถ้าช้ากว่าสามสิบเปอร์เซ็นต์ บอกลูกค้าใช้ direct API ผ่าน OpenBridge. สาม track Anthropic Q สอง earnings มิถุนา ดู disclosure performance milestone ถ้า miss คือ window OpenBridge เปลี่ยน default backend
+
+เรื่องที่ 2
+ขณะที่สื่อ Western tech ส่วนใหญ่ยังจ้อง Google Cloud Next บวก Anthropic dual deal ตอนเช้าวันพฤหัสฯ ที่ยี่สิบสามเมษา Swiggy superapp food delivery ที่ใหญ่ที่สุดของอินเดียรองจาก Zomato ออก press release ผ่าน AWS press center ที่จะเปลี่ยน e-commerce ทั้งภูมิภาค.
+
+โครงสร้างคือ Swiggy Builders Club. invite only program เปิดให้ developer founder enterprise ที่อยากสร้างกับ Swiggy ในโลก AI first ส่งใบสมัคร ผ่าน review ได้ access build และ ship demo.
+
+หัวใจคือเปิดสาม MCP server บวกสิบแปดกว่า API tool ข้ามสาม vertical. Food รับ delivery. Instamart grocery สิบนาที. Dineout restaurant reservation. ที่สำคัญที่สุดคือ agent ที่ approved สามารถ take real world action ได้ สั่งอาหารจริง ช้อป grocery จริง จอง table จริง ไม่ใช่แค่ search และ recommend.
+
+Swiggy เลือก stack จงใจ. AWS Bedrock เป็น compute layer บวก AgentCore เป็น orchestration. ไม่ใช่ Google Vertex ไม่ใช่ Azure ไม่ใช่ direct Anthropic. AWS เป็น cloud incumbent ของ Indian enterprise และ data residency Mumbai region ผ่านมาตรฐาน RBI SEBI.
+
+timing บอกอะไร. Swiggy เปิดห่างจาก OpenAI Workspace Agents launch เพียงหนึ่งวัน. Swiggy positions ตัวเองเป็น first Indian commerce backbone ที่ ChatGPT plug ได้ ก่อน Zomato Flipkart ทัน. ด่านลึกกว่าคือ Swiggy รู้ว่า ChatGPT Claude Gemini จะกินผู้บริโภคในสิบสองถึงสิบแปดเดือน ต้องเปลี่ยน Swiggy app เป็น execution layer ที่ external agent เรียกได้ ก่อนผู้บริโภคหยุดเปิด app เอง.
+
+pattern คือเกม commerce ในยุค agent แยกเป็นสามชั้น. agent client layer คือ ChatGPT Claude Gemini LINE AI. commerce backbone คือ Swiggy Lazada Shopee. integration glue คือ middleware ที่แปลง agent intent เป็น backbone API. Swiggy ตัดสินใจเป็น layer สอง บริสุทธิ์. ขายตัวเองเป็น execution layer ที่ทุก agent ต้องเรียก.
+
+จุดเปราะคือ distribution power กลับด้าน. ถ้า Swiggy ไม่ใช่ destination อำนาจเปลี่ยนไปอยู่ที่ ChatGPT ที่เลือกเรียก Swiggy หรือ Zomato. ต้อง compete ที่ API quality latency commission rate ไม่ใช่ brand. เหมือน Booking.com vs Expedia ในยุค Google Travel.
+
+สำหรับ OpenBridge นี่คือ playbook ตรง ๆ ที่ต้อง copy ในหกสิบเก้าสิบวัน แต่กลับด้านบทบาท. Swiggy คือ commerce backbone. OpenBridge คือ integration glue ที่ทำให้ Thai SaaS เช่น FlowAccount PEAK LINE OA Shopee Seller Lazada Seller KBank Biz API เป็น MCP callable layer สำหรับ external agent.
+
+Action สิบสี่วัน หนึ่ง ติดต่อ FlowAccount และ PEAK เสนอ build MCP server co branded ภายในสามสิบวัน. OpenBridge ลงแรง engineering ร้อยเปอร์เซ็นต์ ขอ revenue share สามสิบเจ็ดสิบ และ exclusivity หกเดือน. สอง เปิด OpenBridge MCP Catalog เป็น public registry. สาม ขอ intro จาก investor a16z Lightspeed เพื่อคุยกับ Swiggy engineering team เรื่อง latency authentication billing.
+
+Strategic position. Swiggy ทำให้ MCP callable commerce กลายเป็น default expectation สำหรับ Asia commerce. ภายในหกเดือน Thai retailer จะถาม เราจะเป็น MCP server ให้ ChatGPT เรียกเมื่อไร. OpenBridge ต้องมีคำตอบ ship ให้คุณสิบสี่วัน ไม่ใช่ assess สามเดือน. ขายเป็น MCP as a service สำหรับ Thai SaaS ห้าหมื่นถึงสองแสนบาทต่อเดือน บวก transaction fee ตาม volume. อย่ารอให้ Accenture Thailand นำ AWS AgentCore มาขาย Central direct ใน Q สาม. ใช้หกสิบวันนี้ lock ห้าถึงเจ็ด Thai SaaS ใหญ่สุดเป็น exclusive partner ก่อน
+
+เรื่องที่ 3
+วันพฤหัสฯ ที่ยี่สิบสามเมษา Orkes startup จาก Santa Clara ที่ founder คือสามคนที่เป็น original architect ของ Netflix Conductor เมื่อปี สองพันสิบหก ประกาศปิดหกสิบ million Series B นำโดย AVP fund ฝรั่งเศสที่ specialize software infrastructure.
+
+Round นี้มาห่างจาก Series A ยี่สิบ million ของปียี่สิบยี่สิบสี่ ประมาณยี่สิบสองเดือน. pace ที่ตลาด software infra ปัจจุบันถือว่า slow and steady ไม่ใช่ hyper growth.
+
+Orkes ทำอะไร. คำตอบสั้นคือ workflow orchestration ที่ทนทานและปลอดภัยสำหรับ AI agent. Conductor เป็น open source ที่ Netflix สร้างปี สองพันสิบหก เพื่อ orchestrate microservice workflow ที่ต้อง resilient. server crash ตรงกลาง workflow ก็ resume ได้ retry ได้ ดู audit trail ได้ทุก step. Orkes คือ commercial Conductor ที่ extend ให้ทำ AI agent workflow ได้.
+
+ลูกค้าที่เปิดเผยน่าตกใจ. LinkedIn ใช้ Orkes orchestrate AI workflow ภายใน. Twilio ใช้สร้าง agent communication platform. Quest Diagnostics ใช้ใน clinical workflow compliance. United Wholesale Mortgage ใช้ใน lending decision. Naveo Commerce European e-commerce ใช้ใน order fulfillment. Woodside Energy Australian LNG ใช้ใน operational decision. ที่ Orkes หลีกเลี่ยงชื่อ หนึ่งใน world's largest global retailer น่าจะ Walmart หรือ Costco.
+
+ตัวเลขที่โชว์ ตั้งแต่ Series A ยี่สิบสองเดือนก่อน community developer หลายแสนคน install หลายล้าน customer สามเท่าจากเดิม. AVP บอก Forbes ว่า Orkes อยู่ใน tens of millions ARR with 200% YoY growth gross margin มากกว่าเจ็ดสิบห้าเปอร์เซ็นต์.
+
+ของแถมน่าสนใจ Prosperity7 Ventures เป็น new investor. fund ของ Aramco PIF ที่ปกติลงพลังงาน. signal ของ Saudi sovereign capital เริ่มลง AI infrastructure layer จริงจัง. Orkes น่าจะเปิด Riyadh Dubai office ใน Q สาม.
+
+ที่ตลาด AI infra เงียบ ๆ คือ reliability tier. ชั้นใต้ model และ agent layer ที่ทำให้ทุกอย่าง production ready. ปียี่สิบยี่สิบหก เงินกำลังย้ายไปที่ durable execution runtime. Temporal Inngest Restate Orkes รวมระดมทุนสองร้อยห้าสิบ million plus ในสิบแปดเดือน.
+
+Stanford AI Index ปล่อยเม.ย. ระบุว่าแปดสิบเก้าเปอร์เซ็นต์ ของ enterprise AI agent ไม่เคยถึง production. failure mode ไม่ใช่ model accuracy แต่เป็น operational reliability. workflow ค้าง retry หาย audit ไม่ได้ governance fail security review. Orkes ขายแก้จุดนี้ตรง ๆ.
+
+จุดเปราะคือ commoditization risk. hyperscaler มี durable execution อยู่แล้ว AWS Step Functions Azure Durable Functions GCP Workflows. ทำไม enterprise ยอมจ่าย Orkes. คำตอบคือสี่ feature ที่ hyperscaler ขาด multi cloud portability AI native primitive observability ระดับ workflow และ enterprise governance multi tenancy.
+
+สำหรับ OpenBridge นี่คือ direct competitor บวก reference architecture ที่ต้องเข้าใจลึก. ลูกค้า OpenBridge ที่ deploy workflow ซับซ้อนต้องการ durable execution layer แบบ Orkes อยู่แล้ว.
+
+สามทาง หนึ่ง build บน Conductor open source. embed Conductor เป็น engine ของ OpenBridge ภายในหกสิบวัน. ขายเป็น Thai SaaS aware Conductor. ต้นทุนสามถึงสี่คน คูณสองเดือน. สอง partner กับ Orkes โดยตรง. เซ็น reseller deal ขาย OpenBridge powered by Orkes ใน Thailand. สาม compete head on. build durable execution เอง risk สูงสุด moat ลึก.
+
+ผมเชียร์ tactic หนึ่ง build บน Conductor. open source Apache สอง license Netflix battle tested แปดปี Orkes ไม่ block community ใช้. OpenBridge ได้ engine ที่ enterprise CIO รู้จักดีกว่า engine custom บวก control ร้อยเปอร์เซ็นต์ Thai customization.
+
+Action สิบสี่วัน หนึ่ง allocate สอง senior engineer ทำ Conductor PoC workflow ตัวอย่าง FlowAccount invoice K Bank payment check LINE OA send Salesforce log. สอง reach out CTO ของ Orkes Boney Sekh ผ่าน LinkedIn ขอ technical session สามสิบนาที เก็บ insight ว่า Indian enterprise ใช้ Conductor pattern อย่างไร. สาม เปิด blog post OpenBridge runs on Conductor ภายในสามสิบวัน credibility และ SEO play
+
+เรื่องที่ 4
+ปลายเดือนเมษา Stanford Human Centered AI institute ปล่อยรายงานประจำปีที่อุตสาหกรรมรอตั้งแต่มกรา. AI Index Report ยี่สิบยี่สิบหก. รวบรวม benchmark deployment data regulatory tracking economic impact ของ AI ทั้งปี.
+
+ที่กำหนดวาระสนทนาคือสองตัวเลขในรายงานเดียวกัน. ตัวหนึ่งทำให้ optimist กระโดด อีกตัวทำให้ realist ยกคิ้ว.
+
+ตัวเลขแรก OSWorld score. benchmark ที่วัดว่า AI agent คุมคอมจริงได้ดีแค่ไหน. ปียี่สิบยี่สิบห้า SOTA สิบสองเปอร์เซ็นต์. ปียี่สิบยี่สิบหก หกสิบหกจุดสาม. ห่าง human เพียงหกจุด. agent ระดับ frontier เช่น GPT ห้าจุดห้าทำ OSWorld Verified เจ็ดสิบแปดจุดเจ็ด. ทำงาน knowledge work บน computer ได้ใกล้คนแล้ว.
+
+ตัวเลขที่สองและสำคัญที่สุด. แปดสิบเก้าเปอร์เซ็นต์ ของ enterprise AI agent ไม่เคยถึง production deployment. ROI เท่ากับศูนย์ บน investment ปกติหนึ่งแสนห้าหมื่นถึงแปดแสนดอลล่าร์ต่อ implementation. ส่วนที่ deploy ผ่าน แปดสิบแปดเปอร์เซ็นต์ report measurable revenue impact. ROI เฉลี่ยหนึ่งร้อยเจ็ดสิบเอ็ดเปอร์เซ็นต์ payback หกเดือน. กระจายแบบ bimodal ทำสำเร็จได้ผลใหญ่ ทำไม่สำเร็จเสียหมด.
+
+failure mode คืออะไร. สามสิบสี่เปอร์เซ็นต์ ไม่ผ่าน security compliance review. ยี่สิบเจ็ดเปอร์เซ็นต์ workflow integration ซับซ้อนเกินคาด operational nightmare. สิบแปดเปอร์เซ็นต์ data quality ไม่พอ. สิบสองเปอร์เซ็นต์ change management user ไม่ใช้. และเก้าเปอร์เซ็นต์ model accuracy hallucination. น่าตกใจที่ model accuracy เป็นสาเหตุน้อยที่สุด.
+
+นี่คือไฮไลต์. model accuracy ไม่ใช่ปัญหาแล้ว. Claude Opus สี่จุดเจ็ด GPT ห้าจุดห้า Gemini สามจุดหนึ่ง ทำ task ได้ดีพอแล้ว. ปัญหาคือการ deploy operate scale govern workflow ที่มี agent อยู่ข้างใน. นี่คือ thesis ที่ Orkes Temporal Inngest ขายมาตลอด สิบแปดเดือน. วันนี้ Stanford มี data ที่ confirm.
+
+กระจายความสำเร็จไม่เท่ากันตาม industry. Telecom สี่สิบแปดเปอร์เซ็นต์ active deployment. Retail สี่สิบเจ็ด. Financial สี่สิบสอง. Healthcare ยี่สิบแปด. Government สิบแปด. Telecom นำเพราะ workflow มาตรฐานสูง. Healthcare Government รั้งท้ายเพราะ compliance overhead.
+
+นี่คือจุดที่ narrative ปียี่สิบยี่สิบหก จะเปลี่ยน. ตลอด สิบแปดเดือน story คือ frontier model จะ AGI ภายในสองปี. Stanford ไม่ contradict แต่บอกว่าแม้ AGI มาแล้วก็ไม่ช่วยถ้า enterprise deploy ไม่เป็น.
+
+Stanford ระบุ ตลาด AI deployment infrastructure จะโต หนึ่งร้อยสี่สิบ billion ไป สามร้อยสิบ billion สองจุดสองเท่า ภายในปี ยี่สิบยี่สิบแปด. เร็วกว่า frontier model market หนึ่งจุดหกเท่า ในช่วงเดียวกัน.
+
+จุดเปราะคือถ้า agent ดีพอจริง อาจไม่ต้องการ infrastructure ซับซ้อน. นึกถึง Tesla FSD ที่ทำ end to end neural network โดยไม่ต้องอะไรซับซ้อน. ถ้า frontier agent เป็นแบบเดียวกัน Orkes Temporal อาจกลายเป็น legacy infrastructure ภายในห้าปี. แต่ Stanford ระบุว่า อย่างน้อย ยี่สิบยี่สิบหก ถึง ยี่สิบยี่สิบแปด ตลาดจะยังต้องการ deterministic execution layer เพราะ regulation audit governance.
+
+สำหรับ OpenBridge ข้อความตรงสำหรับ pitch deck. หยุดพูดเรื่อง LLM model ใน slide แรก. เริ่มด้วย แปดสิบเก้าเปอร์เซ็นต์ ของ enterprise AI agent ไม่ถึง production. OpenBridge แก้จุดนี้.
+
+Action สิบสี่วัน หนึ่ง Re frame website สเลส deck. ตัด We help you build AI agents เปลี่ยนเป็น We help you deploy AI agents that survive production. ใช้เลข Stanford แปดสิบเก้า บวก ROI หนึ่งร้อยเจ็ดสิบเอ็ดเป็น hook. สอง build deployment scorecard checklist สิบสองจุด. interactive tool บน website ภายในสามสิบวันเพื่อ inbound lead. สาม lock สองสาม Thai enterprise case study ที่มี deployment success metric ชัดเจน.
+
+Strategic signal. Thailand จะ lag US สิบสองถึง สิบแปดเดือน ใน operational tier awareness. ตอนนี้ Thai CIO ส่วนใหญ่ยังโฟกัสใช้ LLM ตัวไหน. ภายในกลางปี ยี่สิบยี่สิบเจ็ด จะถามคำถาม Stanford ยี่สิบยี่สิบหก เดียวกัน deploy ผ่านกี่เปอร์เซ็นต์. OpenBridge มี window สิบสองเดือน ที่จะ educate ตลาดและ position ตัวเองเป็น deployment specialist ก่อน Accenture PwC Deloitte นำ message นี้เข้า.
+
+Pricing implication. ถ้า OpenBridge บอกตัวเองว่า เราเปลี่ยน แปดสิบเก้าเปอร์เซ็นต์ ให้เป็น สิบเอ็ดเปอร์เซ็นต์ deployment failure rate. premium pricing ปกติ. ลูกค้าที่จ่ายสามแสนถึงแปดแสนดอลล่าร์ต่อ project รอสิบสองเดือนแล้ว fail ยอมจ่ายห้าแสนสำหรับ vendor ที่ guarantee deploy ในหกสิบวัน. success based pricing ห้าสิบ ห้าสิบ split ครึ่งหนึ่ง upfront ครึ่งหนึ่งหลัง KPI ผ่าน. pricing model ที่ Accenture ขายมาตลอด. OpenBridge ใช้ได้ที่ price point ต่ำกว่า หกสิบ เจ็ดสิบเปอร์เซ็นต์
+
+ทั้งหมดนี้คือ brief ของรอบนี้ ขอให้วันนี้เป็นวันที่ดีครับ แล้วเจอกันรอบหน้า
