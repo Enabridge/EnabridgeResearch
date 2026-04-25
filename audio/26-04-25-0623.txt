@@ -1,0 +1,96 @@
+สวัสดีครับ นี่คือ Enabridge AI Brief รอบ 25 April 2026 เวลา 06:23
+รอบนี้มี 4 เรื่อง เน้น Agentic AI, business use case, และ trend ที่เอามาใช้กับ OpenBridge ได้
+
+เรื่องที่ 1
+วันศุกร์ยี่สิบสี่เมษา. Alphabet ประกาศลงทุน Anthropic สูงสุดสี่หมื่นล้านเหรียญ. แบ่งเป็น หนึ่งหมื่นล้าน cash ทันทีที่ valuation สามแสนห้าหมื่นล้านเหรียญ. อีกสามหมื่นล้านขึ้นกับ performance milestone. Google Cloud ผูกห้า gigawatts TPU capacity ส่งในห้าปี.
+
+ดีลนี้ตามหลัง Amazon ลงสองหมื่นห้าพันล้านเมื่อต้นเดือน. Anthropic กลายเป็น AI lab รายแรกที่มี hyperscaler backing สองรายเต็มตัวพร้อมกัน. secondary market ตีมูลค่าไปแล้วหนึ่งล้านล้าน.
+
+แต่ตัวเลขที่ทำให้ดีลนี้น่าสนใจคือ revenue. Anthropic annualized run rate สามหมื่นล้านในเมษา. ขึ้นจากเก้าพันล้านสิ้นปีที่แล้ว. และจากหนึ่งพันล้านมกราคม สองศูนย์สองห้า. สามสิบเท่าในสิบหกเดือน. Claude Code คนเดียวคิดเป็นสองพันห้าร้อยล้าน.
+
+ตัวเลขที่หนักที่สุดสำหรับ Google. Anthropic ถือสี่สิบเปอร์เซ็นต์ของ enterprise LLM spend. ขึ้นจากยี่สิบสี่เปอร์เซ็นต์ปีก่อน. OpenAI ตกเหลือยี่สิบเจ็ด. Gemini ไม่อยู่ใน top of mind enterprise. เจ็ดสิบเปอร์เซ็นต์ของลูกค้าใหม่เลือก Anthropic head to head กับ OpenAI. Google ลงทุนในตลาดที่ตัวเองแพ้.
+
+Sundar Pichai เขียน internal memo. Google's ability to win in AI is no longer constrained by model quality alone. It's constrained by ensuring the world's most valuable AI workloads run on our compute. Google ตั้ง strike team ให้ DeepMind ตาม Claude ใน coding ทัน.
+
+Pattern ใหญ่ที่สุด. เกม model layer ไม่ใช่ winner take all. เป็น arms dealer economics. Google ไม่ต้องชนะ Anthropic. แค่ทำให้ workload วิ่งบน TPU. เก็บ margin จากทั้ง Gemini direct sell และ Claude inference. Cisco play ของยุค AI.
+
+ผลกระทบ OpenAI. valuation gap แคบลง. Anthropic สามแสนห้าหมื่น primary หนึ่งล้านล้าน secondary. OpenAI ห้าแสน last round. ARR เริ่มใกล้กัน. ถ้า Anthropic ปิด round ใหม่ที่ห้าแสนล้านบวก OpenAI เสีย narrative ผู้นำ AI เป็นครั้งแรกตั้งแต่ ChatGPT.
+
+สำหรับ OpenBridge. สามสิ่ง. หนึ่ง เปิด Claude first enterprise tier default Sonnet Opus charge premium ยี่สิบสามสิบเปอร์เซ็นต์ ลูกค้า trust signal สูงขึ้น. สอง track ลูกค้าที่เลือก Claude สร้าง case study. ตัวเลขสี่สิบเปอร์เซ็นต์ enterprise share resonate กับ CFO Thai SMB. สาม เริ่ม conversation Anthropic Thailand partner ภายในหกสิบวัน เป็น first mover certified Thai integrator.
+
+signal สุดท้าย. AI lab ไม่กลัวขายตัวให้ hyperscaler หลายรายอีกแล้ว. OpenBridge ขาย neutrality เป็น differentiation ได้. Pitch ใหม่ orchestration ที่ไม่ผูกขาด vendor ใช้ model ดีที่สุดต่อ task. CTO Thai กังวล vendor lock in หลังเห็น Anthropic valuation OpenBridge ตอบ pain นี้ได้ตรง
+
+เรื่องที่ 2
+วันศุกร์ยี่สิบสี่เมษา. วันเดียวกับที่ Google ประกาศลงทุน Anthropic สี่หมื่นล้าน ทีม DeepSeek จากหางโจวปล่อย V4 Preview เงียบ ๆ. ไม่มี keynote ไม่มี livestream. แค่ blog post และ Hugging Face checkpoint. ภายในหกชั่วโมง benchmark กระจายไปทั่ว AI Twitter.
+
+V4 Pro ทำ Terminal Bench สองจุดศูนย์ที่หกสิบเจ็ดจุดเก้า. สูงกว่า Claude Opus สี่จุดหก. ราคาถูกกว่า ยี่สิบเอ็ดเท่า.
+
+V4 Pro เป็น MoE หนึ่งจุดหกล้านล้าน params total. active สี่สิบเก้าพันล้านต่อ token. context หนึ่งล้านเป็น default. V4 Flash สองร้อยแปดสิบสี่พันล้าน total active สิบสามพันล้าน. ราคา input ศูนย์จุดหนึ่งสี่ output ศูนย์จุดสองแปดต่อล้าน token.
+
+V4 Pro เทียบ GPT-5.5 Pro. หนึ่งจุดเจ็ดสี่กับสามจุดสี่แปด vs สามสิบกับหนึ่งร้อยแปดสิบ. input ถูกกว่าสิบเจ็ดเท่า output ถูกกว่าห้าสิบสองเท่า. average เก้าสิบแปดเปอร์เซ็นต์ของต้นทุนหายไป.
+
+จุดที่นักพัฒนาตื่นตัว. V4 ออกพร้อม native integration กับ Claude Code OpenClaw OpenCode. swap in แทน Claude Sonnet ได้โดยไม่ต้องแก้ tool calling format. ครั้งแรกที่ open source จากจีน designed ให้ทำงานกับ Western agentic stack as first class citizen.
+
+V4 Pro เกิน Gemini บน LiveCodeBench. เกิน GPT-5.4 บน Codeforces. ตามหลัง GPT-5.5 บน Terminal Bench สิบสี่จุดแปด points. Simon Willison สรุป almost on the frontier a fraction of the price. ตามหลังสามถึงหกเดือนแต่ราคาตามหลังหนึ่งจุดห้าถึงสองปี.
+
+ที่ซ่อนอยู่. V4 optimized สำหรับชิป Huawei Ascend nine ten C. จีนตอนนี้มี independent stack ที่ไม่ต้องพึ่ง NVIDIA. trained บน Ascend served บน Ascend integrated กับ Western harness ผ่าน open source.
+
+Pattern ที่ใหญ่. cost economics ของ AI inference เพิ่งเปลี่ยนทิศ. workload ที่เคยใช้ Claude Opus หรือ GPT-5.5 ต้อง revenue per task ห้าสิบเซ็นต์ถึงสองเหรียญ. V4 ดึง threshold เหลือห้าถึงสิบเซ็นต์. addressable market ของ AI agents โตห้าถึงสิบเท่าในชั่วข้ามคืน.
+
+OpenAI Anthropic ต้องเลือกสามทาง. ลดราคารักษา volume เสีย margin. ขายมูลค่าเพิ่ม safety compliance market เล็กลง. เร่งไปขั้นถัดไปที่ V4 ตามไม่ทัน. คาดเห็นทั้งสามทางใน GPT-5.6 และ Claude Sonnet 5 ภายในหกสิบวัน.
+
+สำหรับ OpenBridge. สามสิ่งใน 30 วัน. หนึ่ง route default Thai SaaS task ที่ revenue per task ต่ำไป V4 Flash ลดต้นทุนเจ็ดสิบถึงแปดสิบห้าเปอร์เซ็นต์. สอง เปิด Cost Optimized Agent tier ราคาห้าสิบเปอร์เซ็นต์ของ Claude tier target Thai SMB ที่ติด POC. สาม deploy V4 self host บน True IDC หรือ NTT Bangkok เป็น first Thai resident frontier tier agent runtime.
+
+signal สุดท้าย. peer แบบ Aurora Mobile กำลัง integrate V4 ทันที. OpenBridge ต้อง ship V4 routing ภายในสิบสี่วัน. ใช้ Thai SaaS connector depth ที่ peer ไม่มีเป็น differentiation. campaign Thai Agents Powered by Open Source pitch sovereign AI angle ตอบ government และ SME ได้ตรง
+
+เรื่องที่ 3
+วันศุกร์ยี่สิบสี่เมษา. OpenAI เปิด Workspace Agents เข้า general availability เงียบ ๆ. ไม่มี keynote ไม่มี Sam Altman tweet ใหญ่. แต่เนื้อหาคือ end of life formal ของ Custom GPTs. ที่ Sam เคยพูดเป็น future of GPT ตอนปี 2023.
+
+Workspace Agents ต่างจาก Custom GPTs สามจุด. หนึ่ง รัน autonomously ใน cloud ไม่ต้องเปิด ChatGPT app. สอง scheduled execution รันทุกชั่วโมงทุกวัน. สาม native connector ตรงกับ Slack Google Drive Microsoft 365 Salesforce Notion Atlassian Rovo SharePoint.
+
+heart of the foundation คือ Codex. agentic harness ของ OpenAI. ให้ workspace agent มี persistent file code tool memory. agent build artifact หลาย session เก็บ state ระหว่าง run. workspace agent มี memory plus working directory เหมือน software engineer.
+
+example use case. agent บน Slack อ่าน thread channel ดึง file จาก Google Drive query Salesforce contact draft response กลับมา. ทั้งหมดใน invoke ครั้งเดียว. multi app multi step multi context.
+
+governance ครบ. admin whitelist tool. require approval สำหรับ destructive action. monitor ผ่าน Compliance API stream ไป SIEM. agent run history เก็บเก้าสิบวัน immutable audit log.
+
+pricing twist สำคัญ. ฟรีถึงหกพ.ค. สิบสองวันให้ enterprise wireup workflow โดยไม่มี cost concern. หลังจากนั้น credit based. คาดศูนย์จุดห้าถึงสองเหรียญต่อ agent run.
+
+pattern ที่หนัก. OpenAI ปฏิเสธบทบาท runtime under Google อย่างเป็นทางการ. หลัง Gemini Enterprise สองสิบสองเมษา หลายคนพูด OpenAI จะถูกบีบเป็น runtime ใต้ control plane. ดีล Google Anthropic สี่หมื่นล้านในวันเดียวกันตอกย้ำ. Workspace Agents คือ counter positioning.
+
+OpenAI ขายตรง knowledge worker คนเดียว. ผ่าน ChatGPT Plus Team Business ที่ยี่สิบเหรียญ user ต่อเดือน. แปดร้อยล้าน user ห้าล้าน paid Business seat. distribution ที่ Google Cloud ใช้ห้าปียังไม่ได้.
+
+จุดที่ OpenAI ยังเสียเปรียบ. ไม่มี data lake. ไม่มี API gateway สามหมื่น enterprise. ไม่มี A2A protocol cross vendor. OpenAI bet distribution มากกว่า infrastructure. Bret Taylor ที่เคยเป็น Salesforce co CEO น่าจะ design playbook นี้.
+
+สำหรับ OpenBridge. overlap อันตราย. pitch ใกล้กันมาก. ต่างที่ Thai SaaS connector ChatGPT ไม่มี. multi model routing. on prem deployment.
+
+สิ่งที่ต้องทำสามข้อใน 14 วัน. หนึ่ง เปรียบเทียบ feature matrix OpenBridge vs Workspace Agents honest sales tool. สอง เปิด API connector Slack Notion Atlassian ภายใน 30 วันไม่งั้นเสีย parity. สาม build Workspace Agents Migration path ลูกค้าที่ทดลองตอนนี้ port กลับ OpenBridge.
+
+opportunity ใหญ่ที่สุด. credit based pricing OpenAI หกพ.ค. ลูกค้าเจอ bill จริงจะมอง alternative. OpenBridge ใช้ DeepSeek V4 backend offer same workflow แปดสิบเก้าสิบเปอร์เซ็นต์ถูกกว่า. landing page Agents like ChatGPT but five to ten times cheaper for Thai workflow launch หนึ่งพ.ค.
+
+เรื่องที่ 4
+วันศุกร์ยี่สิบสี่เมษา. ในขณะที่ AI Twitter ตะวันตกประมวลตัวเลข DeepSeek V4. Aurora Mobile ปล่อย press release เก้าโมงเช้าอเมริกาตะวันออก. GPTBots.ai integration เสร็จและพร้อม production แล้ว.
+
+ไม่ใช่ preview ไม่ใช่ coming soon. ภายในไม่กี่ชั่วโมงหลัง DeepSeek เปิด weights GPTBots มี V4 รันผ่าน workflow ลูกค้า enterprise. ความเร็วที่ Box AI Bedrock Agents Workato ใช้เวลาเป็นสัปดาห์ถึงเดือน.
+
+GPTBots คือ subsidiary ของ Aurora Mobile บริษัทจีน NASDAQ JG. รายได้ปีที่แล้วสี่ร้อยล้านบวก. enterprise AI agent platform ขายตลาดเอเชีย. pricing tier ที่ enterprise SE Asia จีน ตะวันออกกลาง buy ได้.
+
+structure integration. V4 default สำหรับ context สองแสน token ขึ้น. V4 Flash default สำหรับ task volume สูง chat classification extraction. V4 Pro default สำหรับ task complex legal financial multi step. ห้าสิบบวก native connector รวม Salesforce HubSpot SAP Oracle Fusion Workday และ Asian system DingTalk WeCom Lark.
+
+จุดที่ pitch หนัก deployment flexibility. ขายสามแบบ. cloud private cloud on premise. on premise plus DeepSeek V4 open source plus Huawei Ascend equal frontier tier AI agent platform ที่ data ไม่ออกจากองค์กร. banking government defense เอเชียซื้อทันทีไม่ต้องเซ็น DPA สามรอบ.
+
+example. insurance claim agent อ่าน policy แปดร้อยหน้า claim form email thread หกเดือน medical record สรุป recommend approval สามนาที. จากเดิมสองสามวัน manual.
+
+pattern ที่ใหญ่. Asian agent platform กำลัง weaponize open source frontier model เร็วกว่า Western platform. GPTBots ship V4 ใน 24 ชม. cycle release Western ปกติ 4 ถึง 8 สัปดาห์. Aurora ลีดด้วย velocity advantage ไม่ใช่ technical แต่เป็น product process.
+
+ที่ลึกกว่า. AI ตอนนี้ bifurcate เป็นสอง bloc. US led NVIDIA Western lab AWS GCP Azure. China led Ascend DeepSeek Qwen Tencent Alibaba Huawei. country ใน middle Thailand Vietnam Indonesia UAE Saudi ต้องเลือกข้างหรือ build neutral orchestration layer.
+
+GPTBots คือ OpenBridge Asian competitor ตรงสาย. pitch เดียวกัน target customer เดียวกัน pattern เดียวกัน. ต่างที่ Aurora มี parent revenue สี่ร้อยล้านบวก NASDAQ listed connectors หนักจีน ไต้หวัน ตะวันออกกลาง.
+
+OpenBridge ยังถือ Thai SaaS depth Thai language nuance SET listing relationship. แต่ window ปิดเร็วถ้า Aurora ตั้งสำนักงานไทย. มีออฟฟิศจาการ์ตา กัวลาลัมเปอร์ตั้งแต่ 2024.
+
+สามสิ่งที่ต้องทำใน 30 วัน. หนึ่ง ship DeepSeek V4 routing ภายใน 14 วันก่อน Aurora เปิด Bangkok office. สอง build Thai Banking Compliance template ที่ Aurora ทำไม่ได้ ก.ล.ต. ธปท. DPA LGAct audit trail ภาษาไทย. สาม conversation กับ SET listed companies pitch Thai incorporated Thai deployed Thai compliant.
+
+signal สุดท้าย. velocity benchmark ใหม่. ทุก major model release ต้อง integrate ไม่กี่ชั่วโมงไม่ใช่ไม่กี่สัปดาห์. ตั้ง Model Release Response Team สอง สามคนใน OpenBridge swap in model ใหม่ภายใน 24 ชม.หลัง release. เป็น marketing differentiator ใน Thai dev community ที่ติดตาม model ใหม่ทันที
+
+ทั้งหมดนี้คือ brief ของรอบนี้ ขอให้วันนี้เป็นวันที่ดีครับ แล้วเจอกันรอบหน้า

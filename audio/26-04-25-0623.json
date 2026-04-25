@@ -1,0 +1,32 @@
+{
+  "date": "26-04-25-0623",
+  "iso_date": "2026-04-25T06:23:00+07:00",
+  "title": "Daily AI Brief — 26-04-25 06:23",
+  "items": [
+    {
+      "file": "26-04-25-0623-01-google-anthropic-40b-claude-enterprise-takeover.md",
+      "title": "Google ทุ่ม $40B ลง Anthropic ที่ valuation $350B — และเหตุผลที่ขม: Claude แซง Gemini ใน enterprise ที่ Google ต้องการที่สุด",
+      "order": 1
+    },
+    {
+      "file": "26-04-25-0623-02-deepseek-v4-1m-context-98-percent-cheaper.md",
+      "title": "DeepSeek V4 ทำลายราคา agentic AI — Pro version ถูกกว่า GPT-5.5 Pro 98%, ชน Claude Opus ใน Terminal-Bench, เปิด open source 1.6T MoE",
+      "order": 2
+    },
+    {
+      "file": "26-04-25-0623-03-openai-workspace-agents-codex-slack-salesforce.md",
+      "title": "OpenAI ส่ง Workspace Agents เข้า GA — Custom GPTs ตาย, Codex-powered \"always-on co-worker\" เสียบเข้า Slack/Salesforce/Notion ตรง, ฟรีถึง 6 พ.ค.",
+      "order": 3
+    },
+    {
+      "file": "26-04-25-0623-04-aurora-mobile-gptbots-deepseek-v4-asia-pattern.md",
+      "title": "Aurora Mobile (NASDAQ: JG) เสียบ DeepSeek V4 เข้า GPTBots ทันทีวันเดียวกับ launch — playbook \"Asian agent platform เก็บเกี่ยว open source ตะวันออก\" ที่ OpenBridge ต้องเรียนรู้",
+      "order": 4
+    }
+  ],
+  "script_char_count": 10772,
+  "audio_file": "26-04-25-0623.mp3",
+  "voice": "coral",
+  "model": "gpt-4o-mini-tts",
+  "speed": 1.3
+}
