@@ -5,7 +5,7 @@ topic: agentic-ai
 reading_time_min: 5
 sources: 4
 image_prompt: Editorial illustration of overlapping translucent hexagonal nodes connected by glowing data threads forming a cross-platform network mesh, abstract geometric circuit patterns radiating between nodes, muted indigo teal and warm amber palette, dramatic side lighting on a dark canvas, minimal flat shapes, no text, no logos, no faces
-image:
+image: images/26-04-27-0617-01-a2a-protocol-150-orgs-linux-foundation.png
 ---
 
 # A2A Protocol แตะ 150 องค์กร — Google ส่งมอบให้ Linux Foundation, AWS/Microsoft/SAP/Salesforce/ServiceNow ทำ production: agent interop กลายเป็น "TCP/IP layer" ของยุค agentic ในไม่ถึง 12 เดือน

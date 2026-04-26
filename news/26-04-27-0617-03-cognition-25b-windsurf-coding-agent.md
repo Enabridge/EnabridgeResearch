@@ -5,7 +5,7 @@ topic: agentic-ai
 reading_time_min: 4
 sources: 4
 image_prompt: Editorial illustration of an abstract glowing keyboard rising into a swirl of code fragments that coalesce into a single luminous agent silhouette walking forward, minimal flat geometric shapes, muted cobalt and gold palette, dramatic side lighting on dark navy backdrop, no text, no logos, no faces
-image:
+image: images/26-04-27-0617-03-cognition-25b-windsurf-coding-agent.png
 ---
 
 # Cognition AI คุยรอบใหม่ที่ valuation $25B — โต 2.5x จาก $10.2B ใน 7 เดือน, post-Windsurf $82M ARR + 350 enterprise: AI coding agent กลายเป็น category killer ที่ VC ยอมเทียบกับ Cursor/SpaceX deal

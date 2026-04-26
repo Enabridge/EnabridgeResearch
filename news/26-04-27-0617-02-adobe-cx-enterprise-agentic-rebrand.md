@@ -5,7 +5,7 @@ topic: openbridge-trend
 reading_time_min: 4
 sources: 4
 image_prompt: Editorial illustration of a customer journey funnel transformed into a translucent crystalline orchestration plane with multiple flowing data ribbons converging into a single conductor figure made of light, abstract minimalist shapes, muted coral magenta and deep navy palette, soft volumetric lighting, no text, no logos, no faces
-image:
+image: images/26-04-27-0617-02-adobe-cx-enterprise-agentic-rebrand.png
 ---
 
 # Adobe ทุบ Experience Cloud ทิ้ง — รีแบรนด์เป็น "CX Enterprise" agentic-first พร้อม MCP endpoints, 1,770+ ลูกค้า entitled, partner ครบทั้ง 7 hyperscaler/frontier lab: customer experience layer กลายเป็นสนามรบ orchestration ใหม่

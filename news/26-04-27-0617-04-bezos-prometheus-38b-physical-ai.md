@@ -5,7 +5,7 @@ topic: use-case
 reading_time_min: 4
 sources: 4
 image_prompt: Editorial illustration of a luminous gear and turbine assembly half-formed of glowing data lattice and half of solid metallic sculpture, surrounded by abstract physics equations rendered as flowing ribbons, muted bronze copper and slate blue palette, dramatic chiaroscuro lighting on dark steel background, minimal flat geometric shapes, no text, no logos, no faces
-image:
+image: images/26-04-27-0617-04-bezos-prometheus-38b-physical-ai.png
 ---
 
 # Bezos ปิดรอบ Project Prometheus $10B ที่ valuation $38B — BlackRock + JPMorgan ลงเป็น lead-less round, เป้าใหญ่ $100B holdco ซื้อโรงงานจริง: "Physical AI" กลายเป็น category ใหม่แยกจาก software AI

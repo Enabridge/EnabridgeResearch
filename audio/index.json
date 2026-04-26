@@ -1,7 +1,41 @@
 {
-  "generated_at": "2026-04-26T12:42:28Z",
-  "count": 11,
+  "generated_at": "2026-04-26T23:32:27Z",
+  "count": 12,
   "episodes": [
+    {
+      "date": "26-04-27-0617",
+      "iso_date": "2026-04-27T06:17:00+07:00",
+      "title": "Daily AI Brief — 26-04-27 06:17",
+      "description": "1. A2A Protocol แตะ 150 องค์กร — Google ส่งมอบให้ Linux Foundation, AWS/Microsoft/SAP/Salesforce/ServiceNow ทำ production: agent interop กลายเป็น \"TCP/IP layer\" ของยุค agentic ในไม่ถึง 12 เดือน\n2. Adobe ทุบ Experience Cloud ทิ้ง — รีแบรนด์เป็น \"CX Enterprise\" agentic-first พร้อม MCP endpoints, 1,770+ ลูกค้า entitled, partner ครบทั้ง 7 hyperscaler/frontier lab: customer experience layer กลายเป็นสนามรบ orchestration ใหม่\n3. Cognition AI คุยรอบใหม่ที่ valuation $25B — โต 2.5x จาก $10.2B ใน 7 เดือน, post-Windsurf $82M ARR + 350 enterprise: AI coding agent กลายเป็น category killer ที่ VC ยอมเทียบกับ Cursor/SpaceX deal\n4. Bezos ปิดรอบ Project Prometheus $10B ที่ valuation $38B — BlackRock + JPMorgan ลงเป็น lead-less round, เป้าใหญ่ $100B holdco ซื้อโรงงานจริง: \"Physical AI\" กลายเป็น category ใหม่แยกจาก software AI",
+      "items": [
+        {
+          "file": "26-04-27-0617-01-a2a-protocol-150-orgs-linux-foundation.md",
+          "title": "A2A Protocol แตะ 150 องค์กร — Google ส่งมอบให้ Linux Foundation, AWS/Microsoft/SAP/Salesforce/ServiceNow ทำ production: agent interop กลายเป็น \"TCP/IP layer\" ของยุค agentic ในไม่ถึง 12 เดือน",
+          "order": 1
+        },
+        {
+          "file": "26-04-27-0617-02-adobe-cx-enterprise-agentic-rebrand.md",
+          "title": "Adobe ทุบ Experience Cloud ทิ้ง — รีแบรนด์เป็น \"CX Enterprise\" agentic-first พร้อม MCP endpoints, 1,770+ ลูกค้า entitled, partner ครบทั้ง 7 hyperscaler/frontier lab: customer experience layer กลายเป็นสนามรบ orchestration ใหม่",
+          "order": 2
+        },
+        {
+          "file": "26-04-27-0617-03-cognition-25b-windsurf-coding-agent.md",
+          "title": "Cognition AI คุยรอบใหม่ที่ valuation $25B — โต 2.5x จาก $10.2B ใน 7 เดือน, post-Windsurf $82M ARR + 350 enterprise: AI coding agent กลายเป็น category killer ที่ VC ยอมเทียบกับ Cursor/SpaceX deal",
+          "order": 3
+        },
+        {
+          "file": "26-04-27-0617-04-bezos-prometheus-38b-physical-ai.md",
+          "title": "Bezos ปิดรอบ Project Prometheus $10B ที่ valuation $38B — BlackRock + JPMorgan ลงเป็น lead-less round, เป้าใหญ่ $100B holdco ซื้อโรงงานจริง: \"Physical AI\" กลายเป็น category ใหม่แยกจาก software AI",
+          "order": 4
+        }
+      ],
+      "audio_file": "26-04-27-0617.mp3",
+      "audio_size_bytes": 6972672,
+      "voice": "coral",
+      "model": "gpt-4o-mini-tts",
+      "speed": 1.3,
+      "script_char_count": 6042
+    },
     {
       "date": "26-04-26-0622",
       "iso_date": "2026-04-26T06:22:00+07:00",
