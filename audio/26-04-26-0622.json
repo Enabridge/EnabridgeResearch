@@ -1,0 +1,32 @@
+{
+  "date": "26-04-26-0622",
+  "iso_date": "2026-04-26T06:22:00+07:00",
+  "title": "Daily AI Brief — 26-04-26 06:22",
+  "items": [
+    {
+      "file": "26-04-26-0622-01-google-40b-anthropic-tpu-compute.md",
+      "title": "Google ทุ่ม $40B เข้า Anthropic — $10B เงินสดทันที + $30B ผูก performance, 5GW TPU 5 ปี: สัปดาห์เดียว Anthropic ล็อก $65B / 10GW จาก 2 hyperscaler",
+      "order": 1
+    },
+    {
+      "file": "26-04-26-0622-02-swiggy-builders-club-mcp-india-commerce.md",
+      "title": "Swiggy เปิด \"Builders Club\" — 3 MCP servers + 18+ API tools ข้าม Food/Instamart/Dineout บน AWS Bedrock + AgentCore: India SuperApp commit เป็น \"agent-callable backbone\"",
+      "order": 2
+    },
+    {
+      "file": "26-04-26-0622-03-orkes-60m-durable-workflow-orchestration.md",
+      "title": "Orkes ระดม $60M Series B นำโดย AVP — \"durable workflow orchestration\" ที่ลูกค้าเป็น LinkedIn, Twilio, Quest Diagnostics, UWM: AI in production = reliability problem ไม่ใช่ model problem",
+      "order": 3
+    },
+    {
+      "file": "26-04-26-0622-04-stanford-ai-index-89-fail-production.md",
+      "title": "Stanford AI Index 2026: agent ทำ OSWorld ได้ 66% ใกล้ human — แต่ **89% ของ enterprise agent ไม่เคยถึง production**, $150K–$800K สูญต่อ implementation: เกม \"ROI agent\" คือเกม operational ไม่ใช่เกม model",
+      "order": 4
+    }
+  ],
+  "script_char_count": 14217,
+  "audio_file": "26-04-26-0622.mp3",
+  "voice": "coral",
+  "model": "gpt-4o-mini-tts",
+  "speed": 1.3
+}
