@@ -5,7 +5,7 @@ topic: agentic-ai
 reading_time_min: 4
 sources: 4
 image_prompt: Editorial illustration of a stylized DNA helix being assembled by autonomous robotic arms in a clean laboratory environment, warm purple and emerald palette, minimal flat shapes, soft volumetric lighting, sense of careful precision, no text, no logos, no faces
-image:
+image: images/26-04-28-0606-04-anthropic-operon-vertical-agent-strategy.png
 ---
 
 # Anthropic Operon — vertical agent ตัวแรก signals การ split ของตลาดที่ลึกกว่าที่ใครคิด

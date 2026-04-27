@@ -5,7 +5,7 @@ topic: use-case
 reading_time_min: 4
 sources: 4
 image_prompt: Editorial illustration of a vast modern corporate headquarters with rows of identical workstations, each glowing softly as if synchronized to one rhythm, a translucent dashboard hovering above showing tier indicators, muted navy and gold palette, minimal flat shapes, dramatic top-down perspective, no text, no logos, no faces
-image:
+image: images/26-04-28-0606-02-jpmorgan-ai-mandate-65k-engineers.png
 ---
 
 # JPMorgan ผูก performance review เข้ากับการใช้ AI tool — 65,000 engineers ถูก track ทุกคน

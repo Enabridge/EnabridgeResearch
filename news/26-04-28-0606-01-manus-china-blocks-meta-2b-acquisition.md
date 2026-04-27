@@ -5,7 +5,7 @@ topic: agentic-ai
 reading_time_min: 4
 sources: 4
 image_prompt: Editorial illustration of a glowing digital butterfly being pulled apart by two opposing magnetic fields representing two superpowers, fragmented circuit-board wings, muted teal and crimson palette, dramatic lighting against a fractured globe backdrop, minimal flat shapes, no text or logos, no faces
-image:
+image: images/26-04-28-0606-01-manus-china-blocks-meta-2b-acquisition.png
 ---
 
 # China kills Meta's $2B Manus deal — agentic AI กลายเป็น geopolitical asset เต็มตัว

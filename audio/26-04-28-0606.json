@@ -1,0 +1,32 @@
+{
+  "date": "26-04-28-0606",
+  "iso_date": "2026-04-28T06:06:00+07:00",
+  "title": "Daily AI Brief — 26-04-28 06:06",
+  "items": [
+    {
+      "file": "26-04-28-0606-01-manus-china-blocks-meta-2b-acquisition.md",
+      "title": "China kills Meta's $2B Manus deal — agentic AI กลายเป็น geopolitical asset เต็มตัว",
+      "order": 1
+    },
+    {
+      "file": "26-04-28-0606-02-jpmorgan-ai-mandate-65k-engineers.md",
+      "title": "JPMorgan ผูก performance review เข้ากับการใช้ AI tool — 65,000 engineers ถูก track ทุกคน",
+      "order": 2
+    },
+    {
+      "file": "26-04-28-0606-03-asapp-cxp-five-agent-customer-service.md",
+      "title": "ASAPP CXP เปิดตัว 5 agent specialized — เทรนด์ \"vendor-as-orchestrator\" มาถึงแล้ว",
+      "order": 3
+    },
+    {
+      "file": "26-04-28-0606-04-anthropic-operon-vertical-agent-strategy.md",
+      "title": "Anthropic Operon — vertical agent ตัวแรก signals การ split ของตลาดที่ลึกกว่าที่ใครคิด",
+      "order": 4
+    }
+  ],
+  "script_char_count": 4936,
+  "audio_file": "26-04-28-0606.mp3",
+  "voice": "coral",
+  "model": "gpt-4o-mini-tts",
+  "speed": 1.3
+}

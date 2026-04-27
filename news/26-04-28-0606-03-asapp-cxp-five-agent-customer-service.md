@@ -5,7 +5,7 @@ topic: openbridge-trend
 reading_time_min: 4
 sources: 3
 image_prompt: Editorial illustration of five interconnected gears each shaped like a different glowing orb representing autonomous AI workers, all rotating around a central control console radiating soft blue waves, muted teal and warm orange palette, minimal flat shapes, dramatic side lighting, no text, no logos, no faces
-image:
+image: images/26-04-28-0606-03-asapp-cxp-five-agent-customer-service.png
 ---
 
 # ASAPP CXP เปิดตัว 5 agent specialized — เทรนด์ "vendor-as-orchestrator" มาถึงแล้ว
