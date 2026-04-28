@@ -5,7 +5,7 @@ topic: openbridge-trend
 reading_time_min: 4
 sources: 4
 image_prompt: Editorial illustration of two intertwined chains slowly breaking apart over a stylized cloud landscape, gold light bleeding through the gap, minimal flat geometric shapes, muted teal and warm amber palette, dramatic side lighting, no text or logos
-image:
+image: images/26-04-29-0612-01-microsoft-openai-cloud-exclusivity-end.png
 ---
 
 # Microsoft–OpenAI หย่ากันแบบสุภาพ — exclusivity จบ, revenue share โดน cap, AGI clause หาย

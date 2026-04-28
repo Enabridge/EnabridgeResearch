@@ -5,7 +5,7 @@ topic: agentic-ai
 reading_time_min: 4
 sources: 4
 image_prompt: Editorial illustration of two abstract glowing orbs trading translucent geometric tokens across an empty marketplace stall, one orb noticeably brighter than the other, minimal flat shapes, muted indigo and warm coral palette, dramatic rim lighting, no text or logos or faces
-image:
+image: images/26-04-29-0612-03-anthropic-project-deal-agent-marketplace.png
 ---
 
 # Anthropic Project Deal — Claude agents 69 ตัวปิดดีล 186 รอบใน internal marketplace, ค้น "model gap" ที่คนตัวเล็กไม่รู้ว่าตัวเองเสียเปรียบ

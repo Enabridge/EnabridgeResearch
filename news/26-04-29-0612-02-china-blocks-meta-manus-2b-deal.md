@@ -5,7 +5,7 @@ topic: openbridge-trend
 reading_time_min: 4
 sources: 4
 image_prompt: Editorial illustration of a half-finished bridge over a wide chasm, with stones being pulled back from one side, abstract globe shape divided by a fault line in the background, minimal flat geometric shapes, muted slate gray and crimson palette, dramatic overhead lighting, no text or logos or faces
-image:
+image: images/26-04-29-0612-02-china-blocks-meta-manus-2b-deal.png
 ---
 
 # จีนสั่ง unwind ดีล Meta ซื้อ Manus 2 พันล้าน — เส้นแบ่ง AI ระหว่าง US-China ขีดชัดขึ้นในรอบ 24 ชม.

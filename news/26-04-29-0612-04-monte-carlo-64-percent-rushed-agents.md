@@ -5,7 +5,7 @@ topic: use-case
 reading_time_min: 3
 sources: 3
 image_prompt: Editorial illustration of a half-built tower of stacked geometric blocks tilting precariously, with smaller hands trying to support it from below, minimal flat shapes, muted ochre and steel blue palette, dramatic cross lighting, no text or logos or faces
-image:
+image: images/26-04-29-0612-04-monte-carlo-64-percent-rushed-agents.png
 ---
 
 # 64% ของ enterprise ส่ง agent ออก production ก่อนพร้อม — engineer 75% บอก "executive ปิด deadline เกินกำลัง"
