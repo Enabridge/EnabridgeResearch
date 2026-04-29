@@ -1,0 +1,32 @@
+{
+  "date": "26-04-30-0602",
+  "iso_date": "2026-04-30T06:02:00+07:00",
+  "title": "Daily AI Brief — 26-04-30 06:02",
+  "items": [
+    {
+      "file": "26-04-30-0602-01-google-pentagon-anthropic-defense-split.md",
+      "title": "Google รับงาน Pentagon ต่อจาก Anthropic ที่ปฏิเสธ — ค่ายโมเดลเริ่มแข่งกันบน \"ค่านิยม\" ไม่ใช่แค่ benchmark",
+      "order": 1
+    },
+    {
+      "file": "26-04-30-0602-02-appian-mcp-snowflake-bpm-orchestration.md",
+      "title": "Appian World 2026 — BPM ยักษ์ enterprise adopt MCP เต็มสตรีม + จับ Snowflake เป็น orchestration layer: workflow stack ของ Fortune 500 มี protocol กลางแล้ว",
+      "order": 2
+    },
+    {
+      "file": "26-04-30-0602-03-avoca-1b-vertical-voice-agent-services.md",
+      "title": "Avoca แตะ unicorn ที่ $1B — vertical voice agent สำหรับช่างประปา/HVAC โบ๊ค $1B งานทั้งปี: agent SMB ทำ enterprise revenue ได้แล้ว",
+      "order": 3
+    },
+    {
+      "file": "26-04-30-0602-04-sereact-110m-cortex-world-model-robotics.md",
+      "title": "Sereact ระดม $110M Series B — Cortex 2.0 ใส่ \"world model\" ลง VLA แล้วกระโดดเข้าสหรัฐ: physical AI ผ่านจุด human-takeover 1 ใน 53,000 pick",
+      "order": 4
+    }
+  ],
+  "script_char_count": 6948,
+  "audio_file": "26-04-30-0602.mp3",
+  "voice": "coral",
+  "model": "gpt-4o-mini-tts",
+  "speed": 1.3
+}

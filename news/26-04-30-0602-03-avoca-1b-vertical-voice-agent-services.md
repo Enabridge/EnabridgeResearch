@@ -5,7 +5,7 @@ topic: use-case
 reading_time_min: 4
 sources: 3
 image_prompt: Editorial illustration of a glowing rotary telephone receiver transforming into flowing sound waves that connect to a small workshop building under a rising sun, minimal flat geometric shapes, muted coral and forest green palette, warm golden hour lighting, no text no logos no faces
-image:
+image: images/26-04-30-0602-03-avoca-1b-vertical-voice-agent-services.png
 ---
 
 # Avoca แตะ unicorn ที่ $1B — vertical voice agent สำหรับช่างประปา/HVAC โบ๊ค $1B งานทั้งปี: agent SMB ทำ enterprise revenue ได้แล้ว

@@ -5,7 +5,7 @@ topic: agentic-ai
 reading_time_min: 4
 sources: 3
 image_prompt: Editorial illustration of a translucent layered cube hovering above a flowing stream of data, arrows from the cube branching into multiple smaller pipelines that connect to abstract enterprise buildings, minimal flat geometric shapes, muted teal and amber palette, clean isometric perspective, no text no logos no faces
-image:
+image: images/26-04-30-0602-02-appian-mcp-snowflake-bpm-orchestration.png
 ---
 
 # Appian World 2026 — BPM ยักษ์ enterprise adopt MCP เต็มสตรีม + จับ Snowflake เป็น orchestration layer: workflow stack ของ Fortune 500 มี protocol กลางแล้ว

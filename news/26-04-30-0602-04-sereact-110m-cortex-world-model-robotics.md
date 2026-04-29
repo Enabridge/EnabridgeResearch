@@ -5,7 +5,7 @@ topic: agentic-ai
 reading_time_min: 4
 sources: 3
 image_prompt: Editorial illustration of a translucent robotic arm reaching toward a swirling sphere of light that contains miniature 3D physics simulations, set against an industrial warehouse backdrop with conveyor belts, minimal flat geometric shapes, muted slate gray and electric cyan palette, dramatic side-lighting, no text no logos no faces
-image:
+image: images/26-04-30-0602-04-sereact-110m-cortex-world-model-robotics.png
 ---
 
 # Sereact ระดม $110M Series B — Cortex 2.0 ใส่ "world model" ลง VLA แล้วกระโดดเข้าสหรัฐ: physical AI ผ่านจุด human-takeover 1 ใน 53,000 pick

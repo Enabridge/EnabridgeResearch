@@ -5,7 +5,7 @@ topic: openbridge-trend
 reading_time_min: 4
 sources: 4
 image_prompt: Editorial illustration of two diverging paths splitting at a fork beneath a glowing data center, one path leading toward an armored fortress under stormy clouds, the other toward an open marble courthouse under clear sky, minimal geometric shapes, muted navy and crimson palette, dramatic chiaroscuro lighting, no text no logos no faces
-image:
+image: images/26-04-30-0602-01-google-pentagon-anthropic-defense-split.png
 ---
 
 # Google รับงาน Pentagon ต่อจาก Anthropic ที่ปฏิเสธ — ค่ายโมเดลเริ่มแข่งกันบน "ค่านิยม" ไม่ใช่แค่ benchmark
