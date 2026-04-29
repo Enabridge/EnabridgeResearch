@@ -1,0 +1,32 @@
+{
+  "date": "26-04-29-0612",
+  "iso_date": "2026-04-29T06:12:00+07:00",
+  "title": "Daily AI Brief — 26-04-29 06:12",
+  "items": [
+    {
+      "file": "26-04-29-0612-01-microsoft-openai-cloud-exclusivity-end.md",
+      "title": "Microsoft–OpenAI หย่ากันแบบสุภาพ — exclusivity จบ, revenue share โดน cap, AGI clause หาย",
+      "order": 1
+    },
+    {
+      "file": "26-04-29-0612-02-china-blocks-meta-manus-2b-deal.md",
+      "title": "จีนสั่ง unwind ดีล Meta ซื้อ Manus 2 พันล้าน — เส้นแบ่ง AI ระหว่าง US-China ขีดชัดขึ้นในรอบ 24 ชม.",
+      "order": 2
+    },
+    {
+      "file": "26-04-29-0612-03-anthropic-project-deal-agent-marketplace.md",
+      "title": "Anthropic Project Deal — Claude agents 69 ตัวปิดดีล 186 รอบใน internal marketplace, ค้น \"model gap\" ที่คนตัวเล็กไม่รู้ว่าตัวเองเสียเปรียบ",
+      "order": 3
+    },
+    {
+      "file": "26-04-29-0612-04-monte-carlo-64-percent-rushed-agents.md",
+      "title": "64% ของ enterprise ส่ง agent ออก production ก่อนพร้อม — engineer 75% บอก \"executive ปิด deadline เกินกำลัง\"",
+      "order": 4
+    }
+  ],
+  "script_char_count": 4141,
+  "audio_file": "26-04-29-0612.mp3",
+  "voice": "coral",
+  "model": "gpt-4o-mini-tts",
+  "speed": 1.3
+}
