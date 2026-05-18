@@ -1,0 +1,50 @@
+สวัสดีครับ นี่คือ Enabridge AI Brief รอบ 19 May 2026 เวลา 06:07 ครับ.
+รอบนี้มี 4 เรื่อง เน้น Agentic AI, business use case, และ trend ที่เอามาใช้กับ OpenBridge ได้.
+
+เรื่องแรก.
+สวัสดีครับโย้ มาเล่าเรื่อง Anthropic ที่เพิ่งประกาศซื้อ Stainless บริษัท 4 ปีที่อยู่ใต้ระบบ AI ทั้งโลก ราคารายงาน 300 ล้านดอลลาร์ขึ้นไป พรีเมียม 2 เท่าจาก valuation Series A เมื่อปลายปี 2024
+
+Stainless ไม่ใช่ชื่อที่ทุกคนรู้ แต่เป็น AI-powered compiler ที่รับ API spec แล้ว generate SDK ข้าม TypeScript Python Go Java Kotlin พร้อม retries streaming pagination error handling ฝังในตัว ในยุค MCP มันยัง generate MCP server โดยอัตโนมัติ และที่สำคัญคือลูกค้าของ Stainless รวม OpenAI Google Meta Cloudflare Replicate Runway เกือบทุกค่าย frontier model ของโลก
+
+ที่ทำให้ดีลนี้ดราม่าคือ Anthropic บอก TechCrunch ว่าจะ wind down hosted product ทั้งหมด รวม SDK generator ที่เป็นรายได้หลัก ลูกค้าเดิมเก็บ SDK ที่ generate ไปแล้วได้ แต่ไม่มี service ใหม่ แปลตรง ๆ คือ OpenAI ที่ใช้ Stainless build SDK ของตัวเองมาตลอด ต่อจากนี้ต้อง build SDK generator ใหม่หรือไปหาเครื่องมือใหม่ที่ยังไม่มีคุณภาพเทียบเท่า นี่คือ infrastructure denial play ไม่ใช่ acqui-hire ธรรมดา
+
+ทำไมสำคัญ Anthropic เป็นผู้สร้าง MCP และเพิ่งบริจาค MCP เป็น open standard ผ่าน Agentic AI Foundation ปลายเมษายน แต่การซื้อ Stainless คือ บริจาค spec แต่ควบคุม implementation playbook เดียวกับ Google บริจาค Kubernetes ให้ CNCF แต่ขาย GKE คาดว่าหลังจากนี้ commercial MCP tooling จะรวมศูนย์ที่ Anthropic
+
+มุม OpenBridge ตรงกระทบ ลูกค้าของเราอยู่บน SDK ที่ Stainless generate เกือบทั้งระบบ ต้อง audit แล้ววางแผน replace ภายใน 12 เดือน อีก angle ที่สำคัญคือ Anthropic จะเปิด MCP server marketplace ของตัวเองใน 6 ถึง 12 เดือน OpenBridge มี window ในการ position ตัวเองเป็น MCP server publisher ของ vertical SEA integrations PromptPay KBank API BSS OSS ของ AIS True hospital HIS BOT regulatory reporting submit เข้า marketplace ก่อนคู่แข่ง regional มาทำซ้ำ ถ้าได้ certified status แต่แรกจะกลายเป็น default integration ของ Claude agent ใน SEA ครับ.
+
+เรื่องที่สอง.
+สวัสดีครับโย้ มาเล่าเรื่อง SAP ที่เพิ่ง strategic invest ใน n8n บริษัท workflow orchestrator จาก Berlin ดัน valuation จาก 2.5 พันล้านเป็น 5.2 พันล้านดอลลาร์ในเวลาไม่ถึง 9 เดือน เพิ่มเท่าตัว
+
+ที่ทำให้ดีลนี้แตกต่างจาก investment ทั่วไปคือ commercial agreement n8n จะถูก embed natively ใน Joule Studio agent-building environment ที่ SAP เปิดตัวที่ Sapphire 2026 GA ไตรมาส 3 ปีนี้ ลูกค้า SAP ระดับ Fortune 500 จะมี n8n เป็น default workflow engine เมื่อต้องต่อ agent ไปยังระบบนอก SAP universe เช่น Slack Salesforce Stripe HubSpot AWS เพราะ n8n มี 1,000 integrations pre-built
+
+ทำไมสำคัญ SAP เพิ่งประกาศ Autonomous Enterprise ที่ Sapphire เดือนต้นพฤษภาคม ยอมรับใน 6 สัปดาห์ต่อมาว่า agent ที่อยู่ใน SAP ecosystem อย่างเดียวไม่พอ ต้องคุยกับโลกข้างนอก แทน build connector เองที่ใช้เวลา 5 ปี เลือก buy-in workflow orchestrator ที่ market-tested แล้ว pattern เดียวกับ Microsoft ซื้อ GitHub แทน build code hosting เอง
+
+ราคา deal 5.2 พันล้านดอลลาร์ ประมาณ 20 เท่าของ ARR เกิน Zapier multiple ที่ valuation ใกล้กัน นักลงทุนเดิมพันว่า workflow orchestrator จะ capture ส่วนของ value ที่ MCP กับ A2A ปล่อยไว้ คือ orchestration layer ระหว่าง agent กับ protocol กับ business logic
+
+มุม OpenBridge n8n เป็น adjacent competitor ใน SEA ที่ enterprise ใช้ SAP เกินครึ่งคือ PTT SCG CP Singtel Telekom Malaysia n8n in Joule Studio จะกลายเป็น default workflow layer ใน 12 เดือน OpenBridge ต้องเลือก เป็น superset ที่มี connector ที่ n8n ไม่มี หรือ integrate เป็น node เพิ่มใน n8n marketplace หรือ position เป็น compliance-grade alternative สำหรับ regulator BOT MAS BNM recommendation ตรงคือเปิด OpenBridge for n8n node ภายใน 60 วัน กลายเป็น addition ใน ecosystem ของเขาแล้ว build compliance moat ใน SEA banking healthcare telco ที่ n8n กับ Joule Studio combo ไม่เข้าใจ ครับ.
+
+เรื่องที่สาม.
+สวัสดีครับโย้ มาเล่าเรื่อง Honeycomb observability vendor ที่เริ่มจาก distributed tracing ของ microservices สมัย 2017 เพิ่งเปิด 3 feature ใหม่สำหรับ agent observability ที่ผมคิดว่าน่าสนใจมาก
+
+ตัวเด่นคือ Agent Timeline ที่ render multi-agent multi-trace workflow เป็น view เดียว เชื่อม LLM call ทุกครั้ง tool invocation ทุกครั้ง agent handoff ทุกครั้ง downstream system impact ใน real time engineer เห็น swim-lane เป็น agent แต่ละตัวพร้อม branching ของ tool call ในจอเดียว แทนที่จะต้อง correlate log แยกกันเอง
+
+Canvas เดิมของ Honeycomb ถูก rebuild เป็น chat interface พร้อม autonomous agent ใน UI เดียว engineer query เป็นภาษาธรรมชาติ Canvas Agent ไป investigate แล้ว produce visualization ที่ share กับทีมได้ Canvas Skills คือ reusable skill ที่ทีมเขียนครั้งเดียวแล้ว invoke ซ้ำได้ตอน incident หน้า
+
+จุดที่ทำให้ Honeycomb แตกต่างจาก Langfuse Arize Helicone คือ stack agnostic รับ OpenTelemetry-native trace ทุก framework ลูกค้าไม่ต้อง install proprietary SDK ตรงข้ามกับ Langfuse Arize ที่ต้อง wrap LLM call ผ่าน SDK ของตัวเอง play เดียวกับที่ Datadog ชนะ APM ในยุค 2015 ถึง 2018 รับ open standard scale infra ไม่ lock-in customer
+
+ทำไมสำคัญ agent observability กำลัง split เป็น 2 layer Layer 1 คือ infrastructure observability trace ของ LLM call tool execution cost latency Honeycomb Datadog Grafana ครอง Layer 2 คือ agent behavior policy enforcement Lakera Truefoundry Kanopy ครอง ใน 2 ถึง 3 ไตรมาส คาด acquisition wave Datadog ซื้อ Layer 2 specialist
+
+มุม OpenBridge ทุก call ที่ agent ทำผ่าน OpenBridge connector คือ telemetry signal ที่ valuable ถ้า OpenBridge emit OpenTelemetry traces native จากทุก connector call ลูกค้าได้ visibility ตั้งแต่ agent ถึง OpenBridge ถึง enterprise system ใน Honeycomb หรือ Datadog ของตัวเองโดยไม่ต้อง config เพิ่ม Action ตรงคือ Q3 ทำ OTel instrumentation ทุก connector ให้ครบ Q4 จะถูก procurement ถาม แล้ว build OpenBridge observability template สำหรับ Honeycomb Datadog position เป็น observable by default integration platform เข้า Tier-1 bank telco healthcare ครับ.
+
+เรื่องที่สี่.
+สวัสดีครับโย้ มาเล่าเรื่อง Fazeshift สตาร์ตอัพ 2 ปีจาก Y Combinator W24 ที่เพิ่งปิด Series A 17 ล้านดอลลาร์ รวม total funding 22 ล้าน นำโดย F-Prime Capital กับ Gradient ซึ่งเป็น Google early-stage AI fund
+
+Fazeshift ไม่ใช่ AI tool ที่ assist accountant แต่เป็น autonomous agent ที่ทำงานแทน accountant ทั้ง workflow ของ accounts receivable ตั้งแต่ invoice creation payment reconciliation customer communication ERP CRM sync dunning exception resolution ที่ทำให้ดีลน่าสนใจคือ traction verify ได้ revenue โต 12 เท่าใน 12 เดือนล่าสุด ลูกค้า dozens of enterprise รวม 8 unicorn startups
+
+ตัวอย่าง deployment confirm ได้คือ agent ตัวเดียวส่ง 9,000 customer communications ต่อวัน เกินกว่าที่ทีม AR 10 คนทำได้ ช่วยลูกค้าใหม่เก็บเงินสด 7.4 ล้านดอลลาร์ภายในไม่กี่สัปดาห์หลัง deploy automate มากกว่า 90 เปอร์เซ็นต์ของ manual AR tasks เลขที่ vendor SaaS อื่นเคยอ้างแต่ verify ไม่ได้
+
+ทำไมสำคัญ autonomous finance จะกลายเป็น vertical AI agent category ที่ใหญ่ที่สุดรองจาก customer service และ coding ขนาดตลาด AR AP software โลก 3.5 พันล้านดอลลาร์ บวก finance ops automation รวม BPO 50 พันล้าน Fazeshift Ramp Tabs Pivotal กำลังแข่งว่า agentic system ตัวไหนทดแทน finance team ทั้งทีมได้ ผู้ชนะคาด exit valuation 5 ถึง 10 พันล้านใน 24 ถึง 36 เดือน
+
+มุม OpenBridge Fazeshift คือ proof point ของ pattern ที่ OpenBridge ทำซ้ำใน SEA ได้ agentic startup ที่ build execution layer บน ERP CRM payment email สำเร็จเพราะมี horizontal integration backbone บวก vertical agent logic บวก deploy velocity 1 ถึง 2 สัปดาห์ playbook นี้ OpenBridge ทำได้ดีกว่าใน SEA เพราะมี regional connector PromptPay KBank Krungsri Maybank ที่ Fazeshift ไม่มี Action ตรงคือ partner กับ Thai AI-native finance startup เช่น Finnomena Lightnet หรือ Aspire BukuKas wrap ใต้ OpenBridge connector layer ขายเข้า Thai SME แล้วทำ niche vertical AR agent backbone สำหรับ Thai construction supplier กับ SME export ครับ.
+
+ทั้งหมดนี้คือ brief ของรอบนี้. ขอให้วันนี้เป็นวันที่ดีครับ. แล้วเจอกันรอบหน้า.
