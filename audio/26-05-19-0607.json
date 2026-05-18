@@ -1,0 +1,32 @@
+{
+  "date": "26-05-19-0607",
+  "iso_date": "2026-05-19T06:07:00+07:00",
+  "title": "Daily AI Brief — 26-05-19 06:07",
+  "items": [
+    {
+      "file": "26-05-19-0607-01-anthropic-acquires-stainless-mcp-sdk-infra-moat.md",
+      "title": "Anthropic ซื้อ Stainless $300M+ — ตัดท่อ SDK + MCP generator ของ OpenAI/Google/Meta ทิ้งในวันเดียว",
+      "order": 1
+    },
+    {
+      "file": "26-05-19-0607-02-sap-n8n-5-2b-joule-studio-workflow-orchestration.md",
+      "title": "SAP เทเงินใส่ n8n ดัน valuation เป็น $5.2B (2 เท่าใน 8 เดือน) — ฝัง workflow orchestrator เข้า Joule Studio Q3",
+      "order": 2
+    },
+    {
+      "file": "26-05-19-0607-03-honeycomb-agent-observability-canvas-timeline-production.md",
+      "title": "Honeycomb เปิด \"Agent Timeline + Canvas Agent\" — observability เห็นทุก agent call/handoff โดยไม่ต้อง vendor SDK",
+      "order": 3
+    },
+    {
+      "file": "26-05-19-0607-04-fazeshift-22m-autonomous-finance-ar-12x-revenue.md",
+      "title": "Fazeshift ปิด Series A $17M (รวม $22M) — agent อัตโนมัติ 90% ของ accounts receivable, รายได้โต 12 เท่าใน 1 ปี",
+      "order": 4
+    }
+  ],
+  "script_char_count": 7711,
+  "audio_file": "26-05-19-0607.mp3",
+  "voice": "th-TH-Chirp3-HD-Achernar",
+  "model": "google-cloud-tts-chirp3-hd",
+  "speed": 1.3
+}
