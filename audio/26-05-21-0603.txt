@@ -1,0 +1,40 @@
+สวัสดีครับ นี่คือ Enabridge AI Brief รอบ 21 May 2026 เวลา 06:03 ครับ.
+รอบนี้มี 4 เรื่อง เน้น Agentic AI, business use case, และ trend ที่เอามาใช้กับ OpenBridge ได้.
+
+เรื่องแรก.
+สวัสดีครับโย้ ข่าวใหญ่ของวานนี้ Anthropic ประกาศซื้อ Stainless ในดีลที่ The Information รายงานมูลค่ากว่า สามร้อยล้านดอลลาร์ สองเท่าของ valuation ตอน Series A เมื่อปลายปีที่แล้ว Stainless คือ compiler ที่แปลง API spec ให้กลายเป็น SDK production-ready ข้ามภาษา TypeScript Python Go Java Kotlin พร้อม generate MCP server อัตโนมัติ ลูกค้าก่อน deal คือ OpenAI Google Meta Cloudflare Runway Replicate Groq Cerebras และ Anthropic เอง
+
+จุดที่สะเทือน industry คือ Anthropic ปิด hosted Stainless products ทันที ไม่รับ signup ใหม่ ไม่ generate SDK ใหม่ผ่าน hosted service projects ที่มีอยู่ใช้ต่อได้แต่ไม่ auto-sync เมื่อ API spec เปลี่ยน คู่แข่ง OpenAI Google Cloudflare ที่พึ่ง Stainless ต้องเลือก build pipeline เองหรือย้ายไป Speakeasy Fern OpenAPI Generator นี่ไม่ใช่ tuck-in นี่คือ strategic denial play ที่ Anthropic ยอมจ่าย premium เพื่อยึด supply chain ของ developer ecosystem คู่แข่ง
+
+ที่ subtle กว่านั้นคือ Stainless รุ่นล่าสุด generate MCP server อัตโนมัติจาก API spec แปลว่า Anthropic ครอบ MCP toolchain ครบทุกชั้น ตั้งแต่ spec ที่ Anthropic เขียนเอง ลงมาถึง code generation ลงมาถึง runtime ที่เป็น Claude Managed Agents กับ MCP Tunnels ภายในสองสัปดาห์ Anthropic ปล่อย PwC alliance Wall Street agent Claude Agent Meter MCP Tunnels Stainless acquisition Karpathy join pretraining ครบทุกชั้นของ stack
+
+มุม OpenBridge ดีลนี้บอกว่า developer infrastructure plays คือดีลที่ AI lab ยอมจ่าย premium ถ้า OpenBridge build ส่วนที่ frontier lab ไม่มี time-to-market มาทำ local connector regulatory pattern vertical-specific MCP server ก็อยู่ใน path ที่ถูกซื้อด้วย valuation premium แต่ต้องระวัง Stainless pattern จะมาถึง integration layer ถ้า Anthropic OpenAI ซื้อ connector vendor ใหญ่แล้วปิดบริการ ลูกค้า bank ไทยจะเดือดร้อน OpenBridge ต้อง position vendor-neutral ชัดเจน เก็บ deployment artifact ใน customer environment ลูกค้า own ได้ source-available core connector ทำได้จะเป็นทางเลือกที่ปลอดภัยของ enterprise procurement ที่ไม่อยาก lock-in ครับ.
+
+เรื่องที่สอง.
+สวัสดีครับโย้ ข่าวใหญ่อีกเรื่องของวานนี้ Google I/O 2026 ที่ Mountain View Sundar Pichai เปิด keynote ด้วยประโยค welcome to the agentic Gemini era สามชิ้นใหญ่ที่ออกพร้อมกัน หนึ่ง Gemini Spark agent ทั่วไปที่รันบน dedicated virtual machine บน Google Cloud ตลอด 24 ชั่วโมง ผู้ใช้ไม่ต้องเปิดคอมพ์ค้างไว้ agent ทำ task เบื้องหลังเอง วันแรกต่อ Gmail Docs Drive Workspace ภายในไม่กี่สัปดาห์เพิ่ม Uber OpenTable Zillow ผ่าน MCP
+
+สอง Gemini 3.5 Flash โมเดล lightweight ใหม่ที่ Google เคลม cutting-edge capability ที่ราคาครึ่งหนึ่งถึงหนึ่งในสามของ frontier model เทียบ benchmark ใกล้ Claude Sonnet 4.5 GPT-5 mini ที่ราคา 30-50 เปอร์เซ็นต์ สาม AI Ultra หั่นราคาจาก 250 ดอลลาร์เหลือ 100 ดอลลาร์ต่อเดือน ลด 60 เปอร์เซ็นต์ รวม 5 เท่า quota ของ Pro plus 20 terabyte storage plus YouTube Premium plus full Gemini 3.5 plus Spark plus Antigravity ใช้ subscription bundle เป็น cross-subsidy ต่อ agent compute เหมือน Amazon Prime
+
+ทำไมสำคัญ ครั้งแรกที่ Google ขยับเข้า agentic competition แบบครบ stack architecture ของ Spark เป็น pattern เดียวกับ Claude Managed Agents กับ ChatGPT Atlas Tasks 3 ค่าย converge บน pattern เดียวกัน agent อยู่บน vendor cloud tool ต่อผ่าน MCP persistent session MCP ชนะ protocol war ที่ Google ได้เปรียบคือ Workspace Search YouTube Maps Drive distribution ลูกค้า ChatGPT Claude ที่อยากให้ agent ทำงานข้าม Gmail Calendar ต้องผ่าน connector แต่ Google ส่ง agent เข้าไปใน workflow นั้นเองที่ zero integration cost
+
+มุม OpenBridge MCP เป็น default protocol ของ agent โลกแล้ว ต้องเลิก Zapier-like trigger action API แล้วเปลี่ยนเป็น MCP server library ก่อน Q3 ทุก connector ใน catalog ต้อง expose เป็น MCP endpoint ที่ Spark Claude ChatGPT ต่อตรงได้ อีก play คือ Spark connector pack สำหรับ Thai bank workflow ต่อ Spark กับ T24 FlexCube กับ BOT submission system ผ่าน MCP server ที่ OpenBridge host ที่ราคา 100 ดอลลาร์ Spark เริ่ม fit budget ของ Thai SME founder ครับ.
+
+เรื่องที่สาม.
+สวัสดีครับโย้ ข่าวที่สามของ Google I/O 2026 Google เปิด Antigravity 2.0 เป็น standalone agent-first platform 4 surface บน harness เดียว Antigravity IDE เดิมจากเดือนธันวาคม Antigravity 2.0 desktop app ใหม่ Antigravity CLI terminal agent เขียน Go successor ของ Gemini CLI และ Antigravity SDK programmatic API ให้ developer สร้าง custom agent host บน infra ใดก็ได้
+
+Harness เดียวกันคือที่ powers Gemini Spark co-optimized กับ Gemini 3.5 Flash multi-turn session resume state ได้ custom skill ผ่าน markdown file นี่คือ direct counter ของ Anthropic Claude Code ที่แตะ 2.5 พันล้านดอลลาร์ run-rate revenue ก่อนรอบ funding กุมภาพันธ์ Google ตอบกลับด้วย strategy ตรงข้าม Anthropic ขาย Claude Code เป็น proprietary stack Google ขายเป็น 4 surface ที่ลูกค้าผสมได้ host บน infra ตัวเองได้
+
+ทำไมสำคัญ 2026 คือปีที่ agent harness กลายเป็น layer ที่ทุก frontier lab ต้องเปิดเป็น product แยกจาก model ปีที่แล้ว model เป็น product ปีนี้ harness orchestration เป็น product แยก คนที่ขาย agent platform ที่ไม่ครอบ harness ของตัวเอง Cursor Replit Cline อยู่ในตำแหน่งที่ถูก commoditize ใน 6-12 เดือน Google ใช้ราคา 30-50 เปอร์เซ็นต์ของ Anthropic เพื่อแย่ง developer strategy เดียวกับที่ Android เคยใช้กับ iOS
+
+มุม OpenBridge build Antigravity skill pack ภายใน Q3 ที่ wrap connector OpenBridge ทั้งหมดเป็น markdown skill ที่ Antigravity agent เรียกใช้ได้ ทุก connector K-Plus SCB Easy LINE Notify PromptPay BOT submission AMLO submission เป็น 1 markdown skill ที่ developer copy ลง dot antigravity slash skills แล้ว Antigravity SDK เรียกได้ทันที สำหรับ defensive ต้อง decouple connector pricing จาก model pricing ขาย integration layer ที่ work กับ Antigravity Claude GPT ทุกตัว ลูกค้าจ่าย model quota แยกตาม vendor ที่ตัวเองเลือกครับ.
+
+เรื่องที่สี่.
+สวัสดีครับโย้ ข่าวที่สี่ของวานนี้ Andrej Karpathy founding member ของ OpenAI อดีต Tesla senior director AI founder Eureka Labs ประกาศย้ายเข้า Anthropic pretraining team สัปดาห์นี้ ใต้ team lead Nick Joseph mission ของทีมใหม่ที่ Karpathy build คือใช้ Claude agent เร่ง pretraining research ของ Claude เอง recursive loop ที่ Anthropic เดิมพันว่าจะรักษา competitive edge ได้แม้ compute budget เล็กกว่า OpenAI กับ Google 5-10 เท่า
+
+Karpathy เป็นคนนิยาม Software 1.0 2.0 3.0 framework ที่ตอนนี้ mainstream เคยพูดที่ Sequoia AI Ascent ว่า LLMs กลายเป็น new programmable layer ของ digital work ตรงกับ Anthropic pitch ที่ Boris Cherny พูดที่งานเดียวกันว่า coding is solved Claude Code แตะ 2.5 พันล้านดอลลาร์ run-rate revenue ก่อน funding กุมภาพันธ์ วันเดียวกัน 19 พ.ค. Anthropic ประกาศ Stainless acquisition 300 ล้านดอลลาร์ 2 ข่าวคู่กันบอกภาพ Anthropic อยู่ใน talent infrastructure offensive mode
+
+ทำไมสำคัญ Anthropic ยอมเดิมพันบน recursive compute strategy ถ้าได้ผล Anthropic generate next-gen model ที่ใช้ compute น้อยกว่า OpenAI Google ได้ Karpathy เป็น co-founder OpenAI ที่กลับมา join AI lab เลือก Anthropic แทน OpenAI เป็น signal สำคัญ talent gravity ของ Anthropic ตอนนี้ดูดคนจากทุกที่ Jan Leike Mike Krieger Jared Kaplan Tom Brown Karpathy เพิ่มชื่อใหญ่ที่สุดเข้า roster
+
+มุม OpenBridge ไม่ direct เกี่ยว แต่ adjacent insight สำคัญ recursive AI คือ pattern ที่ OpenBridge ก็ apply ได้ ใช้ Claude GPT Gemini agent อ่าน OpenAPI spec ของลูกค้า generate MCP server connector pattern แบบ recursive ลดเวลา onboarding จาก 4-6 สัปดาห์เหลือ 2-3 วัน อีก angle Software 3.0 framing เป็น vocabulary ที่ OpenBridge ควรใช้ขาย enterprise ลูกค้า Thai bank insurance telco confused กับ agentic AI vs automation vs RPA Karpathy framing ที่ agent คือ new programming layer prompt คือ code MCP server คือ library คือ mental model ที่ฟังเข้าใจง่ายและถูกอ้างใน boardroom OpenBridge ต้อง position เป็น Software 3.0 distribution layer สำหรับ Thai enterprise ครับ.
+
+ทั้งหมดนี้คือ brief ของรอบนี้. ขอให้วันนี้เป็นวันที่ดีครับ. แล้วเจอกันรอบหน้า.

@@ -1,0 +1,32 @@
+{
+  "date": "26-05-21-0603",
+  "iso_date": "2026-05-21T06:03:00+07:00",
+  "title": "Daily AI Brief — 26-05-21 06:03",
+  "items": [
+    {
+      "file": "26-05-21-0603-01-anthropic-acquires-stainless-300m-sdk-control-openai-google.md",
+      "title": "Anthropic ทุ่ม $300M+ ซื้อ Stainless — ตัดเส้นเลือด SDK ของ OpenAI/Google/Cloudflare แล้วปิดเครื่องทันที",
+      "order": 1
+    },
+    {
+      "file": "26-05-21-0603-02-google-io-gemini-spark-3-5-flash-ai-ultra-100-dollar-agentic-era.md",
+      "title": "Google I/O 2026 — Gemini Spark 24/7 + Gemini 3.5 Flash + AI Ultra หั่นจาก $250 เหลือ $100 = price war เปิดทาง agentic era",
+      "order": 2
+    },
+    {
+      "file": "26-05-21-0603-03-google-antigravity-2-managed-agent-platform-claude-code-counter.md",
+      "title": "Google เปิด Antigravity 2.0 = managed agent platform 4 surface (IDE/CLI/SDK/Desktop) — counter Claude Code $2.5B ARR แบบเต็มหน้า",
+      "order": 3
+    },
+    {
+      "file": "26-05-21-0603-04-karpathy-anthropic-claude-improves-claude-pretraining-recursive.md",
+      "title": "Andrej Karpathy ออก OpenAI/Tesla ไป Anthropic pretraining — สร้างทีมเอา Claude ไป train Claude ตัวเอง = recursive compute edge",
+      "order": 4
+    }
+  ],
+  "script_char_count": 7765,
+  "audio_file": "26-05-21-0603.mp3",
+  "voice": "th-TH-Chirp3-HD-Achernar",
+  "model": "google-cloud-tts-chirp3-hd",
+  "speed": 1.3
+}
