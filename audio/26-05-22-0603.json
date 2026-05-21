@@ -1,0 +1,32 @@
+{
+  "date": "26-05-22-0603",
+  "iso_date": "2026-05-22T06:03:00+07:00",
+  "title": "Daily AI Brief — 26-05-22 06:03",
+  "items": [
+    {
+      "file": "26-05-22-0603-01-ey-microsoft-1b-fde-pilot-production-ai-governance.md",
+      "title": "EY + Microsoft ทุ่ม $1B ตั้ง FDE Program — เปิดสงคราม pilot-to-production บน enterprise AI",
+      "order": 1
+    },
+    {
+      "file": "26-05-22-0603-02-google-gemini-spark-3-5-flash-agentic-os-io-2026.md",
+      "title": "Google เปิด Gemini Spark + 3.5 Flash ที่ I/O 2026 — เดิมพันคลื่นถัดไปบน agent ไม่ใช่ chatbot",
+      "order": 2
+    },
+    {
+      "file": "26-05-22-0603-03-informatica-aws-headless-mcp-claire-agent-data.md",
+      "title": "Informatica + AWS เปิด Headless MCP — ดัน CLAIRE Agent skill เป็น data layer ของ Bedrock AgentCore",
+      "order": 3
+    },
+    {
+      "file": "26-05-22-0603-04-openai-ads-manager-self-serve-cpc-chatgpt-commerce.md",
+      "title": "OpenAI เปิด Ads Manager self-serve เต็มรูปแบบ — เริ่มยึดสนาม CPC bidding ใน ChatGPT, ตั้งเป้า $100B ปี 2030",
+      "order": 4
+    }
+  ],
+  "script_char_count": 6977,
+  "audio_file": "26-05-22-0603.mp3",
+  "voice": "th-TH-Chirp3-HD-Achernar",
+  "model": "google-cloud-tts-chirp3-hd",
+  "speed": 1.3
+}

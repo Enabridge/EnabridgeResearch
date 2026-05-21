@@ -1,0 +1,40 @@
+สวัสดีครับ นี่คือ Enabridge AI Brief รอบ 22 May 2026 เวลา 06:03 ครับ.
+รอบนี้มี 4 เรื่อง เน้น Agentic AI, business use case, และ trend ที่เอามาใช้กับ OpenBridge ได้.
+
+เรื่องแรก.
+สวัสดีครับโย้ ข่าวใหญ่เมื่อวานนี้ Microsoft กับ EY ประกาศ joint initiative มูลค่าหนึ่งพันล้านดอลลาร์ตลอดห้าปี จับคู่ EY consultant กับ Microsoft Forward Deployed Engineer หรือ FDE เพื่อย้ายโปรเจกต์ AI ของลูกค้าจาก pilot สู่ production จริง โฟกัสสี่ฟังก์ชันคือ finance tax HR supply chain ครอบทุกอุตสาหกรรมตั้งแต่ bank insurance industrial energy retail government healthcare
+
+แผนสำคัญคือเปิด AI Center of Excellence สี่เมือง London New York Singapore Frankfurt ภายในสิ้นปี twenty-twenty-six แต่ละศูนย์มี consultant กับ engineer นั่งทำงานคู่กัน rapid prototyping กับ governance workshop และที่น่าสนใจคือทั้งสองค่าย co-fund AI Governance Professional certification ผูก EY Learning เข้ากับ Microsoft Learn
+
+ทำไมสำคัญ นี่คือ pattern เดียวกับ OpenAI ตั้ง Deployment Company สี่พันล้านดอลลาร์ Anthropic JV กับ Blackstone Goldman หนึ่งพันห้าร้อยล้าน PwC certify Claude สามหมื่นคน ServiceNow Accenture FDE program ทุกค่ายเห็นเหมือนกันคือ model API ขายไม่พอ ต้องลงทุน human capital ไปยืนข้างลูกค้า services-led model กลายเป็น default playbook แล้ว
+
+มุม OpenBridge ตรงนี้คือ window หกถึงเก้าเดือนที่ต้อง position ตัวเองให้ชัด ถ้า EY กับ Microsoft เข้า Singapore แล้วเราไม่ได้เป็น local integration partner เราจะถูกตัดออกจาก Tier-1 deal ทันที play ที่ต้องเร่งคือ pitch ตัวเองเป็น BOT MAS BNM-certified integration layer ที่ FDE ของ Microsoft ใช้ deploy Copilot บน Thai bank ได้เลย Big 4 ไม่มี local connector FDE ไม่รู้ KBank SCB CIMB API OpenBridge มีทั้งสองอย่างครับ window นี้แคบเพราะ Accenture Deloitte KPMG กำลัง pitch เหมือนกัน.
+
+เรื่องที่สอง.
+สวัสดีครับโย้ ข่าวใหญ่ของอาทิตย์นี้ Google จัด I/O twenty-twenty-six ที่ Shoreline Amphitheatre Sundar Pichai เปิด keynote ด้วยประโยคว่า welcome to the agentic Gemini era ตัวเอกของงานคือ Gemini Spark personal AI agent ที่รัน twenty-four-seven บน dedicated VM ทำงานหลังบ้านได้แม้ user ปิด laptop รุ่น Enterprise ต่อ connector ครบ SharePoint OneDrive ServiceNow ผ่าน secure Agent Gateway ที่ enforce DLP policy ทุก task รันใน fresh isolated ephemeral VM กัน data overlap ระหว่าง session
+
+โมเดลใต้ฝากระโปรงคือ Gemini three point five Flash ที่ Google เคลมว่า optimize สำหรับ agentic กับ coding task โดยเฉพาะ ราคาครึ่งหนึ่งของ frontier rival กับ latency ต่ำกว่าสามเท่า นี่คือ pitch ตรงต่อ enterprise CFO ที่จ่าย OpenAI bill หลายล้าน เพราะ economics ของ agent ต่างจาก chatbot agent ทำ multi-turn tool call หลายสิบครั้งต่อ task token cost ทบ exponential ถ้าไม่ลดราคาลง agent business ขาดทุน
+
+ทำไมสำคัญ frontier race ย้ายจาก benchmark quality ไป unit economics ของ agent ตอนนี้เหลือสาม architectural play ที่ชัดคือ OpenAI ChatGPT consumer mass บวก Deployment Company บวก Dell on-prem Anthropic Claude managed agent บวก MCP tunnel บวก Wall Street vertical Google full-stack จาก TPU ลง Workspace integration ที่ Google ได้เปรียบสุดคือ distribution เพราะ Workspace Gmail Chrome อยู่ทุกที่แล้ว
+
+มุม OpenBridge เป็นข่าวทั้งดีและร้าย ฝั่งดีคือราคา Gemini three point five Flash ลด TCO ของ workflow ที่ build ให้ลูกค้า ฝั่งร้ายคือ Gemini Spark กับ Workspace connector เป็น direct competitor แต่ที่ Google ยังขาดคือ vertical connector สำหรับ Thai bank government insurance ที่ไม่ใช่ SaaS standard นี่คือ moat ที่ต้องยึดให้ลึก action ที่ต้องเร่งคือ build Gemini Spark connector pack สำหรับ Thai enterprise ภายใน Q3 ก่อน Spark เปิด GA position เป็น trusted last-mile partner ใน Thailand ครับ.
+
+เรื่องที่สาม.
+สวัสดีครับโย้ ข่าว MCP น่าสนใจของเมื่อวาน Informatica ที่เพิ่งถูก Salesforce ปิดดีล acquire แปดพันล้านเมื่อปลายปีที่แล้ว ประกาศ deeper integration กับ AWS ในรูปแบบที่เรียกว่า Headless Data Management ความหมายคือ Informatica แยก MCP server กับ CLAIRE Agent skill ออกจาก UI ดั้งเดิม แล้วเปิดให้ใช้ข้าม AWS AI services โดยตรง รวมถึง AWS Agent Registry Amazon QuickSight Bedrock AgentCore
+
+ปัญหาที่แก้คือ unreliable data is the number one barrier to enterprise AI เจ็ดสิบแปดเปอร์เซ็นต์ของ production agent team เจอปัญหาเดียวกัน agent มี LLM ฉลาด มี tool ครบ แต่ data ที่ดึงมา query เป็น stale duplicate ไม่มี context Informatica แก้โดยให้ CLAIRE serve metadata กับ trusted data ผ่าน MCP agent ไม่ต้องเดา schema ไม่ต้องเสี่ยง compliance violation
+
+ทำไมสำคัญ MCP กำลังกลายเป็น universal interface ระหว่าง enterprise data system กับ agent runtime สองสัปดาห์ที่ผ่านมา Atlassian Cloudflare Anthropic Informatica ทุก vendor converge ที่จุดเดียวกัน เราจะเห็น MCP server marketplace ที่จัดเรียงตาม trust tier Tier หนึ่งคือ sovereign data Informatica Collibra Snowflake Tier สองคือ SaaS standard Tier สามคือ community registry นับล่าสุดเก้าพันสี่ร้อย server
+
+มุม OpenBridge นี่คือ wake-up call ลูกค้า Thai bank ที่ deploy agent บน Bedrock Claude Gemini ไม่ต้องการ OpenBridge UI หรือ console เขาต้องการ OpenBridge MCP server ที่ agent ของเขา query ได้โดยตรง action item เก้าสิบวันคือ wrap OpenBridge connector library ใหม่ทั้งหมดเป็น MCP server-native interface ทำเป็น OpenBridge MCP Hub directory ของ Thai SEA enterprise connector ที่ certify ผ่าน BOT MAS BNM แล้วใส่บน AWS Agent Registry กับ Anthropic catalog บทเรียนจาก Salesforce ซื้อ Informatica แปดพันล้านคือ data trust layer มีราคา ไม่ใช่แค่ pipe กับ adapter ครับ.
+
+เรื่องที่สี่.
+สวัสดีครับโย้ ข่าวสุดท้ายของวัน OpenAI เปิด ChatGPT Ads Manager เป็น self-serve เต็มรูปแบบเมื่อวาน business ใน US ทุก size สามารถสมัครที่ ads.openai.com ทำ verification เสร็จก็ start campaign ได้เลย ฟีเจอร์หลักคือ CPC bidding กับ measurement tools ไม่มี minimum spend partner ครบทุก layer agency คือ Dentsu Omnicom ad tech คือ Adobe Criteo ads แสดงให้ Free กับ Go tier user ใน US Canada Australia New Zealand
+
+ตัวเลขที่สำคัญที่สุดคือ OpenAI ตั้งเป้า ad revenue สองพันห้าร้อยล้านดอลลาร์ปีนี้ และ scale ไปหนึ่งแสนล้านต่อปีภายในปี twenty-thirty นี่คือ scale ระดับ Google Search ปี twenty-twenty-four หนึ่งแสนเจ็ดหมื่นห้าพันล้าน บอกว่า Sam Altman กับ Fidji Simo CEO of ChatGPT มองว่า conversational AI จะเป็น primary commerce surface ของยุคถัดไป แทนที่ search box
+
+ทำไมสำคัญ Google Search ถูกท้าทายแบบ existential แล้ว Google เพิ่ง revamp search box ที่ I/O ให้รับ chatbot conversation เป็น defensive move ที่สำคัญกว่าคือ conversational ad มี intent signal สูงกว่า search ad หลายเท่า user search best CRM for SMB intent ประมาณเจ็ดสิบเปอร์เซ็นต์ user chat กับ ChatGPT พร้อม context ตัวเองครบ intent เก้าสิบห้าเปอร์เซ็นต์ ราคา CPC มีโอกาส premium สามถึงห้าเท่า
+
+มุม OpenBridge ลูกค้า B2B SaaS ของเรากำลังจะมี acquisition channel ใหม่ที่ทรงพลังกว่า LinkedIn Google Ads ที่ควรทำคือ build ChatGPT Ads campaign automation connector เป็น product บน workflow platform ลูกค้า B2C D2C ของเราต้อง publish product feed กับ structured data เข้า ChatGPT shopping surface ออกแบบเป็น AI Agent Commerce abstraction layer ตั้งแต่ต้น ที่ลูกค้าใช้ OpenBridge แล้ว publish ไป ChatGPT Gemini Claude Copilot พร้อมกันได้ นี่คือ multi-agent commerce moat ที่ vendor เดียวสร้างให้ลูกค้าไม่ได้ครับ.
+
+ทั้งหมดนี้คือ brief ของรอบนี้. ขอให้วันนี้เป็นวันที่ดีครับ. แล้วเจอกันรอบหน้า.
