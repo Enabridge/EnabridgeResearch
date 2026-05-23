@@ -1,0 +1,13 @@
+สวัสดีครับ นี่คือ Enabridge AI Brief รอบ 24 May 2026 เวลา 06:03 ครับ.
+รอบนี้มี 3 เรื่อง เน้น Agentic AI, business use case, และ trend ที่เอามาใช้กับ OpenBridge ได้.
+
+เรื่องแรก.
+สวัสดีครับ Yoh วันนี้ข่าวใหญ่สุดคือ Anthropic ที่กำลังจะกลายเป็น AI startup ที่แพงที่สุดในโลก Bloomberg รายงานว่า Anthropic กำลังปิดรอบระดมทุนกว่าสามหมื่นล้านเหรียญ ที่ valuation เกินเก้าแสนล้านเหรียญ ซึ่งถ้าสำเร็จจะแซง OpenAI ไปเลย ตัวเลขที่น่าทึ่งคือรายได้ที่โตแบบบ้าคลั่งจริง ๆ จาก 87 ล้านเหรียญต่อปีเมื่อต้นปี 2024 มาเป็นสามหมื่นล้านเหรียญในเดือนเมษายน 2026 โตขึ้น 80 เท่าภายในสองปี Dario Amodei CEO บอกว่า growth engine หลักคือ Claude Code ที่เปลี่ยน Claude จาก chatbot เป็น coding agent ที่ developer จ่ายเงินใช้จริงทุกเดือน ฝั่ง IPO ก็เริ่มมีการพูดคุยกับ Goldman Sachs และ JPMorgan แล้ว อาจเร็วสุดตุลาคมนี้ สำหรับ OpenBridge สิ่งที่ต้องคิดคือถ้า Anthropic พิสูจน์แล้วว่า agentic workflow คือ revenue machine ตลาดของ integration layer ที่เชื่อมต่อ agent กับ enterprise tools ก็ต้องใหญ่ตามไปด้วยครับ.
+
+เรื่องที่สอง.
+เรื่องถัดมาเป็นเรื่องที่น่าตื่นเต้นมาก OpenAI ประกาศว่า reasoning model ภายในของบริษัทสามารถหักล้างข้อคาดการณ์ทางคณิตศาสตร์ที่ค้างมา 80 ปีได้ด้วยตัวเอง ปัญหาที่ว่าคือ planar unit distance problem ที่ Paul Erdős ตั้งไว้ตั้งแต่ปี 1946 ถามว่าถ้ามี n จุดบนระนาบ จะจัดให้มีคู่จุดที่ห่างกันพอดี 1 หน่วยได้มากที่สุดเท่าไร ตลอด 80 ปี นักคณิตศาสตร์เชื่อว่า square grid ดีที่สุด แต่โมเดลของ OpenAI เจอ construction แบบใหม่ที่เอาชนะ grid ได้ โดยใช้เทคนิคจาก algebraic number theory ที่ไม่เคยมีใครเอามาใช้กับปัญหานี้มาก่อน ที่สำคัญคือโมเดลไม่ได้ถูก train เฉพาะสำหรับปัญหานี้ ไม่ได้ค้นหาคำตอบที่มีอยู่แล้ว และไม่มีมนุษย์ช่วยนำทาง Fields medalist Tim Gowers เรียกว่า milestone in AI mathematics นี่อาจเป็นครั้งแรกที่ AI ทำสิ่งที่มนุษย์ยังทำไม่ได้ในทางคณิตศาสตร์จริง ๆ ไม่ใช่แค่ช่วยมนุษย์ทำเร็วขึ้นครับ.
+
+เรื่องที่สาม.
+เรื่องสุดท้ายสำคัญมากสำหรับ OpenBridge ครับ Camunda เพิ่งเปิดตัว ProcessOS ที่งาน CamundaCon ในอัมสเตอร์ดัม เป็นสิ่งที่เขาเรียกว่า agentic operating system for business processes ไม่ใช่แค่ workflow engine ธรรมดาอีกต่อไป ProcessOS ใช้ AI agent 4 ตัวทำงานครอบคลุมทั้ง lifecycle ของ business process ตัวแรก Discovery วิเคราะห์ว่าองค์กรรัน process จริงยังไง ตัวที่สอง Design ออกแบบใหม่ ตัวที่สาม Build สร้างและ deploy ตัวสุดท้าย Optimize ปรับปรุงต่อเนื่อง ที่น่าสนใจคือระบบสร้าง knowledge base ขององค์กรที่ฉลาดขึ้นเรื่อย ๆ ยิ่งใช้ยิ่งเก่ง ตอนนี้อยู่ใน closed beta รันบน AWS กับ Amazon Bedrock สำหรับ OpenBridge สิ่งที่ต้องคิดคือ Camunda กำลังบอกตลาดว่ายุคของ workflow platform ที่แค่ execute ตาม rule จบแล้ว ต้อง position ตัวเองว่าจะ build agentic layer เอง เป็น tool ให้ ProcessOS เรียกใช้ผ่าน MCP หรือ partner กับ Camunda ตรง ๆ ครับ.
+
+ทั้งหมดนี้คือ brief ของรอบนี้. ขอให้วันนี้เป็นวันที่ดีครับ. แล้วเจอกันรอบหน้า.
