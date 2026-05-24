@@ -1,0 +1,27 @@
+{
+  "date": "26-05-25-0603",
+  "iso_date": "2026-05-25T06:03:00+07:00",
+  "title": "Daily AI Brief — 26-05-25 06:03",
+  "items": [
+    {
+      "file": "26-05-25-0603-01-anthropic-mcp-tunnels-self-hosted-sandboxes.md",
+      "title": "Anthropic ปล่อย MCP Tunnels + Self-Hosted Sandboxes — Claude agent เข้าถึง enterprise API ได้โดยไม่ต้องเปิด port",
+      "order": 1
+    },
+    {
+      "file": "26-05-25-0603-02-nextera-dominion-67b-merger-ai-power.md",
+      "title": "NextEra ซื้อ Dominion Energy $67B — utility merger ใหญ่สุดในประวัติศาสตร์สหรัฐ เพราะ AI กินไฟไม่หยุด",
+      "order": 2
+    },
+    {
+      "file": "26-05-25-0603-03-anthropic-gates-foundation-200m-ai-health.md",
+      "title": "Anthropic + Gates Foundation จับมือ $200M — Claude ลงสนามจริงใน healthcare, education, agriculture ของประเทศรายได้ต่ำ",
+      "order": 3
+    }
+  ],
+  "script_char_count": 3123,
+  "audio_file": "26-05-25-0603.mp3",
+  "voice": "th-TH-Chirp3-HD-Achernar",
+  "model": "google-cloud-tts-chirp3-hd",
+  "speed": 1.3
+}
