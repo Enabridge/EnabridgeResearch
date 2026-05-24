@@ -1,0 +1,27 @@
+{
+  "date": "26-05-24-0603",
+  "iso_date": "2026-05-24T06:03:00+07:00",
+  "title": "Daily AI Brief — 26-05-24 06:03",
+  "items": [
+    {
+      "file": "26-05-24-0603-01-anthropic-900b-valuation-overtake-openai.md",
+      "title": "Anthropic กำลังจะแซง OpenAI — $900B valuation จะทำให้ Claude maker เป็น AI startup ที่แพงที่สุดในโลก",
+      "order": 1
+    },
+    {
+      "file": "26-05-24-0603-02-openai-erdos-conjecture-ai-math-proof.md",
+      "title": "OpenAI หักล้างข้อคาดการณ์ทางคณิตศาสตร์อายุ 80 ปี — ครั้งแรกที่ AI \"คิดเอง\" แล้วพิสูจน์ได้จริง",
+      "order": 2
+    },
+    {
+      "file": "26-05-24-0603-03-camunda-processos-agentic-workflow-orchestration.md",
+      "title": "Camunda เปิดตัว ProcessOS — ระบบปฏิบัติการ agentic ที่ใช้ 4 AI agents ปรับ business process ตั้งแต่ค้นหาจนถึง optimize",
+      "order": 3
+    }
+  ],
+  "script_char_count": 2713,
+  "audio_file": "26-05-24-0603.mp3",
+  "voice": "th-TH-Chirp3-HD-Achernar",
+  "model": "google-cloud-tts-chirp3-hd",
+  "speed": 1.3
+}
