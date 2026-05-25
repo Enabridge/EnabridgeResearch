@@ -1,0 +1,27 @@
+{
+  "date": "26-05-26-0605",
+  "iso_date": "2026-05-26T06:05:00+07:00",
+  "title": "Daily AI Brief — 26-05-26 06:05",
+  "items": [
+    {
+      "file": "26-05-26-0605-01-anthropic-stainless-300m-sdk-mcp-war.md",
+      "title": "Anthropic ซื้อ Stainless $300M+ แล้วปิดให้คู่แข่ง — สงคราม SDK infrastructure เริ่มแล้ว",
+      "order": 1
+    },
+    {
+      "file": "26-05-26-0605-02-vatican-magnifica-humanitas-pope-ai-anthropic.md",
+      "title": "Pope Leo XIV เรียก AI ว่า \"เครื่องมือแห่งการครอบงำและความตาย\" — Anthropic's Olah นั่งข้างคาร์ดินัลรับฟัง",
+      "order": 2
+    },
+    {
+      "file": "26-05-26-0605-03-openai-confidential-ipo-trillion-valuation.md",
+      "title": "OpenAI ยื่น IPO ลับ — ตีราคา $852B-$1T แต่ยังขาดทุน $1.22 ต่อรายได้ทุก $1",
+      "order": 3
+    }
+  ],
+  "script_char_count": 3281,
+  "audio_file": "26-05-26-0605.mp3",
+  "voice": "th-TH-Chirp3-HD-Achernar",
+  "model": "google-cloud-tts-chirp3-hd",
+  "speed": 1.3
+}
