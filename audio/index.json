@@ -1,7 +1,36 @@
 {
-  "generated_at": "2026-05-24T23:14:51Z",
-  "count": 39,
+  "generated_at": "2026-05-26T23:14:35Z",
+  "count": 40,
   "episodes": [
+    {
+      "date": "26-05-27-0604",
+      "iso_date": "2026-05-27T06:04:00+07:00",
+      "title": "Daily AI Brief — 26-05-27 06:04",
+      "description": "1. Claude Mythos พบช่องโหว่ 10,000+ จุดในเดือนเดียว — แต่แพตช์ตามไม่ทัน\n2. NSA ออก Security Guidance สำหรับ MCP — สัญญาณว่า AI agent protocol กลายเป็น critical infrastructure\n3. OpenAI ตั้ง Deployment Company ทุน $4B + ซื้อ Tomoro — ยอมรับว่า \"deploy\" ยากกว่า \"build\"",
+      "items": [
+        {
+          "file": "26-05-27-0604-01-anthropic-glasswing-mythos-10k-vulnerabilities.md",
+          "title": "Claude Mythos พบช่องโหว่ 10,000+ จุดในเดือนเดียว — แต่แพตช์ตามไม่ทัน",
+          "order": 1
+        },
+        {
+          "file": "26-05-27-0604-02-nsa-mcp-security-guidance-enterprise.md",
+          "title": "NSA ออก Security Guidance สำหรับ MCP — สัญญาณว่า AI agent protocol กลายเป็น critical infrastructure",
+          "order": 2
+        },
+        {
+          "file": "26-05-27-0604-03-openai-deployment-company-4b-tomoro.md",
+          "title": "OpenAI ตั้ง Deployment Company ทุน $4B + ซื้อ Tomoro — ยอมรับว่า \"deploy\" ยากกว่า \"build\"",
+          "order": 3
+        }
+      ],
+      "audio_file": "26-05-27-0604.mp3",
+      "audio_size_bytes": 778176,
+      "voice": "th-TH-Chirp3-HD-Achernar",
+      "model": "google-cloud-tts-chirp3-hd",
+      "speed": 1.3,
+      "script_char_count": 2899
+    },
     {
       "date": "26-05-25-0603",
       "iso_date": "2026-05-25T06:03:00+07:00",
