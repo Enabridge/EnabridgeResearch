@@ -1,0 +1,13 @@
+สวัสดีครับ นี่คือ Enabridge AI Brief รอบ 28 May 2026 เวลา 06:09 ครับ.
+รอบนี้มี 3 เรื่อง เน้น Agentic AI, business use case, และ trend ที่เอามาใช้กับ OpenBridge ได้.
+
+เรื่องแรก.
+สวัสดีครับ Yoh ข่าวแรกวันนี้เป็นเรื่อง Cognition AI ผู้สร้าง Devin ซึ่งเป็น AI coding agent ปิดรอบระดมทุนใหม่ได้ 1 พันล้านดอลลาร์ ที่มูลค่า 2 หมื่น 6 พันล้านดอลลาร์ เพิ่มขึ้นกว่าเท่าตัวจากเมื่อ 9 เดือนก่อน ตัวเลขที่น่าตกใจคือรายได้ เพิ่มจาก 37 ล้านเป็น 492 ล้านดอลลาร์ภายใน 12 เดือน โต 13 เท่า ลูกค้าเป็นระดับ Goldman Sachs Mercedes-Benz NASA กองทัพสหรัฐ และที่น่าสนใจที่สุดคือ Cognition ใช้ Devin เขียนโค้ดของตัวเอง 89 เปอร์เซ็นต์ เพิ่มจาก 13 เปอร์เซ็นต์เมื่อ 5 เดือนก่อน นี่คือ proof point ที่แข็งแกร่งมากว่า AI coding agent ทำงานได้จริงในระดับ production สำหรับ OpenBridge signal คือ coding agent พิสูจน์แล้วว่า vertical agent ทำเงินได้ และ enterprise ที่ใช้ agent ต้องการ integration layer ที่เชื่อม agent กับระบบอื่น ซึ่งเป็น use case ตรง ๆ ของเราครับ.
+
+เรื่องที่สอง.
+เรื่องที่สองครับ Coinbase เปิดตัว Base MCP เมื่อวานนี้ เป็น MCP gateway ที่ให้ AI agents อย่าง Claude กับ ChatGPT เชื่อมต่อกับ crypto wallet แล้วสั่งทำธุรกรรม DeFi ผ่านแชทได้เลย ไม่ว่าจะ swap token โอนเงิน หรือ interact กับ DeFi protocols ที่น่าสนใจคือ security model ที่ใช้ OAuth 2.1 กับ approval window ทุก transaction ต้องผ่านการยืนยันจากผู้ใช้ก่อน server ไม่ถือ private key เลย ทำไมเรื่องนี้สำคัญ เพราะมันพิสูจน์ว่า MCP กำลังกลายเป็น universal connector จริง ๆ ไม่ใช่แค่เชื่อม AI กับ code editor แต่ขยายไปถึง financial infrastructure ที่มีเงินจริงไหลอยู่ สำหรับ OpenBridge signal คือ MCP integration layer มีโอกาสในทุก vertical ถ้า crypto ที่ compliance เยอะมากยัง adopt ได้ B2B automation ก็ไม่น่ามีอุปสรรคครับ.
+
+เรื่องที่สาม.
+เรื่องสุดท้ายวันนี้ครับ Simon Willison ซึ่งเป็น trusted voice ของวงการ AI tooling เขียนบทวิเคราะห์เมื่อวานนี้ว่า Claude Code ของ Anthropic กับ Codex ของ OpenAI ต่าง found product-market fit แล้ว ไม่ใช่แค่ hype อีกต่อไป developer ใช้ทุกวันยอมจ่ายเงินจริง สิ่งที่น่าสนใจคือทั้งสองบริษัทปรับ pricing ให้ enterprise จ่ายตาม API token จริง ไม่มี bundling ซ่อน ประกอบกับข่าว Cognition 492 ล้านดอลลาร์ ARR ทำให้ AI coding agent กลายเป็น billion-dollar category ที่พิสูจน์แล้ว Willison ยังชี้ว่า moat ไม่ใช่ model intelligence แต่คือ ecosystem กับ distribution สำหรับ OpenBridge takeaway คือ usage-based pricing เป็น blueprint ที่ใช้ได้ และ integration layer ที่เชื่อม agent กับ enterprise tools เป็น ecosystem play ที่สร้าง moat ได้จริงครับ.
+
+ทั้งหมดนี้คือ brief ของรอบนี้. ขอให้วันนี้เป็นวันที่ดีครับ. แล้วเจอกันรอบหน้า.
