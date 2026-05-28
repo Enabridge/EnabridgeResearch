@@ -1,0 +1,27 @@
+{
+  "date": "26-05-28-0609",
+  "iso_date": "2026-05-28T06:09:00+07:00",
+  "title": "Daily AI Brief — 26-05-28 06:09",
+  "items": [
+    {
+      "file": "26-05-28-0609-01-cognition-devin-1b-26b-valuation.md",
+      "title": "Cognition ระดมทุน $1B มูลค่า $26B — Devin เขียนโค้ด 90% ของบริษัทเอง รายได้พุ่ง 13 เท่าใน 12 เดือน",
+      "order": 1
+    },
+    {
+      "file": "26-05-28-0609-02-coinbase-base-mcp-defi-agents.md",
+      "title": "Coinbase เปิด Base MCP — AI agent สั่ง swap, lend, transfer crypto ผ่านแชทได้แล้ว",
+      "order": 2
+    },
+    {
+      "file": "26-05-28-0609-03-willison-claude-code-codex-pmf.md",
+      "title": "Simon Willison ชี้ — Claude Code และ Codex \"found product-market fit\" แล้ว ตลาด AI coding agent เข้าสู่ยุค revenue จริง",
+      "order": 3
+    }
+  ],
+  "script_char_count": 2496,
+  "audio_file": "26-05-28-0609.mp3",
+  "voice": "th-TH-Chirp3-HD-Achernar",
+  "model": "google-cloud-tts-chirp3-hd",
+  "speed": 1.3
+}
