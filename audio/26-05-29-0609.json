@@ -1,0 +1,27 @@
+{
+  "date": "26-05-29-0609",
+  "iso_date": "2026-05-29T06:09:00+07:00",
+  "title": "Daily AI Brief — 26-05-29 06:09",
+  "items": [
+    {
+      "file": "26-05-29-0609-01-anthropic-965b-eclipse-openai-65b-raise.md",
+      "title": "Anthropic ปิดดีล $65B จริงแล้ว — valuation $965B แซง OpenAI ครั้งแรกในประวัติศาสตร์ ARR พุ่งเป็น $47B ภายในเดือนเดียว",
+      "order": 1
+    },
+    {
+      "file": "26-05-29-0609-02-robinhood-agentic-trading-credit-card-mcp.md",
+      "title": "Robinhood เปิดทาง AI agent ซื้อขายหุ้นและรูดบัตรเครดิตได้แล้ว — ใช้ MCP รองรับ Claude / ChatGPT / Codex / Cursor",
+      "order": 2
+    },
+    {
+      "file": "26-05-29-0609-03-fujitsu-anthropic-openai-japan-fde.md",
+      "title": "Fujitsu จับมือทั้ง Anthropic + OpenAI พร้อมกัน — ปูทาง Claude ใช้ภายในกับพนักงาน 100,000 คน, ใช้โมเดล Forward Deployed Engineer",
+      "order": 3
+    }
+  ],
+  "script_char_count": 3467,
+  "audio_file": "26-05-29-0609.mp3",
+  "voice": "th-TH-Chirp3-HD-Achernar",
+  "model": "google-cloud-tts-chirp3-hd",
+  "speed": 1.3
+}
