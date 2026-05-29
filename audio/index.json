@@ -1,7 +1,36 @@
 {
-  "generated_at": "2026-05-28T23:18:41Z",
-  "count": 42,
+  "generated_at": "2026-05-29T23:19:38Z",
+  "count": 43,
   "episodes": [
+    {
+      "date": "26-05-30-0610",
+      "iso_date": "2026-05-30T06:10:00+07:00",
+      "title": "Daily AI Brief — 26-05-30 06:10",
+      "description": "1. Snowflake ทุ่ม $6B กับ AWS + ซื้อ Natoma (MCP gateway) — เปลี่ยน data warehouse เป็น \"agentic OS\" ของ enterprise\n2. Palo Alto Networks ปิดดีลซื้อ Portkey — AI gateway ที่จัดการ \"trillions of tokens/month\" กลายเป็น security stack หลักของ agentic enterprise\n3. Claude Opus 4.8 + Dynamic Workflows — Anthropic ส่งของจริง รัน 1,000 subagents พร้อมกัน, Claude Code ทำ codebase migration ระดับแสน lines ได้แล้ว",
+      "items": [
+        {
+          "file": "26-05-30-0610-01-snowflake-6b-aws-natoma-agentic-data.md",
+          "title": "Snowflake ทุ่ม $6B กับ AWS + ซื้อ Natoma (MCP gateway) — เปลี่ยน data warehouse เป็น \"agentic OS\" ของ enterprise",
+          "order": 1
+        },
+        {
+          "file": "26-05-30-0610-02-palo-alto-portkey-ai-gateway-agentic-security.md",
+          "title": "Palo Alto Networks ปิดดีลซื้อ Portkey — AI gateway ที่จัดการ \"trillions of tokens/month\" กลายเป็น security stack หลักของ agentic enterprise",
+          "order": 2
+        },
+        {
+          "file": "26-05-30-0610-03-claude-opus-48-dynamic-workflows-1000-subagents.md",
+          "title": "Claude Opus 4.8 + Dynamic Workflows — Anthropic ส่งของจริง รัน 1,000 subagents พร้อมกัน, Claude Code ทำ codebase migration ระดับแสน lines ได้แล้ว",
+          "order": 3
+        }
+      ],
+      "audio_file": "26-05-30-0610.mp3",
+      "audio_size_bytes": 1002432,
+      "voice": "th-TH-Chirp3-HD-Achernar",
+      "model": "google-cloud-tts-chirp3-hd",
+      "speed": 1.3,
+      "script_char_count": 3786
+    },
     {
       "date": "26-05-29-0609",
       "iso_date": "2026-05-29T06:09:00+07:00",
