@@ -1,7 +1,36 @@
 {
-  "generated_at": "2026-05-28T23:18:41Z",
-  "count": 42,
+  "generated_at": "2026-05-30T23:20:12Z",
+  "count": 43,
   "episodes": [
+    {
+      "date": "26-05-31-0610",
+      "iso_date": "2026-05-31T06:10:00+07:00",
+      "title": "Daily AI Brief — 26-05-31 06:10",
+      "description": "1. Claude Opus 4.8 + Dynamic Workflows — Anthropic ปล่อยรุ่นใหม่ภายใน 41 วัน เปิด orchestration 1,000 subagents สำหรับ codebase-scale migration\n2. OpenRouter ระดมทุน $113M Series B ที่ $1.3B — CapitalG นำ, NVIDIA/ServiceNow/Snowflake/Databricks ตามมา เป็น signal ว่า AI router คือ infrastructure layer ที่ทุก hyperscaler ต้องมีไว้\n3. Cloudflare เปิด Enterprise MCP Reference Architecture — Code Mode ลด token cost 99.9%, Shadow MCP Discovery บล็อก rogue server ผ่าน HTTPS inspection",
+      "items": [
+        {
+          "file": "26-05-31-0610-01-claude-opus-4-8-dynamic-workflows-1000-subagents.md",
+          "title": "Claude Opus 4.8 + Dynamic Workflows — Anthropic ปล่อยรุ่นใหม่ภายใน 41 วัน เปิด orchestration 1,000 subagents สำหรับ codebase-scale migration",
+          "order": 1
+        },
+        {
+          "file": "26-05-31-0610-02-openrouter-113m-series-b-25t-tokens-ai-gateway.md",
+          "title": "OpenRouter ระดมทุน $113M Series B ที่ $1.3B — CapitalG นำ, NVIDIA/ServiceNow/Snowflake/Databricks ตามมา เป็น signal ว่า AI router คือ infrastructure layer ที่ทุก hyperscaler ต้องมีไว้",
+          "order": 2
+        },
+        {
+          "file": "26-05-31-0610-03-cloudflare-enterprise-mcp-reference-architecture-99-percent-token-reduction.md",
+          "title": "Cloudflare เปิด Enterprise MCP Reference Architecture — Code Mode ลด token cost 99.9%, Shadow MCP Discovery บล็อก rogue server ผ่าน HTTPS inspection",
+          "order": 3
+        }
+      ],
+      "audio_file": "26-05-31-0610.mp3",
+      "audio_size_bytes": 1094592,
+      "voice": "th-TH-Chirp3-HD-Achernar",
+      "model": "google-cloud-tts-chirp3-hd",
+      "speed": 1.3,
+      "script_char_count": 4196
+    },
     {
       "date": "26-05-29-0609",
       "iso_date": "2026-05-29T06:09:00+07:00",
