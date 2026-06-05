@@ -112,26 +112,37 @@ brief ไหน error / out of credits / pending เกิน 3 รอบ:
 - บอกใน chat ตอน done: `brief #N ต้อง fallback — รัน python3 scripts/gen_images.py --slug ${SLUG} มือทีหลัง`
 - brief อื่นไม่กระทบ — push ตามปกติ
 
-### 5. Commit + push
+### 5. Open draft PR + run Phase 2 (TTS + index + Telegram)
+
+ขั้นตอนทั้งหมดอยู่ใน `write_briefs.sh` แล้ว — Phase 1 push briefs + images, Phase 2 รัน TTS (OpenAI gpt-4o-mini-tts) + rebuild index + push audio + ส่ง Telegram
+
+ก่อนรัน — เปิด draft PR ผ่าน GitHub MCP เก็บ PR URL ไว้ส่งเข้า Telegram
 
 ```bash
+# (Claude: open draft PR via mcp__github__create_pull_request ก่อน, เก็บ URL)
+export PR_URL="https://github.com/Enabridge/EnabridgeResearch/pull/<N>"
 bash scripts/write_briefs.sh "${SLUG}"
 ```
 
-(stage briefs + images + commit + force-with-lease push ไป `daily/${SLUG}`)
+`write_briefs.sh` จะทำตามลำดับ:
+
+1. Validate YAML frontmatter ของ briefs
+2. Stage + commit + push `news/${SLUG}-*.md` + images ขึ้น `daily/${SLUG}`
+3. **Phase 2**: รัน `tts_openai.py` → `update_index.py` → commit + push `audio/${SLUG}.*` + `audio/index.json` ด้วย identity `enabridge-bot`
+4. รัน `push_telegram.py` ส่ง message + MP3 + PR link เข้า Telegram
+
+ถ้า env ไม่มี `OPENAI_API_KEY` Phase 2 จะ fail; ถ้าไม่อยากรัน Phase 2 ตั้ง `SKIP_PHASE2=1` ก่อน (เผื่อ debug). ถ้าไม่มี `TELEGRAM_BOT_TOKEN`/`TELEGRAM_CHAT_ID` Phase 2 จะข้าม Telegram step
 
 ### 6. จบงาน
 
-รอ GHA ~2–3 นาที: TTS → update index → open PR → ส่ง Telegram preview
-ตอบใน chat: รายการ brief ที่สร้าง + TL;DR 3–4 บรรทัด + brief ที่ skip image (ถ้ามี) + link PR
+ตอบใน chat: รายการ brief ที่สร้าง + TL;DR 3–4 บรรทัด + brief ที่ skip image (ถ้ามี) + link PR + ยืนยันว่า Telegram ส่งแล้ว
 
 ---
 
 ## ห้าม
 
 - ❌ อย่า merge PR เอง — Yoh ฟัง MP3 ใน Telegram แล้ว approve เอง
-- ❌ อย่ารัน `run_daily.sh`
-- ❌ อย่าทำ TTS / Telegram / update_index เอง — GHA ทำให้
+- ❌ อย่ารัน `scripts/run_daily.sh` (อันนั้นของ Mac Cowork ใช้ Google TTS — ห้ามรันบน remote)
 - ❌ อย่า push ตรงเข้า main
 - ❌ อย่าใช้ branch default ของ session — ใช้ `daily/${SLUG}` เสมอ
 - ❌ อย่า skip step 4 — ถ้า Higgsfield ใช้ไม่ได้ ให้ทำ fallback message ไม่ใช่ปล่อยเงียบ

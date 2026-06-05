@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-05T00:29:14Z",
+  "generated_at": "2026-06-05T00:35:14Z",
   "count": 44,
   "episodes": [
     {
@@ -30,10 +30,10 @@
         }
       ],
       "audio_file": "26-06-04-0609.mp3",
-      "audio_size_bytes": 6589824,
+      "audio_size_bytes": 5065920,
       "voice": "sage",
-      "model": "openai-gpt-4o-mini-tts",
-      "speed": 1.0,
+      "model": "openai-tts-1-hd",
+      "speed": 1.3,
       "script_char_count": 4341
     },
     {

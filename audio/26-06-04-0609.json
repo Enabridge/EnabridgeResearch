@@ -27,6 +27,6 @@
   "script_char_count": 4341,
   "audio_file": "26-06-04-0609.mp3",
   "voice": "sage",
-  "model": "openai-gpt-4o-mini-tts",
-  "speed": 1.0
+  "model": "openai-tts-1-hd",
+  "speed": 1.3
 }
