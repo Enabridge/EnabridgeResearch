@@ -71,6 +71,61 @@ fi
 echo "[git] push ${BRANCH}..."
 git push --force-with-lease -u origin "$BRANCH"
 
+# ─── Phase 2: TTS + index + Telegram ────────────────────────────────
+# Remote routine จบในตัว ไม่พึ่ง GHA (workflow ตัวเก่าหยุดรันตั้งแต่ ~เม.ย.)
+# ฝั่ง Mac Cowork ใช้ tts.py (Google Chirp 3 HD) ผ่าน run_daily.sh
+# ฝั่ง remote ใช้ tts_openai.py (OpenAI gpt-4o-mini-tts) เพราะไม่มี GCP cred
+# ถ้าตั้ง SKIP_PHASE2=1 จะข้าม (เผื่อ debug)
+if [ -n "${SKIP_PHASE2:-}" ]; then
+  echo "[phase2] SKIP_PHASE2=1 — ข้าม TTS+Telegram"
+  echo "=== done (briefs only) ==="
+  exit 0
+fi
+
+echo ""
+echo "=== Phase 2: TTS + index + Telegram ==="
+
+# (1) TTS — ใช้ OpenAI ถ้าไม่มี GCP creds (default remote), ไม่งั้นใช้ Google
+if [ -n "${GOOGLE_APPLICATION_CREDENTIALS:-}" ] && [ -f "${GOOGLE_APPLICATION_CREDENTIALS}" ]; then
+  echo "[phase2] TTS → Google Cloud (Chirp 3 HD)"
+  python3 "${SCRIPT_DIR}/tts.py" --slug "${SLUG}"
+else
+  if [ -z "${OPENAI_API_KEY:-}" ]; then
+    echo "[ERR] phase2: ทั้ง GOOGLE_APPLICATION_CREDENTIALS และ OPENAI_API_KEY ไม่มีใน env"
+    echo "      ตั้งอย่างน้อย OPENAI_API_KEY แล้วลองใหม่ — หรือ SKIP_PHASE2=1 เพื่อจบแค่ briefs"
+    exit 1
+  fi
+  echo "[phase2] TTS → OpenAI (gpt-4o-mini-tts)"
+  python3 "${SCRIPT_DIR}/tts_openai.py" --slug "${SLUG}"
+fi
+
+# (2) Rebuild audio/index.json
+echo "[phase2] update audio/index.json"
+python3 "${SCRIPT_DIR}/update_index.py"
+
+# (3) Commit + push audio + index (identity = enabridge-bot เหมือนเดิม)
+git config user.name  "enabridge-bot"
+git config user.email "bot@enabridge.ai"
+git add "audio/${SLUG}".* audio/index.json
+if git diff --cached --quiet; then
+  echo "[phase2] ไม่มี audio/index ใหม่ — ข้าม commit"
+else
+  git commit -m "build: images + audio + index for ${SLUG}"
+  git push origin "$BRANCH"
+fi
+
+# (4) Telegram — ส่ง message + audio (ถ้าตั้ง TELEGRAM_BOT_TOKEN/CHAT_ID)
+if [ -z "${TELEGRAM_BOT_TOKEN:-}" ] || [ -z "${TELEGRAM_CHAT_ID:-}" ]; then
+  echo "[phase2] ไม่มี TELEGRAM_BOT_TOKEN/TELEGRAM_CHAT_ID — ข้าม Telegram"
+else
+  PR_URL_FLAG=""
+  if [ -n "${PR_URL:-}" ]; then
+    PR_URL_FLAG="--pr-url ${PR_URL}"
+  fi
+  echo "[phase2] push Telegram"
+  python3 "${SCRIPT_DIR}/push_telegram.py" --slug "${SLUG}" ${PR_URL_FLAG}
+fi
+
 echo "=== done ==="
-echo "GHA workflow จะรัน: TTS → update index → open PR → ส่ง Telegram"
-echo "ดูสถานะ: https://github.com/Enabridge/EnabridgeResearch/actions"
+echo "Brief + audio + Telegram ส่งเรียบร้อย"
+echo "PR (ถ้าเปิดไว้แล้ว) จะ auto-update เมื่อ push ใหม่"

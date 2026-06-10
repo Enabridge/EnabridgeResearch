@@ -1,0 +1,32 @@
+{
+  "date": "26-06-04-0609",
+  "iso_date": "2026-06-04T06:09:00+07:00",
+  "title": "Daily AI Brief — 26-06-04 06:09",
+  "items": [
+    {
+      "file": "26-06-04-0609-01-anthropic-confidential-s1-1t-valuation-47b-revenue.md",
+      "title": "Anthropic ยื่น S-1 ลับ — เปิดตัวเลข run-rate $47B พุ่งใส่ valuation $1T",
+      "order": 1
+    },
+    {
+      "file": "26-06-04-0609-02-microsoft-build-polaris-windows-agent-framework-acs.md",
+      "title": "Microsoft Build 2026: ตัดสาย OpenAI ด้วย Polaris + เปลี่ยน Windows เป็น Agent Host",
+      "order": 2
+    },
+    {
+      "file": "26-06-04-0609-03-meta-business-agent-whatsapp-global-launch.md",
+      "title": "Meta เปิด Business Agent ทั่วโลก — agentic AI ลงสามแพลตฟอร์ม WhatsApp + IG + Messenger",
+      "order": 3
+    },
+    {
+      "file": "26-06-04-0609-04-sierra-950m-fortune-50-agent-platform.md",
+      "title": "Sierra ปิด $950M ที่ $15.8B — agent platform ของ Bret Taylor ทำ $150M ARR ใน 8 ไตรมาส",
+      "order": 4
+    }
+  ],
+  "script_char_count": 4341,
+  "audio_file": "26-06-04-0609.mp3",
+  "voice": "sage",
+  "model": "openai-tts-1-hd",
+  "speed": 1.3
+}
